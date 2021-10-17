@@ -1,0 +1,53 @@
+* {
+    /*border-box - considera a borda como parte do tamanho*/
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #555;
+}
+
+.teclado {
+    display: flex;
+}
+
+.oitava {
+    position: relative;
+    display: flex;
+    /*flex-direction: row; - já é default, não precisa colocar*/
+}
+
+.branca {
+    background-color: #fff;
+    width: 50px;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+.preta {
+    position: absolute;
+    background: #000;
+    width: 30px;
+    height: 160px;
+}
+
+[cs] {
+    left: 35px;
+}
+
+[ds] {
+    left: 85px;
+}
+
+[fs] {
+    left: 185px;
+}
+
+[gs] {
+    left: 235px;
+}
+
+[as] {
+    left: 285px;
+}
