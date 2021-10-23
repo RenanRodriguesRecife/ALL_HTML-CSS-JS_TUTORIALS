@@ -83,12 +83,51 @@ ul{
 
 @media (min-width: 720px) {
     /*estilos versão tabale*/
-   
+    .avatar {
+        width: 13rem;
+        margin: 10.5rem auto 0;
+    }
+    
+    .avatar > img {
+        width: 13rem;
+        height: 14.5rem;
+    }
+
+    body{
+        font-size: 18px;
+    }
+
+    .container{
+        max-width: 600px;
+    }
+
+    li  img {
+        width: 70px;
+    }
 }
 
 @media (min-width: 920px){
     /*estilos versão desktop*/
+
+    .avatar {
+        width: 15rem;
+        margin: 10.5rem auto 0;
+    }
+    
+    .avatar > img {
+        width: 15rem;
+        height: 16.5rem;
+    }
+
+    body{
+        font-size: 20px;
+    }
+
     .container{
         max-width: 800px;
+    }
+
+    li  img {
+        width: 100px;
     }
 }
