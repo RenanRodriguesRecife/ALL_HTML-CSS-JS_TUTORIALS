@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600&display=swap');
+
+/*Cores*/
+:root{
+    --color-first: #EA4C89;
+    --color-secondary: #1D2063;
+    --color-text: #fff; 
+}
+/*Fontes e tipografia*/
+:root{
+    --heading-font: 'Raleway';
+    --body-font: 'Open Sans';
+    --h1-font-size: 2rem;
+    --h3-font-size: 1rem;
+    --small-font-size: 0.8125rem;
+}
+@media screen and (min-width: 768px){
+    :root{
+        --h1-font-size: 3.5rem;
+        --h3-font-size: 1.25rem;
+        --small-font-size: 0.8125rem;
+    }
+}
+/* z-index*/
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
