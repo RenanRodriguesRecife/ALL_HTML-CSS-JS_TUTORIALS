@@ -6,7 +6,7 @@ $header-height: 3rem;
 
 :root{
     --first-color: #fff;
-    --second-color: #fff;
+    --second-color: #BDBDBD;
 }
 
 :root{
@@ -67,7 +67,7 @@ img{
     top: 0;
     left: 0;
     background-color: transparent;
-    z-index: var(--z-fixed);    
+    z-index: var(--z-tooltip);    
 }
 
 .main-bg{
@@ -86,17 +86,17 @@ img{
 
 /*Nav*/
 .nav{
-    height:$header-height;
+    height: $header-height;
     display: flex;
     justify-content: space-between;
-    align-itens: center;
+    align-items: center;
     font-weight: bold;
     color: var(--second-color);
 
     &__menu{
         @media screen and (max-width: 768px){
             position: fixed;
-            top: $header-height;
+            top: -100%;
             left: 0;
             right: 0;
             background-color: rgba(0,0,0,.9);    
@@ -134,8 +134,63 @@ img{
         font-size: 1.5rem;
 
         }
+    .show{
+            top:$header-height;
+    }
+        
 }
 
-.show{
-    top:$header-height;
+
+/*Home*/
+.home{
+    position: relative;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    color: var(--first-color);
+    row-gap: 2rem;
+    &__title{
+        font-size:var(--h1-font-size);
+    }
+}
+
+.button{
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    background-color: var(--first-color);
+    color: #000;
+    margin-right: 1rem;
+    border-radius: .25rem;
+
+    &--ghost{
+        background-color: transparent;
+        color: var(--first-color);
+        border: 1.5px solid var(--first-color);
+
+        &:hover{
+            background-color: var(--first-color);
+            color: #000;
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    .nav{
+        &__list{
+            display: flex;
+        }
+        &__item{
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+        }
+        &__toggle{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
