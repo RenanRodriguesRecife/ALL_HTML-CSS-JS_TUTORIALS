@@ -11,3 +11,4 @@ Repositório unindo todos os tutoriais avulsos de HTML-CSS-JS
 
 <p>hellodribbble - Pagina Web Responsive Mobile First HTML CSS & JS - (https://www.youtube.com/watch?v=Et8pJUznDvw)</p>
 
+<p>CardUIResponsive - Product Card Ui Design Responsive | HTML & CSS - (https://www.youtube.com/watch?v=iVHvPSe2mpE&t=73s)</P>
