@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+$header-height: 3rem;
+
+/* Cores */
+
+:root{
+    --first-color: #fff;
+    --second-color: #fff;
+}
+
+:root{
+    --bady-font: 'Open Sans';    
+    --h1-font-size: 2rem;
+    @media screen and (min-width: 768px){
+        --h1-font-size: 3.5rem;
+    }
+}
+
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;    
+}
+
+/* BASE */
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: var(--body-font);    
+}
+
+h1{
+    margin: 0;    
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;    
+}
+
+.bd-grid{
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;    
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: var(--z-fixed);    
+}
+
+.main-bg{
+    
+    height: 100vh;
+    &__hero-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }    
+}
+
+/*Nav*/
+.nav{
+    height:$header-height;
+    display: flex;
+    justify-content: space-between;
+    align-itens: center;
+    font-weight: bold;
+    color: var(--second-color);
+
+    &__menu{
+        @media screen and (max-width: 768px){
+            position: fixed;
+            top: $header-height;
+            left: 0;
+            right: 0;
+            background-color: rgba(0,0,0,.9);    
+            width: 85%;
+            height: 85%;
+            margin: auto;
+            padding: 2rem;
+            border: 1px solid var(--first-color);
+            z-index: var(--z-fixed);
+            transition: .5s;
+        }    
+        
+    }
+    &__logo{
+        color: var(--second-color);
+        &:hover{
+            color: var(--first-color);    
+        }
+    }
+    &__list{
+        text-align: center;
+    }
+    &__item{
+        margin-bottom: 2rem;    
+    }
+    &__link{
+        padding: .5rem;    
+        color: var(--second-color);
+        &:hover{
+            color: var(--first-color);
+            }
+    }
+    &__toggle{
+        cursor: pointer;
+        font-size: 1.5rem;
+
+        }
+}
+
+.show{
+    top:$header-height;
+}
