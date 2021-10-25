@@ -27,3 +27,34 @@
 }
 
 /*BASE*/
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 2rem 0 0 0;
+    background-color: #fff;
+    color: var(--dark-color);
+    font-family: var(--body-font);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    padding: 2rem 0;
+}
+.bd-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    max-width: 1200px;
+    margin-left: 2.5rem;
+    margin-right:2.5rem;
+    align-items: center;
+    gap: 2rem;
+}
+/*--- PAGES --*/
