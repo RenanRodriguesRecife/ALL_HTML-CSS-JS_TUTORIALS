@@ -95,7 +95,7 @@ p{
         @media screen and (max-width: 768px){
             position: fixed;
             top: $header-height;
-            left: 0;
+            left: -100%;
             background-color: rgba(1,10,67,8);
             width: 80%;
             height: 100vh;
@@ -127,4 +127,8 @@ p{
         font-size: 1.3rem;
         text-align: right;
     }
+}
+
+.show{
+    left: 0;
 }

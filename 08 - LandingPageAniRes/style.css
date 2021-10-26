@@ -91,7 +91,7 @@ p {
   .nav__menu {
     position: fixed;
     top: 3rem;
-    left: 0;
+    left: -100%;
     background-color: #010a43;
     width: 80%;
     height: 100vh;
@@ -121,6 +121,10 @@ p {
 .nav__icon-cart {
   font-size: 1.3rem;
   text-align: right;
+}
+
+.show {
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
