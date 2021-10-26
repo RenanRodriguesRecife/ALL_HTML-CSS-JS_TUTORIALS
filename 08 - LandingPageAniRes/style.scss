@@ -85,3 +85,46 @@ p{
 }
 
 /*Nav*/
+.nav{
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    &__menu{
+        @media screen and (max-width: 768px){
+            position: fixed;
+            top: $header-height;
+            left: 0;
+            background-color: rgba(1,10,67,8);
+            width: 80%;
+            height: 100vh;
+            margin:auto;
+            padding: 2rem;
+            z-index: var(--z-fixed);
+            transition: .5s;
+
+        }
+    }
+    &__list{
+        text-align: center;
+    }
+    &__item{
+        margin-bottom: 2rem;
+    }
+    &__link{
+        padding: .5rem;
+        color: var(--white-color);
+    }
+    &__logo{
+        color: var(--white-color);
+    }
+    &__toggle{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    &__icon-cart{
+        font-size: 1.3rem;
+        text-align: right;
+    }
+}
