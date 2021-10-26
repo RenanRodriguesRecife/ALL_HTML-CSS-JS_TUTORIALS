@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
+
+$header-height: 3rem;
+
+:root{
+    --first-color: #010A43;
+    --second-color: #FFC2C2;
+    --white-color: #fff;
+}
+
+:root{
+    --body-font: 'Tinos', serif;
+    --h1-font-size: 2.3rem;
+    --h2-font-size: 2.3rem;
+    --normal-font-size: 0.93rem;
+    --big-font-size: 5rem;
+    --smaller-font-size: 0.75rem;
+    
+    @media screen and (min-width: 768px){
+        --h1-font-size: 4.5rem;
+        --h2-font-size: 3.56rem;
+        --normal-font-size: 1rem;
+        --big-font-size: 10rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+
+/*BASE*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: $header-height 0 0 0;
+    font-family: var(--body-font);
+    font-weight: initial;
+    overflow: hidden;
+}
+
+h1,h2{
+    margin: 0;
+    font-weight: initial;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+    font-size: var(--normal-font-size);
+}
+
+
+.bd-grid{
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    z-index: var(--z-fixed);
+}
+
+/*Nav*/
