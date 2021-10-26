@@ -53,5 +53,26 @@
 
     <!-- MAIN JS -->
     <script src="script.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+
+    <script>
+        /*HOme Primary*/
+        TweenMax.to(".home__primary",2,{
+            width: "100%",
+            ease:Expo.easeInOut
+        })
+        gsap.from('.home__title',{opacity: 0, duration: 2, delay: 1.5, y:100})
+        gsap.from('.home__title img',{opacity: 0, duration: 2, delay: 1.5, y:-100})
+        /*Home Secondary*/
+        TweenMax.to(".home__secondary",2,{
+            width: "100%",
+            ease:Expo.easeInOut
+        })
+        gsap.from('.home__scroll',{opacity: -1, duration: 1.5, delay:1.5 , x:-100})
+    
+    </script>
 </body>
 </html>
