@@ -10,7 +10,7 @@
 <body>
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div class="nav_toggle" id="nav-toggle">
+            <div class="nav__toggle" id="nav-toggle">
                 <ion-icon name="reorder-two-outline"></ion-icon>
             </div>
             <div>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
             <div class="nav__icon-cart">
-                <ion-icon cart-outline=""></ion-icon>
+                <ion-icon cart-outline="cart-outline"></ion-icon>
             </div>
         </nav>
     </header>
@@ -36,13 +36,12 @@
                 <h1 class="home__title">Fashion Online<br> Store</h1>
 
                 <div class="home__img">
-                    <img src="img/img-home.jpg" alt="">
+                    <img src="./img/img-home.jpg" alt="">
                 </div>
-
             </div>
 
             <div class="home__secondary">
-                <a href="#about" class="home__scroll">SROLL</a>
+                <a class="home__scroll" href="#about" >SCROLL DOWN</a>
                 <span class="home__year">2020</span>
             </div>
         </div>
@@ -62,17 +61,17 @@
         /*HOme Primary*/
         TweenMax.to(".home__primary",2,{
             width: "100%",
-            ease:Expo.easeInOut
+            ease: Expo.easeInOut
         })
         gsap.from('.home__title',{opacity: 0, duration: 2, delay: 1.5, y:100})
-        gsap.from('.home__title img',{opacity: 0, duration: 2, delay: 1.5, y:-100})
+        gsap.from('.home__img img',{opacity: 0, duration: 2, delay: 1.5, y:-100})
         /*Home Secondary*/
-        TweenMax.to(".home__secondary",2,{
+        TweenMax.to(".home__secondary",2.5,{
             width: "100%",
-            ease:Expo.easeInOut
+            ease: Expo.easeInOut
         })
-        gsap.from('.home__scroll',{opacity: -1, duration: 1.5, delay:1.5 , x:-100})
-    
+        gsap.from('.home__scroll', {opacity: 0, duration: 3, x: -100})
+        gsap.from('.home__year', {opacity: -1, duration: 1.5, delay: 1.5, x: 100})
     </script>
 </body>
 </html>
