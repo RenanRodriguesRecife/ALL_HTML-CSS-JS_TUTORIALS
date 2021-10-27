@@ -1,7 +1,8 @@
 const teclas = document.querySelectorAll(".oitava > div")
-const audioSource = document.getElementById("source-audio")
+const audioSources = document.querySelectorAll(".source-audio")
 
-//console.log(teclas)
+
+
 
 function desmarcar(tecla){
     tecla.classList.remove("selecionada")
@@ -10,8 +11,9 @@ function desmarcar(tecla){
 teclas.forEach(function(tecla){
     tecla.onmousedown = function(){
         tecla.classList.add("selecionada")
-        audioSource.src = `audio/${tecla.attributes[1].name}.wav`
-        console.log(tecla.attributes[1].name)
+       
+            audioSource.src = `audio/${tecla.attributes[1].name}.wav`
+        
         audioSource.play()
     }
 
@@ -20,3 +22,7 @@ teclas.forEach(function(tecla){
 
     tecla.onmouseleave = () => desmarcar(tecla)
 })
+
+
+
+function isPlaying(audio) { return !audio.paused; }
