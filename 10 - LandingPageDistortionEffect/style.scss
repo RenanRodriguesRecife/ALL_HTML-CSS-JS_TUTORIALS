@@ -131,11 +131,119 @@ img{
 }
 
 .show{
-    right: 0;
+    right: -5%;
 }
 
 .hidder{
     right: -100%;
 }
 
-4:22
+.home{
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-content: flex-end;
+    z-index: var(--z-normal);
+    &__title{
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        font-size: var(--big-font-size);
+        font-weight: $font-black;
+        z-index: var(--z-fixed);
+    }
+    &__img{
+        position: absolute;
+        top: 10%;
+        left: 22%;
+        width: 235px;
+        height: 353px;
+    }
+    &__social{
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        padding-top: 2rem;
+        &-link{
+            padding-bottom: 2rem;
+            color: var(--text-color);
+            font-size: var(--smaller-font-size);
+
+        }
+    }
+    &__subtitle{
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        padding-top: 2rem;
+        font-size: var(--h2-font-size);
+        font-weight: $font-black;
+    }
+    &__button{
+        position: absolute;
+        right: -1rem;
+        bottom: 0;
+        padding: 1rem;
+        background-color: var(--text-color);
+        color: var(--white-color);
+        &-icon{
+            padding-left: 4.25rem;
+        }
+    }
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px){
+    body{
+        margin: 0;
+    }
+    .l-main{
+        height: 100vh;
+    }
+    .nav{
+        &__list{
+            display: flex;
+            padding-top: 0;
+        }
+        &__item{
+            margin-left: 3rem;
+            margin-bottom: 0;
+        }
+        &__toggle, &__close{
+            display: none;
+        }
+        &__link{
+            text-transform: initial;
+        }
+    }
+    .home{
+        grid-template-columns: 4fr 1fr;
+
+        &__title{
+            top: 16%;
+            left: 23%;
+        }
+        &__img{
+            width: 359px;
+            height: 539px;
+            top: 18%;
+            left: 43%;
+        }
+        &__social{
+            padding-top: 5rem;
+            &-link{
+                padding-bottom: 3rem;
+            }
+        }
+        &__subtitle{
+            padding-top: 18rem;
+            padding-right: 8rem;
+        }
+    }
+}
+
+@media screen and(min-width: 1200px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
