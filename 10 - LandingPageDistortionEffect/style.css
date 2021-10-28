@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:700,900&display=swap");
+:root {
+  --first-color: #D8DBE2;
+  --second-color: #F2BF25;
+  --text-color: #000;
+  --white-color: #fff;
+}
+
+:root {
+  --body-font:"Ralewey",sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.93rem;
+  --smaller-font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --h2-font-size: 2rem;
+    --big-font-size: 6rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: var(--body-font);
+  background-color: var(--first-color);
+  color: var(--text-color);
+  font-weight: 700;
+  overflow: hidden;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bd-grid {
+  max-width: 1200px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-modal);
+  background-color: var(--first-color);
+}
+
+.nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    background-color: var(--white-color);
+    width: 85%;
+    height: 100vh;
+    padding: 0.75rem;
+    z-index: var(--z-model);
+    font-weight: 900;
+    transition: 0.5s;
+  }
+}
+.nav__close {
+  text-align: right;
+}
+.nav__close-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav__list {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.nav__item {
+  margin-bottom: 2.5rem;
+}
+.nav__link {
+  padding-top: 0.5rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+.nav__link:hover {
+  color: #575757;
+}
+.nav__logo {
+  font-size: var(--normal-font-size);
+  font-weight: 900;
+  color: var(--text-color);
+}
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.show {
+  right: 0;
+}
+
+.hidder {
+  right: -100%;
+}
+
+/*# sourceMappingURL=style.css.map */
