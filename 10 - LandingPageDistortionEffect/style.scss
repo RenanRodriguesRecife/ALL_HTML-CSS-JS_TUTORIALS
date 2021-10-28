@@ -13,9 +13,12 @@ $font-black: 900;
 
 :root{
     --body-font:'Ralewey',sans-serif;
+
     --h2-font-size: 1.25rem;
+    --big-font-size:3rem;
     --normal-font-size: 0.93rem;
     --smaller-font-size: 0.75rem;
+
     @media screen and (min-width: 768px){
         --h2-font-size: 2rem;
         --big-font-size: 6rem;
@@ -138,6 +141,11 @@ img{
     right: -100%;
 }
 
+/*HOme*/
+.l-main{
+    height:calc(100vh - #{$header-height});
+}
+
 .home{
     position: relative;
     height: 100%;
@@ -159,6 +167,7 @@ img{
         left: 22%;
         width: 235px;
         height: 353px;
+        z-index: var(--z-tooltip);
     }
     &__social{
         writing-mode: vertical-rl;
@@ -175,6 +184,7 @@ img{
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         padding-top: 2rem;
+        padding-right: .5rem;
         font-size: var(--h2-font-size);
         font-weight: $font-black;
     }

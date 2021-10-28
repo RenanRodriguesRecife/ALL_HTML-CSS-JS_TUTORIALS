@@ -9,6 +9,7 @@
 :root {
   --body-font:"Ralewey",sans-serif;
   --h2-font-size: 1.25rem;
+  --big-font-size:3rem;
   --normal-font-size: 0.93rem;
   --smaller-font-size: 0.75rem;
 }
@@ -136,6 +137,11 @@ img {
   right: -100%;
 }
 
+/*HOme*/
+.l-main {
+  height: calc(100vh - 3rem);
+}
+
 .home {
   position: relative;
   height: 100%;
@@ -158,6 +164,7 @@ img {
   left: 22%;
   width: 235px;
   height: 353px;
+  z-index: var(--z-tooltip);
 }
 .home__social {
   writing-mode: vertical-rl;
@@ -173,6 +180,7 @@ img {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   padding-top: 2rem;
+  padding-right: 0.5rem;
   font-size: var(--h2-font-size);
   font-weight: 900;
 }
