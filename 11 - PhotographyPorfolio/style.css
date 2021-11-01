@@ -1,12 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap);
-
-@font-face{
+@font-face {
     font-family: 'Raiderfont';
-    src: local('Raiderfont'),url('./fonts/Raiderfont.ttf') format('truetype');
-}
-
-:root{
-    --body-font:"Montserrat",sans-serif;
+    src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
 }
 
 *{
@@ -16,7 +10,7 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: "Montserrat";
     font-size: 12px;
     width: 100%;
     height: 100vh;
@@ -36,7 +30,7 @@ ul{
 }
 
 .left{
-    background: #8384AF;
+    background: #B3B4AF;
     left: 0%;
     width: 0%;
 }
@@ -44,7 +38,7 @@ ul{
 .right{
     background: #191921;
     right: 0%;
-    width: 100%;;
+    width: 100%;
 }
 
 .nav ul{
@@ -73,6 +67,7 @@ ul{
 
 .nav .menu{
     flex: 1;
+    font-size: 18px;
 }
 
 .nav .collection {
@@ -80,14 +75,18 @@ ul{
 }
 
 .nav .explore{
-    flex: 1;
+    flex: 4;
 }
 
 .nav .search{
     flex: 3;
 }
 
-.nav .profile{
+.nav .profile {
+    flex: 0;
+}
+
+.nav .profile .img{
     background-image: url('./img/profile.jpg');
     background-position: 50%;
     background-size: cover;
@@ -135,7 +134,7 @@ ul{
     position: absolute;
     top: 50%;
     right: 100px;
-    transform: translate(-50%);
+    transform: translateY(-50%);
 }
 
 .text h1{
@@ -157,11 +156,12 @@ ul{
     left: -270px;
     transform: translateY(-50%);
     font-size: 90px;
-    font-family: 'Riderfont';
+    font-family: 'Raiderfont';
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
 }
+
 
 .bottomnav{
     position: absolute;
@@ -174,4 +174,17 @@ ul{
     text-transform: uppercase;
     letter-spacing: 15px;
     margin-top: 20px;
+}
+
+.bottomnav ul li:nth-child(2){
+    font-weight: bolder;
+}
+
+.bottomnav ul li:nth-child(2)::before{
+    content: "";
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 65px;
+    margin: 0 10px 0 -78px;
+    transform: translateY(-3px);
 }
