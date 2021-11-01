@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap);
 
+@font-face{
+    font-family: 'Raiderfont';
+    src: local('Raiderfont'),url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
 :root{
     --body-font:"Montserrat",sans-serif;
 }
