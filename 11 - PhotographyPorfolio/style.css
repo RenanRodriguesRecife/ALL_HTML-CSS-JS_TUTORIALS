@@ -20,6 +20,7 @@ body {
     font-size: 12px;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 ul{
@@ -37,11 +38,13 @@ ul{
 .left{
     background: #8384AF;
     left: 0%;
+    width: 0%;
 }
 
 .right{
     background: #191921;
     right: 0%;
+    width: 100%;;
 }
 
 .nav ul{
@@ -103,7 +106,7 @@ ul{
     background-image: url('./img/karina.jpg');
     background-size: cover;
     height: 550px;
-    width: 800px;
+    width: 0;
 }
 
 .info{
@@ -140,4 +143,35 @@ ul{
     color: #fff;
     font-family: 'Raiderfont';
     text-transform: uppercase;
+}
+
+.text p {
+    font-size: 20px;
+    color: #fff;
+    font-family: monospace;
+}
+
+.name{
+    position: absolute;
+    top: 50%;
+    left: -270px;
+    transform: translateY(-50%);
+    font-size: 90px;
+    font-family: 'Riderfont';
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.bottomnav{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.bottomnav ul li{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-top: 20px;
 }
