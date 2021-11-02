@@ -6,9 +6,10 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: #000f18;
+    background-color: #000F18;
     color: #01B1E7;
     font-family: "Montserrat",sans-serif;
+    overflow: hidden;
 }
 
 ul{
@@ -123,7 +124,7 @@ ul{
     margin: 0;
     font-family: 'KreepTown';
     font-size: 80px;
-    color: #D35A09;
+    color: #D35A08;
     letter-spacing: 3px;
 }
 
@@ -137,12 +138,12 @@ ul{
     margin-top: 20px;
     outline: none;
     cursor: pointer;
-    transition: 2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .btn-1{
     background: #01B1E7;
-    color: #000f18;
+    color: #000F18;
     padding: 20px 60px;
     border: none;
     margin-right: 20px;
@@ -160,9 +161,9 @@ ul{
 }
 
 .btn-2:hover{
-    background-image: #01B1E7;
+    background: #01B1E7;
     border: 1px solid #01B1E7;
-    color: #000f18;
+    color: #000F18;
 }
 
 .dots{
@@ -191,6 +192,11 @@ ul{
     right: 100px;
 }
 
+.bottomnav-title{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
 .bottomnav-title::before{
     display: inline-block;
     content: "";
@@ -205,9 +211,6 @@ ul{
     height: auto;
 }
 
-.bottomnav ul{
-    list-style: none;
-}
 
 .bottomnav ul li{
     position: absolute;
@@ -226,7 +229,7 @@ ul{
 }
 
 .bottomnav ul li:nth-child(1):hover{
-    background-image: transparent;
+    background: transparent;
     color: #fff;
     border: 1px solid #D35A08;
 }
@@ -236,7 +239,11 @@ ul{
     bottom: 35px;
     background: #01B1E7;
     border: 1px solid #01B1E7;
-    color: #000f18;
+    color: #000F18;
 }
 
-.bottomnav
+.bottomnav ul li:nth-child(2):hover{
+   background: transparent;
+   color: #fff;
+   border: 1px solid #01B1E7;
+}
