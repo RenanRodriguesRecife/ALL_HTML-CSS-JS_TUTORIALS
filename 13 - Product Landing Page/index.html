@@ -91,7 +91,7 @@
         })
         TweenMax.from(".logo",1,{
             delay: 1,
-            width:0,
+            opacity:0,
             x: -20,
             ease: Expo.easeInOut
         })
@@ -134,15 +134,23 @@
         TweenMax.staggerFrom(".size ul li",.3,{
             delay: 2,
             opacity:0,
-            x: -20,
+            y: -20,
             ease: Expo.easeInOut
         },0.08)
+
         TweenMax.staggerFrom(".dot",1,{
+            delay: 2.4,
+            opacity:0,
+            x: 20,
+            ease: Expo.easeInOut
+        },0.08)
+        TweenMax.from(".bottomnav",1,{
             delay: 2.4,
             opacity:0,
             x: -20,
             ease: Expo.easeInOut
-        },0.08)
+        })
+
         TweenMax.from(".bottomnav ul li:first-child",.5,{
             delay: 2.4,
             opacity:0,
@@ -158,19 +166,19 @@
         TweenMax.from(".product-img",3,{
             delay: 2,
             opacity:0,
-            x: 20,
+            y: 20,
             ease: Expo.easeInOut
         })
         TweenMax.from(".product-title",3,{
             delay: 2.2,
             opacity:0,
-            x: 50,
+            y: 50,
             ease: Expo.easeInOut
         })
         TweenMax.from(".product-subtitle",3,{
             delay: 2.4,
             opacity:0,
-            x: 50,
+            y: 50,
             ease: Expo.easeInOut
         })
     </script>
