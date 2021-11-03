@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrant';
+    font-size: 14px;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+.left, .right{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+
+.left{
+    background: #363A5D;
+}
+
+.right{
+    left: 50%;
+    background: #D3D9DD;
+}
+
+.left-strip, .right-strip{
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    background: #fff;
+    opacity: .5;
+}
+
+.left-strip{
+    left: 120px;
+}
+
+.right-strip{
+    right: 120px;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+.logo,
+.menu,
+.categorires,
+.search,
+.bag{
+    position: absolute;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.logo{
+    left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.logo .reg{
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.menu{
+    left: 150px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.search,
+.bag{
+    background: #fff;
+    color: #363A5D;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.search{
+    right: 180px;
+}
+
+.bag{
+    right: 40px;
+}
+
+.categorires{
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    color: #363A5D;
+    font-weight: 500;
+}
+
+.categorires ul{
+    list-style: none;
+}
+
+.categorires ul li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.media{
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+
+.media ul li{
+    display: inline-block;
+    font-weight: 500;
+}
+
+.media ul li:not(:last-child){
+    padding-right: 60px;
+}
+
+.size{
+    position: absolute;
+    left: 150px;
+    bottom: 20px;
+}
+
+.size ul li{
+    display: inline-block;
+    font-weight: 500;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 1.5;
+    transition: .3 ease-in-out;
+    cursor: pointer;
+}
