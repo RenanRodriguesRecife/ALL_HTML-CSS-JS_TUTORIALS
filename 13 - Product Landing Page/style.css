@@ -54,9 +54,9 @@ ul{
 
 .logo,
 .menu,
-.categorires,
+.categories,
 .search,
-.bag{
+.bag {
     position: absolute;
     padding: 10px;
     margin-top: 10px;
@@ -98,20 +98,18 @@ ul{
     right: 40px;
 }
 
-.categorires{
+.categories{
     left: 50%;
     top: 30%;
     transform: translate(-50%,-50%);
     border: 2px solid #fff;
+    border-radius: 50px;
+    background: #fff;
     color: #363A5D;
     font-weight: 500;
 }
 
-.categorires ul{
-    list-style: none;
-}
-
-.categorires ul li{
+.categories ul li{
     display: inline-block;
     padding: 5px 20px;
 }
@@ -149,6 +147,120 @@ ul{
     width: 20px;
     text-align: center;
     line-height: 1.5;
-    transition: .3 ease-in-out;
+    transition: .3s ease-in-out;
     cursor: pointer;
+}
+
+.size ul li:hover{
+    background: #fff;
+    color: #363A5D;
+}
+
+.size span{
+    font-weight: 500;
+}
+
+.size span::after{
+    display: inline-block;
+    content: "";
+    border: .5px solid #fff;
+    opacity: .5;
+    width: 50px;
+    margin: 0 0 0 10px;
+    transform: translateY(-4px);
+}
+
+.product-img{
+    width: 500px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    animation: fly 4s ease-in-out infinite;
+}
+
+@keyframes fly{
+    0%{
+        transform: translate(-50%,-46%);
+    }
+    50%{
+        transform: translate(-50%,-54%);
+    }
+    100%{
+        transform: translate(-50%,-46%);
+    }
+}
+
+.product-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.product-title{
+    font-size: 100px;
+}
+
+.product-title::after{
+    content: ".";
+    color: #363A5D;
+}
+
+.product-sutitle{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.dots{
+    position: absolute;
+    top: 43%;
+    right: -25px;
+    transform: rotate(90deg);
+}
+
+.dot{
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    background: transparent;
+    border: 2px solid #363A5D;
+    border-radius: 50%;
+    margin: 0 18px;
+}
+
+.dot:first-child{
+    background: #363A5D;
+    margin-left: 0;
+}
+
+.bottomnav{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottomnav-img{
+    background: url('levi-shirt.jpg') no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 250px;
+    height: 150px;
+}
+
+.bottomnav ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 28px 20px 20px 0;
+    background: #363A5D;
+    color: #fff;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.bottomnav ul li:hover{
+    background: #fff;
+    color: #363A5D;
 }
