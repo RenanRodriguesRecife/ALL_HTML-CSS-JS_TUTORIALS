@@ -32,9 +32,9 @@ img{
 .border-bottom{
     position: absolute;
     top: 100px;
-    width: 100%;
+    width: 0%;
     z-index: 1;
-    border-color: rgba(255,255,255,.2);
+    border-color: rgba(255,255,255,.5);
     border-width: .5px;
 }
 
@@ -101,9 +101,9 @@ img{
 .title{
     font-size: 120px;
     text-transform: uppercase;
-    width: 100%;
-    /*overflow: hidden;
-    white-space: nowrap;*/
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .desc{
@@ -131,7 +131,7 @@ img{
     background: url('./img/img-1.jpg') no-repeat;
     background-position: center;
     background-size: cover;
-    width: 450px;
+    width: 0;
     height: 600px;
 }
 
@@ -139,9 +139,8 @@ img{
     position: absolute;
     bottom: 120px;
     right: 320px;
-    margin-top: 20px;
     width: 450px;
-    /*opacity: 0;*/
+    opacity: 0;
 }
 
 .arrows{
@@ -174,7 +173,7 @@ img{
     background: url('./img/img-2.jpg') no-repeat;
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: 0;
     height: 350px;
     margin-bottom: 30px;
 }
@@ -187,7 +186,7 @@ img{
     background: url('./img/img-3.jpg') no-repeat;
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: 0;
     height: 600px;
 }
 
