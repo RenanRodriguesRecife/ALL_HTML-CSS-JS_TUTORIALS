@@ -9,7 +9,7 @@ html, body {
     font-family: 'Montserrat';
     background: #000100;
     color: #fff;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 ul {
@@ -137,7 +137,7 @@ img{
 
 .slider{
     position: absolute;
-    bottom: 120px;
+    bottom: 100px;
     right: 320px;
     width: 450px;
     opacity: 0;
