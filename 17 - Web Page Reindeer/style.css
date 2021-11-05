@@ -8,4 +8,143 @@ body {
     height: 100vh;
     font-family: 'agency fb';
     background: url('reindeer.png') no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    /*overflow: hidden;*/
 }
+
+ul {
+    list-style: none;
+}
+
+.nav{
+    width: 200px;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 0 0 50%;
+    background: #FFEB00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo h1{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 2;
+
+}
+
+.logo span{
+    font-size: 60px;
+    line-height: 1;
+}
+
+.menu-links{
+    flex: 1;
+    display: flex-end;
+    justify-content: right;
+    text-align: right;
+    padding-top: 50px;
+}
+
+.menu-links ul{
+    width: 100%;
+}
+
+.menu-links ul li{
+    padding: 10px;
+    color: #494949;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu-links ul li:hover{
+    background: #494949;
+    color: #fff;
+}
+
+.scrolldown{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-90deg);
+}
+
+.scrolldown::before{
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #000;
+    width: 65px;
+    margin: 0 10px 0 0;
+    transform: translateY(10px);
+}
+
+.text{
+    position: absolute;
+    top: 25%;
+    right: 180px;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #494949;
+}
+
+.text .title{
+    font-size: 150px;
+}
+
+.watchnow{
+    position: absolute;
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #FFEB00;
+    padding: 30px 180px 30px 30px;
+}
+
+.watchnow a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+}
+
+.fa-play{
+    color: #000;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.media{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.media ul li{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    color: #494949;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.media ul li:hover{
+    background: #FFEB00;
+}
+
