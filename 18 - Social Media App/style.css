@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background: #242C39;
+    color: #fff;
+}
+
+.live {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x:scroll;
+    padding:30px 0 0 20px;
+    margin-bottom: 20px;
+}
+
+.live .person{
+    margin-right: 30px;
+    text-align: center;
+}
+
+.live .profile-pic {
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.live .person:nth-child(1) .profile-pic {
+background-image: url('./img/01.jpg');}
+.live .person:nth-child(2) .profile-pic {
+background-image: url('./img/02.jpg');}
+.live .person:nth-child(3) .profile-pic {
+background-image: url('./img/03.jpg');}
+.live .person:nth-child(4) .profile-pic {
+background-image: url('./img/04.jpg');}
+.live .person:nth-child(5) .profile-pic {
+background-image: url('./img/05.jpg');}
+.live .person:nth-child(6) .profile-pic {
+background-image: url('./img/06.jpg');}
+.live .person:nth-child(7) .profile-pic {
+background-image: url('./img/07.jpg');}
+.live .person:nth-child(8) .profile-pic {
+background-image: url('./img/08.jpg');}
+
+.live .profile-pic::before{
+    content: '';
+    display: inline-block;
+    border: 3px solid #454D5A;
+    padding: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.live .person .none{
+    font-size: 12px;
+    padding-top: 20px;
+} 
+
+.live-active .profile-pic::before{
+    border-color: #FFDF38 !important;
+}
+
+4:02
