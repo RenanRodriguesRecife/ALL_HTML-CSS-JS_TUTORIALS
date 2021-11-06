@@ -3,7 +3,7 @@ Repositório unindo todos os tutoriais avulsos de HTML-CSS-JS
 
 <p>https://renanrodriguesrecife.github.io/ALL_HTML-CSS-JS_TUTORIALS/</p>
 
-<ul>
+<ol>
   <li>Teclado Virtual - Criando um Teclado Com HTML, CSS e JavaScript - (https://www.youtube.com/watch?v=PIdNP6qoMoA)</li>
   <li>Login1 - Tela de login com HTML e CSS (Tutorial) - Rodrigo M.S. - (https://www.youtube.com/watch?v=EJB_Z_9v3PY)</li>
   <li>Form-resposivo-1 - Formulário com HTML e CSS [Responsivo] - Rodrigo M.S. - (https://www.youtube.com/watch?v=Ph-60-pkAQM&t=48s)</li>
@@ -14,4 +14,4 @@ Repositório unindo todos os tutoriais avulsos de HTML-CSS-JS
   <li></li>
   <li></li>
   <li></li>
-</ul>
+</ol>
