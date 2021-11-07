@@ -15,6 +15,7 @@ body {
     font-family: 'assc';
     background: #000;
     color: #fff;
+    overflow: hidden;
 }
 
 ul {
@@ -69,6 +70,12 @@ ul {
     padding: 50px 0;
 } 
 
+
+.swiper-wrapper {
+    transition-delay: .1s;
+}
+
+
 .swiper-slide {
     width: 800px;
     height: 500px;
@@ -110,7 +117,7 @@ ul {
     transition: all 1s ease-in-out;
 }
 
-.slide-img:haver::after{
+.slide-img:hover::after{
     opacity: .5;
 }
 
@@ -121,12 +128,18 @@ ul {
     z-index: 1;
     width: 100px;
     height: 100px;
+    overflow: hidden;
 }
 
 .slide-number p {
     font-size: 60px;
     font-family: "assc";
     color: #ecbb1b;
+    position: relative;
+}
+
+.slide-number p span{
+    position: absolute;
 }
 
 .slide-text {
@@ -136,11 +149,38 @@ ul {
     z-index: 1;
     width: 200px;
     height: 100px;
+    overflow: hidden;
 }
 
 .slide-text h4 {
     color: #fff;
     font-size: 60px;
     font-family: "assc";
+    position: relative;
 }
 
+.slide-text h4 span {
+    position: absolute;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .scroll p::after{
+    content: "";
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 60px;
+    margin: 0 0 0 10px;
+    transform: translateY(-4px);
+}
