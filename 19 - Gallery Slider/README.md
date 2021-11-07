@@ -1,0 +1,1 @@
+Gallery Slider | HTML, CSS & JAVASCRIPT (GSAP) | Web Design Speed Code - https://www.youtube.com/watch?v=vDYP_9Jkxyg&t=42s
