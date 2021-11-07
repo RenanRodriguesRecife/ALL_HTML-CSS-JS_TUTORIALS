@@ -1,0 +1,62 @@
+@font-face{
+    font-family: 'assc';
+    src: url('./fonts/assc.ttf')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width:100%;
+    height:100vh;
+    font-family: 'assc';
+    background: #000;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;
+}
+
+.navbar .media li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.navbar .media li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar .menu i {
+    padding-right: 20px;
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: .3;
+}
+
+.bg-text h1 {
+    font-family: "assc";
+    font-size: 500px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 3px #444;
+    text-transform: uppercase;
+}
