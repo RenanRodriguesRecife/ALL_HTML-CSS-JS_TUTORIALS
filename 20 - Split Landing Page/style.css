@@ -176,3 +176,36 @@ ion-icon {
 .hover-right .split.left .text{
     transform: translate(-45%, -50%);
 }
+
+.slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.pages {
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.pages span::after{
+    content: "";
+    display: inline-block;
+    border: .5px solid #fff;
+    width: 100px;
+    margin: 0 10px;
+    transform: translateY(-4px);
+}
+
+.arrows{
+    padding: 0 20px;
+}
+
+.arrows ion-icon{
+    font-size: 30px;
+    padding: 0 20px;
+}
