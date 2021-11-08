@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'sansserifexbflf-italic';
+    src: url('./font/sansserifexbflf-italic.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+ion-icon {
+    font-size: 25px;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0 30px;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar > div{
+    padding: 0 30px;
+}
+
+.logo {
+    margin: auto;
+    font-family: 'sansserifexbflf-italic';
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profile img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
