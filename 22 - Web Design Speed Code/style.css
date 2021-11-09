@@ -65,3 +65,54 @@ ul {
     font-weight: 500;
     letter-spacing: 1px;
 }
+
+.img-wrapper01{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+
+.img-wrapper01 .img01{
+    background: url('./images/image01.jpg') no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 500px;
+    width: 350px;
+}
+
+.img-wrapper02{
+    position: absolute;
+    top: 0;
+    left: 650px;
+}
+
+.img-wrapper02 .img02{
+    background: url('./images/image02.png') no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 100vh;
+    width: 800px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+
+.text h1 {
+    font-size: 120px;
+    font-family: 'Tinos';
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.text p {
+    font-size: 40px;
+    font-family: 'Tinos';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
