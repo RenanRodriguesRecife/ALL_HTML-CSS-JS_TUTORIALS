@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Poppins';
-    background: #8C6C79;
+    
     color: #fff;
     width: 100%;
     height: 100vh;
@@ -17,6 +17,15 @@ body{
 
 ul {
     list-style:none;
+}
+
+.bg{
+    position: absolute;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background: #8C6C79;
+    z-index: -1;
 }
 
 .navbar {
@@ -61,7 +70,7 @@ ul {
 
 .media ul li{
     display: inline-block;
-    padding-top: 0 20px;
+    padding: 0 20px;
     font-size: 10px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -148,6 +157,7 @@ ul {
     left: 50%;
     transform: translate(-50%,-50%);
     white-space: nowrap;
+    width: 1000px;
 }
 
 .text h1 {
@@ -172,6 +182,15 @@ ul {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: lighter;
+
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+}
+
+.text p .hidetext{
+    position: absolute;
 }
 
 .desc{
