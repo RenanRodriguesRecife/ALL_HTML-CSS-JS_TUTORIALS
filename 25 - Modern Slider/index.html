@@ -5,8 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- swiper css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.css">
 </head>
 <body>
-    
+  <div class="full-page">
+    <div class="logo">
+        <img src="img/logo.svg" alt="logo">
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="#">home</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-title">
+        <h2>selectedwork</h2>
+    </div>
+
+    <div class="social-media">
+        <ul>
+            <li><a href="#">IG.</a></li>
+            <li><a href="#">FB.</a></li>
+            <li><a href="#">DB.</a></li>
+        </ul>
+    </div>
+
+
+    <div class="copyright">
+        <p>create with love by <span>nomealeatório</span></p>
+    </div>
+
+    <!-- slider -->
+    <div class="swiper-container">
+            
+            <!-- slide 01 -->
+            <div class="swiper-slide">
+                <div class="port-text">
+                    <h4><span class="reveal">Anethys</span></h4>
+                </div>
+                <div class="port-img">
+                    <img src="img/1.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- slide 02 -->
+            <div class="swiper-slide">
+                <div class="port-text">
+                    <h4><span class="reveal">holapics</span></h4>
+                </div>
+                <div class="port-img">
+                    <img src="img/2.jpg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+  </div>  
+
+  <!-- jquery -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <!-- swiper js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.js"></script>
+  
+  <script src="main.js"></script>
 </body>
 </html>
