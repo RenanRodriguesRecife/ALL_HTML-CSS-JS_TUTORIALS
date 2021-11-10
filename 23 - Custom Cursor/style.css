@@ -4,6 +4,8 @@
     font-family: 'Gilroy';
 }
 
+
+
 .full{
     height: 100vh;
     width: 100%;
@@ -11,6 +13,7 @@
     top: 0;
     left: 0;
     background: #070707;
+    
 }
 
 .link {
@@ -25,6 +28,13 @@
     padding: 10px 20px;
 }
 
+.cursor {
+    background-color: #fff;
+    height: 0;
+    width: 0;
+    z-index: 99;
+}
+
 .cursor,
 .cursor2,
 .cursor3 {
@@ -36,12 +46,7 @@
     top: 50%;
 }
 
-.cursor {
-    background-color: #fff;
-    height: 0;
-    width: 0;
-    z-index: 99;
-}
+
 
 .cursor2,
 .cursor3 {
