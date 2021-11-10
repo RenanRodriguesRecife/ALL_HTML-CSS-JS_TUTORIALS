@@ -1,0 +1,128 @@
+@font-face{
+    font-family: 'MADE Soulhaze';
+    src: url('fonts/MADESoulmaze.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'MADE Soulhaze';
+}
+
+body {
+    background: #070707;
+}
+
+.full-page{
+    width: 100%;
+    height: 100vh;
+}
+
+.Logo {
+    position: fixed;
+    left: 15px;
+    top: 10vh;
+}
+
+.navbar{
+    position: fixed;
+    right: 15vh;
+    top: 10vh;
+}
+
+.social-media{
+    position: fixed;
+    left: 15vh;
+    bottom: 10vh;
+}
+
+.copyright {
+    position: fixed;
+    right: 15vh;
+    bottom: 10vh;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.copyright p span {
+    color: #ef0303;
+}
+
+.navbar ul, .social-media ul {
+    margin: 0;
+}
+
+.navbar ul li, .social-media ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a , .social-media ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.navbar ul li a:hover , .social-media ul li a:hover{
+    color: #ef0303;
+    
+}
+
+.navbar ul li a.active {
+    color: #ef0303;
+}
+
+.main-title h2{
+    position: fixed;
+    transform: translate(-50%);
+    left: 50%;
+    top: 20vh;
+    text-align: center;
+    color: #444;
+    font-size: 120px;
+    font-style: italic;
+}
+
+.main-title h2::after{
+    content: 'selectedwork';
+    color: transparent;
+    -webkit-text-stroke: .2px #444;
+    left: 0;
+    top: 20px;
+    position: absolute;
+}
+
+.swiper-container{
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.swiper-slide{
+    width: 50%;
+}
+
+.swiper-wrapper{
+    transition-delay: .5s;
+}
+
+.port-img img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.port-img::after{
+    content: '';
+    width: 100%;
+    height: calc(100% - 4px);
+    background-image: -moz-linear-gradient(0deg,rgb(195,20,50)0%,rgb(284,18,26)100%);
+    background-image: -webkit-linear-gradient(0deg,rgb(195,20,50)0%,rgb(284,18,26)100%);
+    background-image: -ms-linear-gradient(0deg,rgb(195,20,50)0%,rgb(204,18,26)100%);
+}
