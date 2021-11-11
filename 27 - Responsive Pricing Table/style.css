@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +14,101 @@
 .outer-box{
     position: relative;
     background-color: #00c9a7;
-    height: 500px;
+    height: 740px;
     box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .12), 0 25px 55px 0 rgba(0, 0, 0, .12);
 }
 
 .outer-box a{
     position: absolute;
     bottom: 0;
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 2rem 0 2rem 4rem;
+    width: 100%;
+
+}
+
+.outer-box a:hover{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.inner-box{
+    background-image: linear-gradient(to bottom, #b8cbb8 0%, #b8cbb8 0%,#b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    position: absolute;
+    top: 0;
+    margin-left: -10px;
+    margin-top: -20px;
+    width: calc(100% - 20px);
+    text-align: center;
+    box-shadow: 1rem .8rem 3rem rgba(0,0,0,.35);
+    color: #fff;
+}
+
+.price{
+    font-size: 5rem;
+    padding: 3rem 0 2rem 0;
+
+}
+
+.type{
+    padding-bottom: 2rem;
+
+}
+
+li{
+    list-style: none;
+    font-size: 2rem;
+    padding: 2rem;
+
+}
+
+.purchase{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    display: none;
+}
+
+.purchase a{
+   background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+   padding: 1.5rem 3rem;
+   text-decoration: none;
+   border-radius: 50px;
+   box-shadow: 1rem .8rem 3rem rgba(0, 0, 0, .25);
+   text-transform: uppercase;
+   color: #fff;
+}
+
+@media only screen and (max-width: 991px){
+    .outer-box{
+        display: none;
+    }
+    .inner-box{
+        width: 100%;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        box-shadow: 0 10px 28px 0 rgb(0, 0, 0,.12), 0 25px 55px 0 rgba(0,0,0,.12);
+    }
+    .purchase{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 512px){
+    .outer-box{
+        display: none;
+    }
+    .inner-box{
+        width: 100%;
+        margin-left: 0;
+        position: relative;
+        box-shadow: 0 16px 28px 0 rgba(0,0,0,.12), 0 25px 55px 0 rgba(0,0,0,.12);
+    }
+    .purchase{
+        display: block;
+    }
 }
