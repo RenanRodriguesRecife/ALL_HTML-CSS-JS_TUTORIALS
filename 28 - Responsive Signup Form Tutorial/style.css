@@ -7,8 +7,9 @@ body {
 
 .container {
     background-color: #080c1a;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    max-width:none;
 }
 
 .form {
@@ -17,5 +18,42 @@ body {
     max-width: 600px;
     border-radius:  10px;
     position: relative;
-    
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top: 140px;
+    box-shadow: 0 1.4rem 4rem rgba(0,0,0,.4);
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+input:not([type="submit"]){
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #0d1225;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #4296c4;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: #09e2a1;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 1.4rem 4rem rgba(0,0,0,.4);
 }
