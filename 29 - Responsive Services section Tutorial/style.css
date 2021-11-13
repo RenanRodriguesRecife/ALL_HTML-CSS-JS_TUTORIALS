@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monserrant',sans-serif;
+}
+
+h1,h2,p {
+    text-align: center;
+}
+
+h1{
+    margin-top: 100px;
+    font-weight: 600;
+    color: #777;
+}
+p{
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 2.3rem;
+    margin-top: 40px;
+    font-weight: 600;
+    color: #6d7c86;
+}
+
+.outer-box{
+    padding:40px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all .6s;
+    transform: scale(1);
+    margin-top: 30px;
+}
+
+hr {
+    height: 15px;
+    background-color: teal;
+    border-radius: 20px;
+    width: 50%;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    transition: top .6s;
+}
+
+.secondary{
+    width: 12px;
+    position: absolute;
+
+}
+
+.circle1{
+    top: 70px;
+    left: 150px;
+    transition: all .6s;
+}
+
+.circle2{
+    top: 100px;
+    left: 100px;
+    transition: all .6s;
+}
+
+.plus{
+    top: 80px;
+    left: 110px;
+    transition: all .6s;
+}
+.main{
+    width: 100px;
+    margin-top: 23px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.outer-box:hover{
+    box-shadow: 0 2rem 10rem rgba(0,0,0,0.26);
+    transition: scale(1.01);
+}
+
+.outer-box:hover hr{
+    top: -30px;
+}
+
+.outer-box:hover .circle1{
+    top: 55px;
+}
+
+.outer-box:hover .circle2{
+    left: 85px;
+}
+
+.outer-box:hover .plus{
+    top: 70px;
+    left: 100px;
+}
