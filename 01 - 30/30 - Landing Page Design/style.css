@@ -220,3 +220,20 @@ img.four{
     margin-top: 50px;
     font-size: 1rem;
 }
+
+.footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer li {
+    align-self: flex-start;
+    padding-bottom: 20px;
+    color: #C8C8C8;
+}
