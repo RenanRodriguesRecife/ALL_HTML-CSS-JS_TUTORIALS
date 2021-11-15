@@ -237,3 +237,10 @@ img.four{
     padding-bottom: 20px;
     color: #C8C8C8;
 }
+
+.footer p {
+    text-align: center;
+    color: #C8C8C8;
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
