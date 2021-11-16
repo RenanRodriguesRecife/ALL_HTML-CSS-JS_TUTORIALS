@@ -26,3 +26,16 @@ t4.to('.one', 1,{opacity: 1, ease: Power0.easeIn})
 .to('.two', 1,{opacity: 1, ease: Power0.easeIn})
 .to('.three', 1,{opacity: 1,ease: Power0.easeIn})
 .to('.four', 1,{opacity: 1,ease: Power0.easeIn})
+
+const controller2 = new ScrollMagin.Controller()
+const scene2 = new ScrollMagic.Scene({
+    triggerElement: '.review',
+    duration: 2000,
+    triggerHook: 0
+})
+.setTween(t4)
+.setPin('.review')
+.addTo(controller2)
+
+
+
