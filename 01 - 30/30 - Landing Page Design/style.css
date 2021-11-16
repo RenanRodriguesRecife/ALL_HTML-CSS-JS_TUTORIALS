@@ -81,6 +81,7 @@ li {
 
 .images{
     margin-right: 20px;
+    opacity: 0;
 }
 
 .images img {
