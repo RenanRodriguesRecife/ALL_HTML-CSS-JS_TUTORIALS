@@ -19,3 +19,10 @@ const scene1 = new ScrollMagic.Scene({
 .setPin('.hero-section')
 .addTo(controller1)
 
+
+
+const t4 = new TimelineLite()
+t4.to('.one', 1,{opacity: 1, ease: Power0.easeIn})
+.to('.two', 1,{opacity: 1, ease: Power0.easeIn})
+.to('.three', 1,{opacity: 1,ease: Power0.easeIn})
+.to('.four', 1,{opacity: 1,ease: Power0.easeIn})
