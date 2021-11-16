@@ -8,3 +8,40 @@
 .container{
     padding: 0 100px 0 100px;
 }
+
+.navbar {
+    background-color: #333454;
+    box-shadow: 0.2em 0 1em rgba(0,0,0,.45);
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0 20px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 20px;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header li {
+    padding-left: 30px;
+    color: #777;
+}
