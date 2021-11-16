@@ -142,3 +142,41 @@ a {
     color: #623aa2;
     font-weight: bold;
 }
+
+.sideways-text .line{
+    border-left: 2px solid rgba(0,0,0,.05);
+    height: 200px;
+    position: relative;
+    left: 50%;
+    margin-bottom: 5px;
+}
+
+.sideways-text .outer-circle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #48cfad;
+    border-radius: 50%;
+    position: relative;
+}
+
+.outer-circle div{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    margin-left: 2.7px;
+    background-color: #48cfad;
+    border-radius: 50%;
+}
+
+.sideways-text li {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    letter-spacing: 2px;
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
+    color: #666;
+}
