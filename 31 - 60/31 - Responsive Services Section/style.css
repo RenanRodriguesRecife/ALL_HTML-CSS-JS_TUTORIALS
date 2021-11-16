@@ -69,3 +69,87 @@ p{
     margin-top: 20px;
     color:#777;
 }
+
+.shapes {
+    position: relative;
+}
+
+.shape-1,
+.shape-2,
+.shape-3,
+.shape-4,
+.shape-5,
+.shape-6 {
+    width: 20px;
+    height: 40px;
+    border-radius: 35px;
+    position: absolute;
+}
+
+.right {
+    right: 0;
+}
+
+.shape-1{
+    right: 40px;
+    background-color: #BF263C;
+    top: -60px;
+    transition: all linear .5s;
+}
+
+.shape-2{
+    right: 20px;
+    background-color: #fff;
+    top: -10px;
+    transition: all linear .5s;
+}
+
+.shape-3{
+    background-color: #BF263C;
+    top: -60px;
+    transition: all linear .5s;
+}
+
+.service-1:hover .shape-1{
+    top:-30px;
+}
+
+.service-1:hover .shape-2{
+    top:-30px;
+}
+
+.service-1:hover .shape-3{
+    top:-40px;
+}
+
+.shape-4{
+    background-color: #fff;
+    top:-27px;
+    transition: all linear .5s;
+}
+
+.shape-5{
+    background-color: #BF263C;
+    left: 20px;
+    top: 17px;
+    transition: all linear .5s;
+}
+
+.shape-6{
+    background-color: #fff;
+    left: 40px;
+    top:-27px;
+    transition: all linear .5s;
+}
+
+.service-1:hover .shape-4{
+    top: -7px;
+}
+
+.service-1:hover .shape-5{
+    top: 0;
+}
+
+.service-1:hover .shape-6{
+    top: -15px;
+}
