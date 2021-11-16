@@ -7,7 +7,7 @@
 
 section{
     background-color: #BF263C;
-    padding-top: 88px;
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -24,4 +24,48 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.service-1{
+    width: 320px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 35px;
+    border-radius: 10px;
+}
+
+.img{
+    padding-top: 30px;
+}
+
+img{
+    height: 170px;
+    width: 100%;
+}
+
+.description {
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #BF263C;
+}
+
+.description{
+    padding-bottom: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2{
+    text-transform: uppercase;
+    color:#BF263C;
+}
+
+p{
+    margin-top: 20px;
+    color:#777;
 }
