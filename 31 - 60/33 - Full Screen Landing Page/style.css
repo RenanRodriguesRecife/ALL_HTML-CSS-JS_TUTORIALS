@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 100px 0 100px;
+}
+
+.just-bg{
+    height: 10px;
+    transition: all 1s;
+}
+
+.navbar {
+    position: relative;
+    height: 80px;
+}
+
+.logo svg {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.logo svg path {
+    transition: all 1s;
+}
+
+.logo img {
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+}
