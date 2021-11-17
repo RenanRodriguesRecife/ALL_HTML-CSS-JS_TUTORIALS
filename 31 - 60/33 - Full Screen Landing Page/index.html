@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=PT+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="just-bg" style="background-color: #078b98;"></div>
     <div class="navbar container">
         <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="434.831" height="170.329" viewBox="0 0 434.831 170.329">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 434.831 170.329">
                 <path d="M514.5,161.5l144.41,140.633a104.587,104.585,0,0,0,146.011,0L949.33,161.5" transform="translate(-514.5 -161.5)"
                 fill="#078b98"/></svg>
             </svg>
@@ -37,9 +40,8 @@
         <div class="couch">
             <div class="images">
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                width="500px" height="auto" viewBox="0 0 755 755">
-                <path id="Seleção"
-                fill="black" stroke="black" stroke-width="1"
+                width="500px" viewBox="0 0 755 755">
+                <path class="cls-1"
                 d="M 543.00,34.00
                    C 550.85,34.00 561.69,33.25 569.00,35.44
                      575.80,37.47 586.00,44.43 593.00,48.00
@@ -92,15 +94,15 @@
                      49.00,207.00 48.00,206.00 48.00,206.00
                      48.00,206.00 49.00,206.00 49.00,206.00 Z" /></svg>
 
-                    <img src="img/couch.jpg" alt="">
+                    <img src="img/couch.png" alt="">
             </div>
 
             <div class="colors">
                 <ul>
-                    <li data-color="#f05f57"></li>
-                    <li data-color="#37bc9b"></li>
-                    <li data-color="#43e8e4"></li>
-                    <li data-color="#2c7596"></li>
+                    <li data-color="#f05f57" onClick="changeColors(this)"></li>
+                    <li data-color="#37bc9b" onClick="changeColors(this)"></li>
+                    <li data-color="#43e8e4" onClick="changeColors(this)"></li>
+                    <li data-color="#2c7596" onClick="changeColors(this)"></li>
                 </ul>
             </div>
         </div>
