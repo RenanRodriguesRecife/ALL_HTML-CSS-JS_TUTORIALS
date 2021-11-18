@@ -4,3 +4,69 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+.front-page{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    color: white;
+    clip-path: circle(5%);
+
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.front-page video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.second-page{
+    height: 100vh;
+}
+
+.blend{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    position: absolute;
+    opacity: 0.5;
+}
+
+ 
+.music-note{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    z-index: 2;
+}
+
+.intro-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.title {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+.sub-title{
+    font-size: 1.5rem;
+}
+
+.second-page{
+    height: 100vh;
+}
+
+.second-page h2{
+    font-size: 6rem;
+}
