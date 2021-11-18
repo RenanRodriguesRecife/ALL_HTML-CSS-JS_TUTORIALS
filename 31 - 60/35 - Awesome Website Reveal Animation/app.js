@@ -31,4 +31,4 @@ tl.fromTo('.sub-title',
     {opacity:0},
     {opacity: 1,
     duration: 1}
-);
+);git
