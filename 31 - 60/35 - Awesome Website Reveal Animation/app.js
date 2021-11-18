@@ -4,7 +4,7 @@ let tl = gsap.timeline({
         trigger: '.front-page',
         start: 'top',
         end: "100%",
-        markers: true,
+       /* markers: true,*/
         scrub: true,
         pin: true,
     },
