@@ -298,3 +298,31 @@ div.hideCategory{
 .showCategory{
     display: block;
 }
+
+.contact{
+    margin-top: 50px;
+}
+
+form input,
+form textarea{
+    display: block;
+    width: 500px;
+    padding: 20px;
+    background-color: #252627;
+    border: 3px solid #707070;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+form input:last-child{
+    width: 150px;
+    background-color: #ED5565;
+    border: none;
+    cursor: pointer;
+}
