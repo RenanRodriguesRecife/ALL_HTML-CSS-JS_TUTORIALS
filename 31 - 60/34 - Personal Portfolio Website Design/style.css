@@ -264,3 +264,37 @@ div[class^='bar-']{
     outline:none;
     cursor: pointer;
 }
+
+div[class^='category-']{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-gap: 20px;
+}
+
+.work a{
+    justify-self: center;
+    position: relative;
+    display: inline-block;
+}
+
+.work-category .active{
+    background-color: #ED5565;
+}
+
+button.active{
+    color: #fff;
+}
+
+.work a img{
+    width: 350px;
+    justify-self: center;
+}
+
+div.hideCategory{
+    display: none;
+}
+
+.showCategory{
+    display: block;
+}
