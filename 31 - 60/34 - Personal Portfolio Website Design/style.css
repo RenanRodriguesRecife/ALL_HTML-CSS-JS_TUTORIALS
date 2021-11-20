@@ -326,3 +326,15 @@ form input:last-child{
     border: none;
     cursor: pointer;
 }
+
+footer hr{
+    border: 2px solid #707070;
+    margin-top: 80px;
+}
+
+footer p {
+    text-align: center;
+    color: #707070;
+    font-size: 1.2rem;
+    padding: 30px 0;
+}
