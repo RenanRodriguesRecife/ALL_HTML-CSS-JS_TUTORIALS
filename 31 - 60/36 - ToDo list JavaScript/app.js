@@ -3,6 +3,7 @@ const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 
 todoButton.addEventListener('click',addTodo);
+todoList.addEventListener('click',deleteCheck);
 
 function addTodo(event){
     //prevent form from submitting
@@ -29,4 +30,12 @@ function addTodo(event){
     todoList.appendChild(todoDiv);
     //Clear todo input value
     todoInput.value = "";
+    
+  
 }
+
+function deleteCheck(event){
+
+}
+
+34:00
