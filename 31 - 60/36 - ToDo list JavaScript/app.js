@@ -93,40 +93,35 @@ function filterTodo(event){
 }
 
 
+function checkLocal(Item){
+    if(localStorage.getItem(Item) === null){
+        return [];
+    }else{
+        return JSON.parse(localStorage.getItem(Item));
+    }
+}
+
 function saveLocal(todo){
     //localStorage.clear();
     //check se já existe
-    let todos;
-    if(localStorage.getItem('todos') === null){
-        todos = [];
-    }else{
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
-
+    let todos = checkLocal('todos');
+    
     todos.push(todo);
     localStorage.setItem('todos',JSON.stringify(todos));
 }
 
 
 function removeLocal(todo){
-    let todos;
-    if(localStorage.getItem('todos') === null){
-        todos = [];
-    }else{
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
+    let todos = checkLocal('todos');
+
     const todoIndex = todo.children[0].innerText;
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 function getLocal(){
-    let todos;
-    if(localStorage.getItem('todos') === null){
-        todos = [];
-    }else{
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
+    let todos = checkLocal('todos');
+
     todos.forEach(function(todo){
         const todoDiv = document.createElement("div");
         todoDiv.classList.add("todo");
