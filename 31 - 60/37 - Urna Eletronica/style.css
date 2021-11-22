@@ -17,8 +17,52 @@ body{
     width: 500px;
     height: 320px;
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #555;
 }
 .teclado{
-    margin-right: 30px;
+    margin-left: 30px;
     background-color: #403A3A;
+}
+
+.teclado--linha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.teclado--botao{
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+
+.botao--branco{
+    align-items: flex-start;
+    background-color: #FFF;
+    color: #000;
+    font-size: 15px;
+}
+
+.botao--corrige{
+    align-items: flex-start;
+    background-color: #F09046;
+    color: #000;
+    font-size: 15px;
+}
+
+.botao--confirma{
+    align-items: flex-start;
+    background-color: #48C079;
+    color: #000;
+    font-size: 13px;
+    height: 50px;
+    
 }
