@@ -35,7 +35,10 @@ function addTodo(event){
 }
 
 function deleteCheck(event){
-
+    const item = event.target;
+    if(item.classList[0] === "trash-btn"){
+        const todo = item.parentElement;
+        todo.remove();
+    }
 }
 
-34:00
