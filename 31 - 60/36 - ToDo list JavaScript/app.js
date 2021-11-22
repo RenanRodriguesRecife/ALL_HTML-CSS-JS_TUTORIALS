@@ -52,4 +52,3 @@ function deleteCheck(event){
         todo.classList.toggle("completed");
     }
 }
-
