@@ -34,17 +34,13 @@ function createTodo(value){
 function addTodo(event){
     //prevent form from submitting
     event.preventDefault();
-    //savelocal
+
     saveLocal(todoInput.value)
     createTodo(todoInput.value)
     
-    
-
-    
     //Clear todo input value
     todoInput.value = "";
-    
-  
+
 }
 
 function deleteCheck(event){
@@ -71,10 +67,8 @@ function deleteCheck(event){
 
 function filterTodo(event){
     const todos = todoList.childNodes;
-    console.log(todos)
+    
     todos.forEach(function(todo) {
-       // console.log(event.target.value)
-       console.log(todo)
         switch(event.target.value)
         {
             case "all":
@@ -101,6 +95,7 @@ function filterTodo(event){
 
 
 function checkLocal(Item){
+    //verifica já existe um local
     if(localStorage.getItem(Item) === null){
         return [];
     }else{
@@ -110,7 +105,6 @@ function checkLocal(Item){
 
 function saveLocal(todo){
     //localStorage.clear();
-    //check se já existe
     let todos = checkLocal('todos');
     
     todos.push(todo);
