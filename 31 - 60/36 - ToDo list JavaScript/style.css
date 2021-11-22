@@ -85,3 +85,10 @@ form button:hover{
 .todo-item{
     padding: 0rem 0.5rem;
 }
+
+/*Remove a possibilidade de ter eventos nos íncones 
+para evitar problema no click do botão*/
+.fa-trash,
+.fa-check{
+    pointer-events:none
+}
