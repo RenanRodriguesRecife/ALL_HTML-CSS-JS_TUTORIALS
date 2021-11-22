@@ -13,7 +13,7 @@ function addTodo(event){
     //create li
     const newTodo = document.createElement('li');
     newTodo.innerHTML = todoInput.value;
-    newTodo.classList.add('tood-item');
+    newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
     //checkmark button
     const completedButton = document.createElement('button');
@@ -27,4 +27,6 @@ function addTodo(event){
     todoDiv.appendChild(trashButton);
     //append to list
     todoList.appendChild(todoDiv);
+    //Clear todo input value
+    todoInput.value = "";
 }
