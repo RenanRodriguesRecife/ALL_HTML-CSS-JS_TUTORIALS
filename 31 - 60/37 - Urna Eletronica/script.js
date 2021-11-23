@@ -30,7 +30,14 @@ function começarEtapa(){
 }
 
 function atualizaInterface(){
-    alert("finalizou de digitar o voto!")
+    let etapa = etapas[etapaAtual];
+    let candidato = etapa.candidatos.filter((item)=>{
+        if(item.numero === numero){
+            return true;
+        }else{
+            return false;
+        }
+    })
 }
 
 function clicou(n){
