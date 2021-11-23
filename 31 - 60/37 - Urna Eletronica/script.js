@@ -38,6 +38,19 @@ function atualizaInterface(){
             return false;
         }
     })
+    if(candidato.length > 0){
+        candidato = candidato[0];
+        seuVotoPara.style.display = "block";
+        seuVotoPara.style.display = "block";
+        descricao.innerHTML = `Nome: ${candidato.nome}<br/>Partido: ${candidato.partido}`;
+
+        let fotosHtml = '';
+        for(let i in candidato.fotos){
+            console.log(candidato.fotos[i].url)
+            fotosHtml += `<div class="d-1-image"><img src="./img/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
+        }
+        lateral.innerHTML = fotosHtml;
+    }
 }
 
 function clicou(n){
