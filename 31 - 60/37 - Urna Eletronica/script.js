@@ -14,7 +14,11 @@ function começarEtapa(){
     let numeroHtml = '';
     console.log(etapa.numeros)
     for(let i=0;i<etapa.numeros;i++){
+        if(i === 0){
+            numeroHtml += '<div class="numero pisca"></div>';
+        }else{
         numeroHtml += '<div class="numero"></div>';
+        }
     }
 
     seuVotoPara.style.display = 'none'
@@ -25,8 +29,23 @@ function começarEtapa(){
     numeros.innerHTML = numeroHtml;
 }
 
+function atualizaInterface(){
+    alert("finalizou de digitar o voto!")
+}
+
 function clicou(n){
-    alert("Clicou em "+n);
+    let pisNum = document.querySelector('.numero.pisca')
+    if(pisNum !== null){
+        pisNum.innerHTML = n;
+        numero = `${numero}${n}`;
+
+        pisNum.classList.remove('pisca');
+        if(pisNum.nextElementSibling !== null){
+            pisNum.nextElementSibling.classList.add('pisca');
+        }else{
+            atualizaInterface();
+        }
+    }
 }
 
 function branco(){
