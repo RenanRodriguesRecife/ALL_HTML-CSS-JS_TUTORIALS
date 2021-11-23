@@ -4,19 +4,22 @@ let descricao = document.querySelector('.d-1-4');
 let aviso = document.querySelector('.d-2');
 let lateral = document.querySelector('.d-1-right');
 let numeros = document.querySelector('.d-1-3');
+let telaPrincipal = document.querySelector('.d-1');
+let Fim = document.querySelector('.aviso--gigante')
 
 let etapaAtual = 0;
 let numero = '';
 let votoBranco = false;
+let votos = [];
 
 function começarEtapa(){
+    Fim.style.display = 'none'
     let etapa = etapas[etapaAtual];
 
     let numeroHtml = ''; 
     numero = '';
     votoBranco = false;
 
-    
     for(let i=0;i<etapa.numeros;i++){
         if(i === 0){
             numeroHtml += '<div class="numero pisca"></div>';
@@ -54,7 +57,6 @@ function atualizaInterface(){
                 fotosHtml += `<div class="d-1-image small"><img src="./img/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
             }else{
                 fotosHtml += `<div class="d-1-image"><img src="./img/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
-   
             }
         }
         lateral.innerHTML = fotosHtml;
@@ -66,34 +68,40 @@ function atualizaInterface(){
 }
 
 function clicou(n){
-    let pisNum = document.querySelector('.numero.pisca')
-    if(pisNum !== null){
-        pisNum.innerHTML = n;
-        numero = `${numero}${n}`;
+    if(etapas[etapaAtual] !== undefined){
+        let pisNum = document.querySelector('.numero.pisca')
+        if(pisNum !== null){
+            pisNum.innerHTML = n;
+            numero = `${numero}${n}`;
 
-        pisNum.classList.remove('pisca');
-        if(pisNum.nextElementSibling !== null){
-            pisNum.nextElementSibling.classList.add('pisca');
-        }else{
-            atualizaInterface();
+            pisNum.classList.remove('pisca');
+            if(pisNum.nextElementSibling !== null){
+                pisNum.nextElementSibling.classList.add('pisca');
+            }else{
+                atualizaInterface();
+            }
         }
     }
 }
 
 function branco(){
-    if(numero === ''){
-        votoBranco = true;
-        seuVotoPara.style.display = 'block';
-        aviso.style.display = 'block';
-        numeros.innerHTML = '';
-        descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>'
-    }else{
-        alert("Para votar em BRANCO, não pode ter digitado nenhum número!")
+    if(etapas[etapaAtual] !== undefined){
+        if(numero === ''){
+            votoBranco = true;
+            seuVotoPara.style.display = 'block';
+            aviso.style.display = 'block';
+            numeros.innerHTML = '';
+            descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>'
+        }else{
+            alert("Para votar em BRANCO, não pode ter digitado nenhum número!")
+        }
     }
 }
 
 function corrige(){
+    if(etapas[etapaAtual] !== undefined){
     começarEtapa();
+    }
 }
 
 function confirma(){
@@ -101,11 +109,29 @@ function confirma(){
 
     let votoConfirmado = false;
 
-    if(votoBranco === true){
+    
+    if(etapas[etapaAtual] === undefined)
+    {
+        console.log("entrou aqui")
+        etapaAtual = 0;
+        Fim.style.display = 'none';
+        telaPrincipal.style.display = 'flex';
+        aviso.style.display = 'flex';
+        console.log(etapas[etapaAtual])
+        começarEtapa();
+    }else if(votoBranco === true){
         console.log("Confirmando como Branco...");
         votoConfirmado = true;
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto:numero
+        })
     }else if(numero.length === etapa.numeros){
         votoConfirmado = true;
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto:numero
+        })
         console.log(numero)
     }
     if(votoConfirmado){
@@ -113,10 +139,14 @@ function confirma(){
         if(etapas[etapaAtual] !== undefined){
             começarEtapa();
         }else{
-            document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>'
+            console.log ("entrou aqui")
+            telaPrincipal.style.display = 'none';
+            aviso.style.display = 'none';
+            Fim.style.display = 'flex';
+            console.log(votos)
         }
     }
-
+ 
 }
 
 começarEtapa();
