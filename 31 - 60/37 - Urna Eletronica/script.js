@@ -7,14 +7,14 @@ let numeros = document.querySelector('.d-1-3');
 
 let etapaAtual = 0;
 let numero = '';
-
+let votobranco = false;
 
 function começarEtapa(){
     let etapa = etapas[etapaAtual];
 
     let numeroHtml = ''; 
     numero = '';
-   
+    votobranco = false;
 
     console.log(etapa.numeros)
     for(let i=0;i<etapa.numeros;i++){
@@ -78,7 +78,13 @@ function clicou(n){
 
 function branco(){
     if(numero === ''){
-
+        votobranco = true;
+        seuVotoPara.style.display = 'block';
+        aviso.style.display = 'block';
+        numeros.innerHTML = '';
+        descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>'
+    }else{
+        alert("Para votar em BRANCO, não pode ter digitado nenhum número!")
     }
 }
 
