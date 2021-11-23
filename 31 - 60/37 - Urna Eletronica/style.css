@@ -156,6 +156,16 @@ body{
 }
 
 .aviso--grande{
-    font-size: 50px;
+    font-size: 42px;
     font-weight: bold;
+}
+
+
+.aviso--gigante{
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
