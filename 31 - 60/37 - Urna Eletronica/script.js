@@ -8,10 +8,14 @@ let numeros = document.querySelector('.d-1-3');
 let etapaAtual = 0;
 let numero = '';
 
+
 function começarEtapa(){
     let etapa = etapas[etapaAtual];
 
-    let numeroHtml = '';
+    let numeroHtml = ''; 
+    numero = '';
+   
+
     console.log(etapa.numeros)
     for(let i=0;i<etapa.numeros;i++){
         if(i === 0){
@@ -73,11 +77,13 @@ function clicou(n){
 }
 
 function branco(){
-    alert("Clicou em branco");
+    if(numero === ''){
+
+    }
 }
 
 function corrige(){
-    alert("Clicou em corrige");
+    começarEtapa();
 }
 
 function confirma(){
