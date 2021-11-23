@@ -7,16 +7,16 @@ let numeros = document.querySelector('.d-1-3');
 
 let etapaAtual = 0;
 let numero = '';
-let votobranco = false;
+let votoBranco = false;
 
 function começarEtapa(){
     let etapa = etapas[etapaAtual];
 
     let numeroHtml = ''; 
     numero = '';
-    votobranco = false;
+    votoBranco = false;
 
-    console.log(etapa.numeros)
+    
     for(let i=0;i<etapa.numeros;i++){
         if(i === 0){
             numeroHtml += '<div class="numero pisca"></div>';
@@ -50,8 +50,12 @@ function atualizaInterface(){
 
         let fotosHtml = '';
         for(let i in candidato.fotos){
-            console.log(candidato.fotos[i].url)
-            fotosHtml += `<div class="d-1-image"><img src="./img/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
+            if(candidato.fotos[i].small){
+                fotosHtml += `<div class="d-1-image small"><img src="./img/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
+            }else{
+                fotosHtml += `<div class="d-1-image"><img src="./img/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
+   
+            }
         }
         lateral.innerHTML = fotosHtml;
     }else{
@@ -78,7 +82,7 @@ function clicou(n){
 
 function branco(){
     if(numero === ''){
-        votobranco = true;
+        votoBranco = true;
         seuVotoPara.style.display = 'block';
         aviso.style.display = 'block';
         numeros.innerHTML = '';
@@ -93,7 +97,26 @@ function corrige(){
 }
 
 function confirma(){
-    alert("Clicou em confirma");
+    let etapa = etapas[etapaAtual];
+
+    let votoConfirmado = false;
+
+    if(votoBranco === true){
+        console.log("Confirmando como Branco...");
+        votoConfirmado = true;
+    }else if(numero.length === etapa.numeros){
+        votoConfirmado = true;
+        console.log(numero)
+    }
+    if(votoConfirmado){
+        etapaAtual++;
+        if(etapas[etapaAtual] !== undefined){
+            começarEtapa();
+        }else{
+            document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>'
+        }
+    }
+
 }
 
 começarEtapa();
