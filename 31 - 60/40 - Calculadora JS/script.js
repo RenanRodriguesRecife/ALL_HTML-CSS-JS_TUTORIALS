@@ -28,6 +28,7 @@ class Calculator {
         this.operation = operation
         this.previousOperand = this.currentOperand
         this.currentOperand = ''
+        
     }
 
     computer(){
@@ -126,3 +127,10 @@ deleteButton.addEventListener('click', button =>{
     calculator.delete()
     calculator.updateDisplay()
 })
+
+/* 
+Ainda apresenta bugs:
+- Quando vocÊ coloca um número maior que o maior valor possível para FLOAT em JS: 1.7976931348623157e
+(não tem o que fazer o problema está na lógica do programa)
+- Você não consegue modificar o valor do operador assim que ele já está escolhido
+*/
