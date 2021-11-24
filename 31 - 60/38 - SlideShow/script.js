@@ -26,3 +26,4 @@ function updateMargin(){
     `-${newMargin}px`;
 }
 
+setInterval(goNext, 1700);
