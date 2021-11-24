@@ -8,6 +8,7 @@ header{
     flex-direction: column;
     height: 100vh;
     background-color: gray;
+    align-items: center;
 }
 
 .header{
@@ -16,7 +17,8 @@ header{
 }
 
 .slider{
-    flex: 1;
+    width: 500px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -39,13 +41,12 @@ header{
     align-items: center;
     color: #FFF;
     text-shadow: 0px 1px 1px #333;
-    font-size: 50px;
+    font-size: 20px;
 }
 
 .slider--controls{
     position: absolute;
     z-index: 99;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
