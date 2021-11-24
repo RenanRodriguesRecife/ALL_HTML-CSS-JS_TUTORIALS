@@ -133,4 +133,6 @@ Ainda apresenta bugs:
 - Quando vocÊ coloca um número maior que o maior valor possível para FLOAT em JS: 1.7976931348623157e
 (não tem o que fazer o problema está na lógica do programa)
 - Você não consegue modificar o valor do operador assim que ele já está escolhido
+- A calculadora faz divisão por zero
+- 0.1 + 0.2 and dividing by zero are giving the incorrect result. I know it is a JS fault, but I was hoping to find a solution here.
 */
