@@ -32,6 +32,14 @@ header{
     height: inherit;
     background-position: center;
     background-size: cover;
+
+    /*Modificando o texto*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
 }
 
 .slider--controls{
