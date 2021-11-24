@@ -24,7 +24,7 @@ header{
     height: 100%;
     display: flex;
     width: calc(100vw * 3);
-    transition:  all ease 0.3s;
+    transition:  all ease 0.4s;
 }
 
 .slider--item{
@@ -51,3 +51,4 @@ header{
     overflow: hidden;
     cursor: pointer;
 }
+
