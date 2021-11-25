@@ -5,13 +5,14 @@ body {
 .screen{
     display: flex;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .leftside{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .leftside img{
@@ -22,5 +23,5 @@ body {
 
 .rightside{
     width: 300px;
-    background-color: #999;
+    background-color: #DDD;
 }
