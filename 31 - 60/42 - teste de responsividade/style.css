@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    margin: 40px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe{
+    height: 500px;
+}
+
+#low-res {
+    width: 320px;
+}
+
+#smartphone-first-generation {
+    width: 480px;
+}
+
+#smartphone{
+    width: 720px;
+}
+#ipad{
+    width: 768px;
+}
+#tablet-standing{
+    width: 900px;
+}
+#tablet-lying{
+    width: 1024px;
+}   
+#desktop{
+    width: 1200px;
+}
