@@ -6,6 +6,8 @@ let b7validator = {
 
         let inputs = form.querySelectorAll('input');
                 
+        b7validator.claerErrors();
+
         for(let i=0; i<inputs.length; i++){
             let input = inputs[i];
             let check = b7validator.checkInput(input);
@@ -48,6 +50,18 @@ let b7validator = {
         errorElement.classList.add('error');
         errorElement.innerHTML = error;
         input.parentElement.insertBefore(errorElement, input.ElementSibling);
+    },
+    claerErrors:() =>{
+        let inputs = form.querySelectorAll('input');
+        for(let i=0; i<inputs.length; i++)
+        {
+            inputs[i].style = '';
+        }
+
+        let errorElements = document.querySelectorAll('.error');
+         for(let i=0;i<errorElements.length;i++){
+             errorElements[i].remove();
+         }        
     }
     
 };
