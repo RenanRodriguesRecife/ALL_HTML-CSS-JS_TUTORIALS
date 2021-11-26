@@ -17,6 +17,13 @@ let lgpdHtml =   `
 
 //Conteúdo do local storage
 let lsContent = localStorage.getItem('lgpd');
-if(!liContent){
+if(!lsContent){
     document.body.innerHTML += lgpdHtml;
+
+    let lgpdArea = document.querySelector('.lgpd');
+    let legpdButton = lgpdArea.querySelector('button');
+
+    legpdButton.addEventListener('click',()=>{
+        lgpdArea.remove();
+    })
 }
