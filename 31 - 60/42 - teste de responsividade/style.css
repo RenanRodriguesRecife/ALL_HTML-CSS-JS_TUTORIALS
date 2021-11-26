@@ -5,8 +5,19 @@
 }
 
 body{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 40px;
+}
+
+form{
+    margin: 20px;
+}
+
+form input{
+    height: 40px;
+    font-size: 20px;
 }
 
 div{
