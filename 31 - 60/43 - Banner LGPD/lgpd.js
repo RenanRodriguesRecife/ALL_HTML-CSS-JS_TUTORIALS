@@ -5,7 +5,7 @@
     2 - se não encontrar aparece o banner
 */
 /*site generico para fazer requisições*/
-let lgpdUrl = 'https://jsomplaceholder.typicode.com/post';
+let lgpdUrl = 'https://jsonplaceholder.typicode.com/posts';
 let lgpdHtml =   `
 <div class="lgpd">
         <div class="lgpd--left">
@@ -24,9 +24,9 @@ if(!lsContent){
     document.body.innerHTML += lgpdHtml;
 
     let lgpdArea = document.querySelector('.lgpd');
-    let legpdButton = lgpdArea.querySelector('button');
+    let lgpdButton = lgpdArea.querySelector('button');
 
-    legpdButton.addEventListener('click',async ()=>{
+    lgpdButton.addEventListener('click',async ()=>{
         lgpdArea.remove();
         let result = await fetch(lgpdUrl)
         let json = await result.json();
@@ -34,7 +34,7 @@ if(!lsContent){
         if(json.error != ''){
             //id para identificar o usuário especifico
             let id = json.id; //json.id
-            localStorage.setItem('lgpd','123')
+            localStorage.setItem('lgpd',id);
         }
     })
 }
