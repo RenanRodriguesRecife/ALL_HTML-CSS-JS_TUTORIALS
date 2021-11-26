@@ -1,8 +1,11 @@
+
+
 /*
     1 - verifica se existe algum registro que já aceitou o banner (cookie)
     2 - se não encontrar aparece o banner
 */
-
+/*site generico para fazer requisições*/
+let lgpdUrl = 'https://jsomplaceholder.typicode.com/post';
 let lgpdHtml =   `
 <div class="lgpd">
         <div class="lgpd--left">
@@ -23,7 +26,15 @@ if(!lsContent){
     let lgpdArea = document.querySelector('.lgpd');
     let legpdButton = lgpdArea.querySelector('button');
 
-    legpdButton.addEventListener('click',()=>{
+    legpdButton.addEventListener('click',async ()=>{
         lgpdArea.remove();
+        let result = await fetch(lgpdUrl)
+        let json = await result.json();
+
+        if(json.error != ''){
+            //id para identificar o usuário especifico
+            let id = json.id; //json.id
+            localStorage.setItem('lgpd','123')
+        }
     })
 }
