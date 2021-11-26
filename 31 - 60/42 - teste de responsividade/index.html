@@ -36,10 +36,10 @@
             event.preventDefault();
             url = document.querySelector('#url').value
             console.log(url)
-            ifremes = document.querySelectorAll('iframe')
-            for(i = 0; i < ifremes.length; i++){
-                ifreme = ifremes[i];
-                ifreme.src = url;
+            iframes = document.querySelectorAll('iframe')
+            for(i = 0; i < iframes.length; i++){
+                iframe = iframes[i];
+                iframe.src = url;
             }
        }
 
