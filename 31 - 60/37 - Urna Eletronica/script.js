@@ -7,6 +7,10 @@ let numeros = document.querySelector('.d-1-3');
 let telaPrincipal = document.querySelector('.d-1');
 let Fim = document.querySelector('.aviso--gigante')
 
+const audio_Botao1 = new Audio('audio/se1.mp3')
+const audio_Botao2 = new Audio('audio/se2.mp3')
+const audio_Confirma = new Audio('audio/se3.mp3')
+
 let etapaAtual = 0;
 let numero = '';
 let votoBranco = false;
@@ -80,6 +84,7 @@ function clicou(n){
             }else{
                 atualizaInterface();
             }
+            audio_Botao1.play();
         }
     }
 }
@@ -92,6 +97,7 @@ function branco(){
             aviso.style.display = 'block';
             numeros.innerHTML = '';
             descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>'
+            audio_Botao1.play();
         }else{
             alert("Para votar em BRANCO, não pode ter digitado nenhum número!")
         }
@@ -100,6 +106,7 @@ function branco(){
 
 function corrige(){
     if(etapas[etapaAtual] !== undefined){
+    audio_Botao2.play();
     começarEtapa();
     }
 }
@@ -137,8 +144,10 @@ function confirma(){
     if(votoConfirmado){
         etapaAtual++;
         if(etapas[etapaAtual] !== undefined){
+            audio_Botao1.play();
             começarEtapa();
         }else{
+            audio_Confirma.play();
             console.log ("entrou aqui")
             telaPrincipal.style.display = 'none';
             aviso.style.display = 'none';
