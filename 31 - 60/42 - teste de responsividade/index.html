@@ -8,26 +8,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <form action="">
-       <input type="text" name="url" id="">
-       <input type="button" value="verificar">
+   <form action="" class="urlSearch">
+       <label for="text">Digite a Url do site (obs: muitos sites recusam carregar em ifremes para evitar ataques)</label>
+       <input type="text" name="url" id="url">
+       <input type="submit" value="buscar">
    </form> 
 
    <div>
-       <h3>low-res</h3>
-        <iframe src="https://g1.globo.com/" id="low-res"></iframe>
         <h3>low-res</h3>
-        <iframe src="https://g1.globo.com/" id="smartphone-first-generation"></iframe>
-        <h3>low-res</h3>
-        <iframe src="https://g1.globo.com/" id="smartphone"></iframe>
-        <h3>low-res</h3>
+        <iframe src="" id="low-res"></iframe>
+        <h3>smartphone-first-generation</h3>
+        <iframe src="" id="smartphone-first-generation"></iframe>
+        <h3>smartphone</h3>
+        <iframe src="" id="smartphone"></iframe>
+        <h3>ipad</h3>
         <iframe src="" id="ipad"></iframe>
-        <h3>low-res</h3>
+        <h3>tablet-standing</h3>
         <iframe src="" id="tablet-standing"></iframe>
-        <h3>low-res</h3>
+        <h3>tablet-lying</h3>
         <iframe src="" id="tablet-lying"></iframe>
-        <h3>low-res</h3>
+        <h3>desktop</h3>
         <iframe src="" id="desktop"></iframe>
    </div>
+
+   <script>
+       function search(event){
+            event.preventDefault();
+            url = document.querySelector('#url').value
+            console.log(url)
+            ifremes = document.querySelectorAll('iframe')
+            for(i = 0; i < ifremes.length; i++){
+                ifreme = ifremes[i];
+                ifreme.src = url;
+            }
+       }
+
+
+
+       let form = document.querySelector('.urlSearch')
+       form.addEventListener('submit',search)
+   </script>
 </body>
 </html>
