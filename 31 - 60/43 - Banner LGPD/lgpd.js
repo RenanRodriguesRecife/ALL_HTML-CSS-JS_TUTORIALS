@@ -18,5 +18,5 @@ let lgpdHtml =   `
 //Conteúdo do local storage
 let lsContent = localStorage.getItem('lgpd');
 if(!liContent){
-
+    document.body.innerHTML += lgpdHtml;
 }
