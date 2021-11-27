@@ -97,3 +97,41 @@ a {
     transform: translateX(-50%);
     top: 50px;
 }
+
+.availability{
+    margin-top: 100px;
+}
+
+.availability h3 {
+    text-align: center;
+    color: var(--h3Btnbleft);
+    font-size: 1.8rem;
+}
+
+div[class^='area-']{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0 .9rem rgba(0,0,0,.15);
+    padding: 10px;
+    width: 250px;
+    margin: 30px 0;
+    color: var(--areaText);
+}
+
+.area-1{
+    border-left: 5px solid var(--area-1);
+}
+.area-2{
+    border-left: 5px solid var(--area-2);
+}
+.area-3{
+    border-left: 5px solid var(--area-3);
+}
+.area-4{
+    border-left: 5px solid var(--area-4);
+}
+
+div[class^= 'area-'] span{
+    margin-top: 8px;
+}
