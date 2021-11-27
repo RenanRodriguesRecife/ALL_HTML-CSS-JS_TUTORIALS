@@ -19,3 +19,42 @@
     --areaText: #EC87C0;
     font-size: 16px;
 }
+
+.container {
+    padding: 0 100px 0 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo{
+    color: var(--logo);
+    padding-top: 20px;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text{
+    margin-top: 150px;
+}
+
+.text h2{
+    color: var(--h2);
+    max-width: 350px;
+    font-size: 3rem;
+}
+
+.text span{
+    margin-left: 200px;
+}
+
+.desc{
+    border-left: 3px solid var(--h3Btnbleft);
+    padding: 10px;
+    margin-top: 100px
+}
