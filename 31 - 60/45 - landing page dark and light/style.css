@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+}
+
+:root{
+    --h1: #707070;
+    --h2: #FFA458;
+    --h3Btnbleft: #FC6E51;
+    --white: #fff;
+    --area-1: #DE3C3C;
+    --area-2: #08FFC8;
+    --area-3: #78BDC4;
+    --area-4: #FFA45B;
+    --para: #AAB2BD;
+    --logo: #3BAFDA;
+    --areaText: #EC87C0;
+    font-size: 16px;
+}
