@@ -135,3 +135,31 @@ div[class^='area-']{
 div[class^= 'area-'] span{
     margin-top: 8px;
 }
+
+.range{
+    width: 100%;
+    background-color: #FFCE54;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: #3C383D;
+    outline: none;
+}
+
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background: #48CFAD;
+    cursor: pointer;
+}
