@@ -9,13 +9,16 @@
 <body>
     <h1>40 bpm</h1>
     <input type="range" min="40" max="218" value="40" id="bpm">
-    <audio src="clap.mp3"></audio>
+    <audio src="./Clap.mp3"></audio>
     <button id="play">Play</button>
     <script>
         const bpm = document.getElementById('bpm');
         const h1 = document.querySelector('h1');
         const play = document.getElementById('play');
+        const audio = document.querySelector('audio');
         const currentBpm = 40;
+        let isPlaying = false;
+        let timer = null;
 
         function tick(){
             audio.currentTime = 0;
@@ -25,9 +28,16 @@
         bpm.addEventListener('change', function(){
             h1.innerHTML = this.value + ' bpm';
             currentBpm = parseInt(this.value);
-        })
+        }) 
         play.addEventListener('click', function(){
-            const timer = setInterval(tick, 100);
+            if(isPlaying){
+                play.innerHTML = 'Play';
+                clearInterval(timer);
+            }else{
+                play.innerHTML = 'Stop';
+                timer = setInterval(tick, (60*1000)/currentBpm);
+            }
+            isPlaying = !isPlaying;
         })
     </script>
 </body>
