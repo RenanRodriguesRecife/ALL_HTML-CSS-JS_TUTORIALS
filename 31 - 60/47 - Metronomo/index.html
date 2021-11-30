@@ -16,7 +16,7 @@
         const h1 = document.querySelector('h1');
         const play = document.getElementById('play');
         const audio = document.querySelector('audio');
-        const currentBpm = 40;
+        let currentBpm = 40;
         let isPlaying = false;
         let timer = null;
 
@@ -28,6 +28,10 @@
         bpm.addEventListener('change', function(){
             h1.innerHTML = this.value + ' bpm';
             currentBpm = parseInt(this.value);
+            if(isPlaying){
+                clearInterval(timer);
+                timer = setInterval(tick, (60*1000)/currentBpm);
+            }
         }) 
         play.addEventListener('click', function(){
             if(isPlaying){
@@ -35,6 +39,7 @@
                 clearInterval(timer);
             }else{
                 play.innerHTML = 'Stop';
+                tick();
                 timer = setInterval(tick, (60*1000)/currentBpm);
             }
             isPlaying = !isPlaying;
