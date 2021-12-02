@@ -47,6 +47,7 @@ body{
     width: 10px;
     height: 40%;
     background-color: black;
+    transform-origin: bottom;
     transform: translateX(-50%) rotate(var(--rotation));
 }
 
