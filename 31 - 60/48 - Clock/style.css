@@ -47,9 +47,11 @@ body{
     width: 10px;
     height: 40%;
     background-color: black;
+    border: 1px solid white;
     border-top-left-radius:10px;
     border-top-right-radius: 10px;
     transform-origin: bottom;
+    z-index: 10;
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 }
 
