@@ -35,6 +35,10 @@ img{
     max-width: 100%;
 }
 
+section a {
+    color: #fff;
+}
+
 /* Navbar */
 .navbar{
     width: 100%;
@@ -99,7 +103,7 @@ img{
     align-items: center;
 }
 
-/* Box */
+/* Box */ 
 .box {
     margin-bottom: 30px;
 }
