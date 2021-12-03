@@ -210,3 +210,11 @@ img{
         font-size: 19px;
     }
 }
+
+@media (min-width: 1440px){
+    .box{
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
