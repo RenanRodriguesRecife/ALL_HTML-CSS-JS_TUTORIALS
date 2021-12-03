@@ -134,3 +134,25 @@ img{
 .btn-dark:hover{
     background-color: #333;
 }
+
+/*background*/
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.bg-extra {
+    background-color: var(--color-extra);
+    color: #000;
+}
+
+.bg-dark{
+    background-color: var(--color-dark);
+    color: #000;
+}
