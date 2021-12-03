@@ -99,6 +99,16 @@ img{
     align-items: center;
 }
 
+/* Box */
+.box {
+    margin-bottom: 30px;
+}
+
+.box-inner{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 /* buttons */
 .btn{
     cursor: pointer;
