@@ -156,3 +156,32 @@ img{
     background-color: var(--color-dark);
     color: #000;
 }
+
+/*text styling*/
+.text-center{
+    text-align: center;
+}
+
+.text-xl{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-lg{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-md{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-sm {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
