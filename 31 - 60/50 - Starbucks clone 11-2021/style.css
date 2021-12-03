@@ -198,3 +198,15 @@ img{
 .py-lg{
     padding: 40px 0;
 }
+
+@media (max-width: 960px){
+    .text-xl{
+        font-size: 30px;
+    }
+    .text-lg{
+        font-size: 25px;
+    }
+    .text-md{
+        font-size: 19px;
+    }
+}
