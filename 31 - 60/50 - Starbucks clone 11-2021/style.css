@@ -185,3 +185,16 @@ img{
     font-size: 19px;
     margin-bottom: 20px;
 }
+
+/* Padding */
+.py-sm{
+    padding: 10px 0;
+}
+
+.py-md{
+    padding: 20px 0;
+}
+
+.py-lg{
+    padding: 40px 0;
+}
