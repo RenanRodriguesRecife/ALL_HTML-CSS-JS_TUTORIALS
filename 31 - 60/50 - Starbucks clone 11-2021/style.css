@@ -291,6 +291,9 @@ section a {
     .navbar .navbar-nav-right{
         display: none;
     }
+    .footer{
+        text-align: center;
+    }
 }
 
 @media (max-width: 960px){
