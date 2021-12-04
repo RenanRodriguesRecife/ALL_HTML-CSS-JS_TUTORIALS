@@ -283,6 +283,14 @@ section a {
         order: 0;
     }
 
+    .navbar-brand img{
+        width: 40px;
+        height: 40px;
+    }
+    .navbar .navbar-nav-left,
+    .navbar .navbar-nav-right{
+        display: none;
+    }
 }
 
 @media (max-width: 960px){
