@@ -113,6 +113,12 @@ section a {
     margin: 0 auto;
 }
 
+/*Grid Styles */
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* buttons */
 .btn{
     cursor: pointer;
