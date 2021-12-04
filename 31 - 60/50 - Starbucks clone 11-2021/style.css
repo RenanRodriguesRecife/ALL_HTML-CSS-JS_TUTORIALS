@@ -275,6 +275,18 @@ section a {
     padding: 40px 0;
 }
 
+/* Hamburger Menu Icon */
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.25s;
+}
+
 @media (max-width: 768px){
     .grid-col-2{
         grid-template-columns: 1fr;
