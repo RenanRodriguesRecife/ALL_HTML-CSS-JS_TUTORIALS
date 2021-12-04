@@ -397,6 +397,10 @@ section a {
     transform: translateX(100%);
 }
 
+.no-scroll{
+    overflow: hidden;
+}
+
 @media (max-width: 960px){
     .text-xl{
         font-size: 30px;
