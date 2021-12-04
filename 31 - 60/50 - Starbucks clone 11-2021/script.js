@@ -6,4 +6,11 @@ function navToggle(){
     document.body.classList.toggle('no-scroll');
 }
 
+function hideNav(){
+    if(window.innerWidth > 768 && btn.classList.contains('open')){
+        navToggle()
+    }
+}
+
 btn.addEventListener('click',navToggle);
+window.addEventListener('resize', hideNav);
