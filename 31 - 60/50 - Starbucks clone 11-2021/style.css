@@ -127,6 +127,13 @@ section a {
     margin-right: 20px;
 }
 
+.divider{
+    width: 95%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px auto;
+}
+
 /* Box */ 
 .box {
     margin-bottom: 30px;
