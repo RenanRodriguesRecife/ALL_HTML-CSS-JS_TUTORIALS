@@ -118,10 +118,15 @@ section a {
     text-align: center;
     justify-self: center;
     padding: 20px 0;
+    margin: 0 auto;
 }
 
 .box-text .btn{
     margin-top: 20px;
+}
+
+.box-f .box-text{
+    max-width: 600px;
 }
 
 /*Grid Styles */
