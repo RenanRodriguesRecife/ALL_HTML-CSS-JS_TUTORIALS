@@ -287,6 +287,27 @@ section a {
     transition: all 0.25s;
 }
 
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+}
+
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
 @media (max-width: 768px){
     .grid-col-2{
         grid-template-columns: 1fr;
