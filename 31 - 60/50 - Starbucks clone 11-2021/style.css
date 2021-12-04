@@ -293,4 +293,7 @@ section a {
         margin-right: auto;
         margin-left: auto;
     }
+    .divider{
+        max-width: 90%;
+    }
 }
