@@ -103,6 +103,16 @@ section a {
     align-items: center;
 }
 
+/* Footer & Social */
+.footer-container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px 30px;
+}
+
+
+
 /* Box */ 
 .box {
     margin-bottom: 30px;
