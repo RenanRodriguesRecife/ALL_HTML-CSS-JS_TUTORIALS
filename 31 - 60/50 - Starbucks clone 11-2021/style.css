@@ -117,6 +117,13 @@ section a {
 .grid-col-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-reversed :first-child{
+    order: 2;
 }
 
 /* buttons */
