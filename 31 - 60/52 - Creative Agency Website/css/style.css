@@ -52,6 +52,26 @@ section{
     z-index: 10;
 }
 
+/* Toggle */
+.toggle{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #f60f20 url("../img/menu.png");
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+    cursor: pointer;
+}
+
+/*Navigation*/
+.navigation{
+    display: none;
+}
+
 .home-content{
     position: relative;
     z-index: 10;
@@ -65,6 +85,3 @@ section{
     height: 110%;
 }
 
-.navigation{
-    display: none;
-}
