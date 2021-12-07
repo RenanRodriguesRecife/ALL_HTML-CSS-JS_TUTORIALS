@@ -72,6 +72,13 @@ section{
     cursor: pointer;
 }
 
+.toggle.active{
+    background: var(--primary-color) url("../img/close.png");
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*Navigation*/
 .navigation{
     display: none;
