@@ -12,6 +12,15 @@ body{
     color: #111;
 }
 
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-size: 2rem;
+    font-weight:700;
+    z-index: 10;
+}
+
 .navigation{
     display: none;
 }
