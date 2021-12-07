@@ -97,7 +97,30 @@ section{
     left: 0;
 }
 
+.navigation ul{
+    position: relative;
+}
 
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.navigation ul li a{
+    font-size: 2.2rem;
+    color: #111;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navigation ul li a:hover{
+    color: var(--primary-color);
+}
+
+
+
+/* homepage */
 .home-content{
     position: relative;
     z-index: 10;
