@@ -21,6 +21,13 @@ body{
     z-index: 10;
 }
 
+.home-img{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    height: 110%;
+}
+
 .navigation{
     display: none;
 }
