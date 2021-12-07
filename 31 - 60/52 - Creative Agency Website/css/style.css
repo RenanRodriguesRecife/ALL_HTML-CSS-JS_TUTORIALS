@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+:root{
+    --primary-color:#f60f20
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,11 +36,12 @@ section{
 .btn{
     cursor: pointer;
     display: inline-block;
-    background: #f60f20;
+    background: var(--primary-color);
     color: #fff;
     text-decoration: none;
     padding: 10px 30px;
     margin: 20px 0;
+    border: 0;
 }
 
 .btn:hover{
@@ -59,7 +64,7 @@ section{
     right: 0;
     width: 60px;
     height: 60px;
-    background: #f60f20 url("../img/menu.png");
+    background: var(--primary-color) url("../img/menu.png");
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
