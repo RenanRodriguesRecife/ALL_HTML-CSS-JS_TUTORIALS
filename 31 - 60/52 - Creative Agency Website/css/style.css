@@ -93,6 +93,10 @@ section{
     align-items: center;
 }
 
+.navigation.active{
+    left: 0;
+}
+
 
 .home-content{
     position: relative;
