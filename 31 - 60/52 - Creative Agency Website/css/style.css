@@ -235,6 +235,17 @@ section.home{
     padding: 5px 15px;
 }
 
+/* Contact */
+
+.contact{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 @media (max-width: 1068px){
     .home-img{
         display: none;
