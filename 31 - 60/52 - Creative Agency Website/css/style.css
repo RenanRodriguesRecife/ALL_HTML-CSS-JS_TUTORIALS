@@ -190,6 +190,10 @@ section.home{
     max-width: 100px;
 }
 
+.portfolio{
+    display: flex;
+}
+
 @media (max-width: 1068px){
     .home-img{
         display: none;
