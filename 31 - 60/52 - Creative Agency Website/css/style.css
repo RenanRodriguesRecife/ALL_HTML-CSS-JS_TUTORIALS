@@ -207,4 +207,14 @@ section.home{
     .navigation ul li a{
         font-size: 2rem;
     }
+
+    .services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .services{
+        grid-template-columns: 1fr;
+    }
 }
