@@ -291,7 +291,16 @@ section.home{
     height: 150px;
 }
 
-
+.contact-form .row input[type='submit']{
+    background-color: #1b206e;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+}
 
 @media (max-width: 1068px){
     .home-img{
