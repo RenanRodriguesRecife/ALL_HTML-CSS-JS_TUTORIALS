@@ -1,0 +1,1 @@
+Criando um layout responsivo com CSS Grid e Object-fit - https://www.youtube.com/watch?v=Y9uat94abxU&list=WL&index=97
