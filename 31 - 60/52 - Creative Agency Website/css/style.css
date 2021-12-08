@@ -262,4 +262,8 @@ section.home{
     .services{
         grid-template-columns: 1fr;
     }
+
+    .services .service{
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
 }
