@@ -194,6 +194,7 @@ section.home{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .portfolio .item{
@@ -219,10 +220,12 @@ section.home{
     justify-content: center;
     align-items: center;
     opacity: 0;
-
+    transition: 0.5s;
 }
 
-
+.portfolio .item:hover .action{
+    opacity: 1;
+}
 
 .portfolio .item .action a{
     display: inline-block;
