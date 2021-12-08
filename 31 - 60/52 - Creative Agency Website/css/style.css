@@ -162,6 +162,14 @@ section.home{
     height: 110%;
 }
 
+.services{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
 @media (max-width: 1068px){
     .home-img{
         display: none;
