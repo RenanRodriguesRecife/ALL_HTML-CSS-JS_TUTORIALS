@@ -302,6 +302,18 @@ section.home{
     cursor: pointer;
 }
 
+.contact-info{
+    width: 350px;
+    background: #f9f9f9;
+    padding: 60px 40px 20px;
+}
+
+.contact-info .info-box{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
 @media (max-width: 1068px){
     .home-img{
         display: none;
