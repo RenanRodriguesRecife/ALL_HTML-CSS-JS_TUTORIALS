@@ -41,3 +41,62 @@ boty{
     text-decoration: none;
     position: absolute;
 }
+
+.wrapper{
+    overflow: hidden;
+}
+
+.features{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.features-group-2{
+    margin-left: 40px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.feature-1,
+.feature-2,
+.feature-3,
+.feature-4 {
+    max-width: 250px;
+    box-shadow: 0 .2rem 3rem rgba(0,0,0,.09);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.feature-2{
+    margin-top: 20px;
+}
+
+.feature-4{
+    margin-top: 20px;
+}
+
+.features img{
+    width: 140px;
+    filter: drop-shadow(0 .1rem .2rem rgba(0,0,0,0.35));
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.features h2{
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px 0 15px 0;
+    color: #434a54;
+}
+
+.features p{
+    font-size: .8rem;
+    text-align: center;
+    color: #434a54;
+    line-height: 1.5;
+}
