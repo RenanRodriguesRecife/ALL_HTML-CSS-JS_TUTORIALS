@@ -219,3 +219,58 @@ nav li{
 .card-1 h2{
     margin-top: -5px;
 }
+
+.play-music{
+    display: flex;    
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.play-music img{
+    width: 15px;
+}
+
+.play-music p {
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+card-1:not(:first-child){
+    margin-left: 20px;
+}
+
+.card-2{
+    background-image:url(./../img//2.jpg);
+}
+
+.card-3{
+    background-image: url(./../img/3.jpg);
+}
+
+.heading-lg{
+    font-family: 'Anthology Outline DEMO', sans-serif;
+    font-size:7rem;
+    color: #bdbdbd;
+    position: relative;
+    z-index: 2;
+    top: -30px;
+    left: 200px;
+}
+
+.channel-link{
+    background-color: #ff5858;
+    padding: 20px 40px;
+    transform: rotateZ(270deg);
+    display: inline-block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    margin-right: -100px;
+    margin-top: -220px;
+}
+
+.channel-link h1{
+    color: #fff;
+}
