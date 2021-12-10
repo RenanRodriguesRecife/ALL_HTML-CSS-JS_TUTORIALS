@@ -100,3 +100,30 @@ boty{
     color: #434a54;
     line-height: 1.5;
 }
+
+.bg-img-1{
+    width: 350px;
+    position: absolute;
+    top: 300px;
+    left: -200px;
+    z-index: -1;
+    animation: rotateInfinite 35 linear infinite;
+}
+
+@keyframes rotateInfinite{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+.bg-img-2{
+    width: 300px;
+    position: absolute;
+    top: -20px;
+    left: -150px;
+    z-index: -1;
+    animation: rotateInfinite 35 linear infinite;
+}
