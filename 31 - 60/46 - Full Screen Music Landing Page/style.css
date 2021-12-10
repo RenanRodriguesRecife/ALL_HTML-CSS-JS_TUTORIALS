@@ -60,6 +60,7 @@ nav li{
 
 .hero-section{
     background-image: url(./../img/bg.jpg);
+    background-color: #ff4b4b;
     background-position: center;
     background-size: cover;
     height: calc(100vh - 59.99px);
@@ -106,4 +107,46 @@ nav li{
     display: flex;
     flex-wrap: wrap;
     margin-top: 7px;
+}
+
+.player-bar{
+    background-color: #ff4b4b;
+    height: 3px;
+    width: 100px;
+    display: block;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: -5px;
+    background-color: #ff4b4b;
+    display:block;
+}
+
+.rest-of-bar{
+    background-color: #fff;
+    height: 3px;
+    width: 296px;
+    display: block;
+}
+
+.time{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.time p{
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
