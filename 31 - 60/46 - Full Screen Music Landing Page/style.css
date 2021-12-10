@@ -150,3 +150,23 @@ nav li{
     left: 0;
     top: 0;
 }
+
+.gradient-1{
+    background-image: linear-gradient(45deg, rgba(135,77,162,.94)0%,rgba(196,58,48,.60)100%);
+
+}
+
+.gradient-2{
+    background-image: linear-gradient(135deg, rgba(144,247,236,.94)10%,rgba(50,204,188,.60)100%);
+    z-index: -1;    
+}
+
+.gradient-3{
+    background-image: linear-gradient(135deg, rgba(146,255,192,.94)10%,rgba(0,38,97,.60)100%);
+    z-index: -1;
+}
+
+.gradient-4{
+    background-image: linear-gradient(-60deg, rgba(255,88,88,.94)0%,rgba(240,152,25,.60)100%);
+    z-index: -1;
+}
