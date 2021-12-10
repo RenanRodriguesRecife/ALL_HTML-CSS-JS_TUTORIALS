@@ -13,3 +13,42 @@ li{
     list-style: none;
     display: inline-block;
 }
+
+.container{
+    padding: 0 100px;
+}
+
+.nav{
+    background-color: #3A3E59;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav li{
+    margin-left: 25px;
+}
+
+.nav-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-left li{
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.nav-left a{
+    color: #fff;
+}
+
+.logo{
+    width: 40px;
+    margin-right: 25px;
+}
