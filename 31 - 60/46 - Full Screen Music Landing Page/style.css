@@ -67,3 +67,43 @@ nav li{
     overflow: hidden;
     padding-top: 80px;
 }
+
+.music{
+    display: flex;
+    flex-wrap: wrap;
+}
+.music-icon{
+    width: 80px;
+}
+.music-player{
+    margin-left: 30px;
+    max-width: 412px;
+}
+
+.music-player h1{
+    line-height: 1.5;
+}
+
+.music p,
+.music h1
+{
+    color: #fff;
+}
+
+.music p
+{
+    letter-spacing: 2px;
+}
+
+.music h1
+{
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+.seek{
+    width: 411px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7px;
+}
