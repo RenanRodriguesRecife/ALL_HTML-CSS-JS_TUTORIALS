@@ -52,3 +52,18 @@ nav li{
     width: 40px;
     margin-right: 25px;
 }
+
+.social-links img{
+    width: 30px;
+    margin-top: 5px;
+}
+
+.hero-section{
+    background-image: url(./../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 59.99px);
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
