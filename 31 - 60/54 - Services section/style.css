@@ -12,3 +12,32 @@
 boty{
     overflow: hidden;
 }
+
+.material{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content h1 {
+    margin-top: 200px;
+    color: #434654;
+    font-size: 3rem;
+}
+
+.content p{
+    color: #656d78;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    max-width: 500px;
+    font-size: 1.2rem;
+}
+
+.content a{
+    background-color: #35587b;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px 35px;
+    text-decoration: none;
+    position: absolute;
+}
