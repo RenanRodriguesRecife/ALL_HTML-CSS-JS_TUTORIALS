@@ -42,12 +42,12 @@ feature2.addEventListener("mouseleave",function(){
 });
 
 feature3.addEventListener("mouseover",function(){
-    arr = [feature1, feature3, feature4];
+    arr = [feature1, feature2, feature4];
     blurred(feature3);
 });
 
 feature3.addEventListener("mouseleave",function(){
-    arr = [feature1, feature3, feature4];
+    arr = [feature1, feature2, feature4];
     unBlurred(feature3);
 });
 
