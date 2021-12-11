@@ -13,3 +13,29 @@
     box-sizing: border-box;
     font-family: 'Raleway',sans-serif;
 }
+
+.container{
+    height: 90vh;
+    background-image: url('/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -370px;
+    background-size: cover;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+}
+
+.wrapper{
+    padding: 0 100px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--white);
+    padding: 30px 0 20px 0;
+}
