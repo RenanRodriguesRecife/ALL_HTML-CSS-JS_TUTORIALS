@@ -64,3 +64,29 @@ p{
     transform: translateX(-50%);
     margin-bottom: 20px;
 }
+
+input{
+    width: 100%;
+    background-color: var(--bgcolor);
+    border: none;
+    border-bottom: 2px solid var(--borderColor);
+    padding: 20px 0 10px 0;
+    color: var(--primaryColor);
+    font-size: 1.1rem;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+}
+
+textarea{
+    width: 100%;
+    background-color: var(--bgcolor);
+    border: none;
+    border-bottom: 2px solid var(--borderColor);
+    padding: 20px 0;
+    color: var(--primaryColor);
+    resize: none;
+    font-size: 1.1rem;
+}
