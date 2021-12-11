@@ -148,3 +148,14 @@ button{
     transform: translateX(-50%);
     margin-top: 20px
 }
+
+.links img{
+    width: 20px;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
