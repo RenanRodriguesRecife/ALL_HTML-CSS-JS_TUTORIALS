@@ -90,3 +90,20 @@ textarea{
     resize: none;
     font-size: 1.1rem;
 }
+
+button{
+    background-color: var(--primaryColor);
+    color: var(--bgcolor);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 20px;
+    cursor: pointer;
+}
