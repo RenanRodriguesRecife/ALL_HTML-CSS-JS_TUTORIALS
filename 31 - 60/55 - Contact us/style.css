@@ -102,7 +102,7 @@ button{
     right: 50%;
     transform: translateX(-50%);
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.3rem; 
     font-weight: 800;
     margin-top: 20px;
     cursor: pointer;
