@@ -19,7 +19,7 @@ body{
     background-color: var(--bgcolor);
     max-width: 600px;
     display: grid;
-    grid-template-columns: 2fr, .2fr;
+    grid-template-columns: 2fr .2fr;
     grid-gap: 20px;
     padding: 30px;
     position: relative;
