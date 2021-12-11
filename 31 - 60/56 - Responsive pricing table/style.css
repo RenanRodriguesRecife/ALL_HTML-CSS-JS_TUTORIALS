@@ -1,0 +1,15 @@
+:root{
+    --white: #fff;
+    --nameColor: #323133;
+    --listColor: #434a53;
+    --lineColor: #e6e8ed;
+    --priceColor: #e48e66;
+    --btnColor: #0f3443;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+}
