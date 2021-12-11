@@ -6,7 +6,7 @@
 }
 
 .container{
-    padding: 0 180px;
+    padding: 0 100px;
 }
 
 boty{
@@ -107,7 +107,7 @@ boty{
     top: 300px;
     left: -200px;
     z-index: -1;
-    animation: rotateInfinite 35 linear infinite;
+    animation: rotateInfinite 35s linear infinite;
 }
 
 @keyframes rotateInfinite{
@@ -123,7 +123,7 @@ boty{
     width: 300px;
     position: absolute;
     top: -20px;
-    left: -150px;
+    right: -150px;
     z-index: -1;
-    animation: rotateInfinite 35 linear infinite;
+    animation: rotateInfinite 40s linear infinite;
 }
