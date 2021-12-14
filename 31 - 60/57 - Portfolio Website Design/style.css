@@ -77,3 +77,27 @@ li a {
     padding: 150px 0 0 50px;
     position: absolute;
 }
+
+.about,
+.skills,
+.contact{
+    opacity: 0;
+}
+
+.main h1,
+.about h1,
+.skills h1,
+.contact h1{
+    font-size: 3rem;
+    color: var(--sectionHlColor);
+}
+
+h1:nth-child(2){
+    margin-bottom: 20px;
+}
+
+.main p{
+    font-size: 1.5rem;
+    color: var(--mainParaColor);
+    margin-bottom: 40px;
+}
