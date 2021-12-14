@@ -101,3 +101,92 @@ h1:nth-child(2){
     color: var(--mainParaColor);
     margin-bottom: 40px;
 }
+
+.main a,
+.about a,
+.contact button{
+    color: var(--white);
+    background-color: var(--btnBgColor);
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+.about h1,
+.skills h1,
+.contact h1{
+    margin-bottom: 20px;
+}
+
+.about p,
+.skills > p{
+    max-width: 650px;
+    font-size: 1.3rem;
+    color: var(--sectionParaColor);
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.skills,
+.contact{
+    padding: 100px 0 0 50px;
+    position: absolute;
+}
+
+.skills-card{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 700px;
+}
+
+.skills-card div{
+    border: 2px solid var(--skillsCardColor);
+    padding: 20px;
+    margin: 10px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-card div:after{
+    content: '';
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--skillsCardColor);
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.skills-card div:hover::after{
+    height: 100%;
+}
+
+.skills-card div:hover p {
+    color: var(--white);
+}
+
+.skills-card div:first-child{
+    margin-left: 0;
+}
+
+.skills-card p{
+    max-width: 100px;
+    font-size: -9rem;
+    margin-top: 10px;
+    color: var(--sectionParaColor);
+    font-weight: 600;
+}
+
+skills img{
+    width: 60px;
+}
+
+.skills h3{
+    text-transform: uppercase;
+    color: var(--skillsH3Color);
+    margin-top: 10px;
+}
