@@ -62,3 +62,18 @@ header{
     color: var(--logoColor);
     cursor: pointer;
 }
+
+nav li{
+    margin-right: 20px;
+    font-size: 1.3rem;
+    line-height: 70px;
+}
+
+li a {
+    color: var(--navLinksColor);
+}
+
+.main, .about{
+    padding: 150px 0 0 50px;
+    position: absolute;
+}
