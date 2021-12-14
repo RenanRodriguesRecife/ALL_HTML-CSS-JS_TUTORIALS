@@ -39,3 +39,100 @@ h1 {
     color: var(--white);
     padding: 30px 0 20px 0;
 }
+
+.plans{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic-plan,
+.premium-plan,
+.ultimate-plan{
+    background-color: var(--white);
+    padding: 50px 30px 20px 30px;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.08);
+}
+
+img{
+    width: 100px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.name{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+    color: var(--nameColor);
+}
+
+ul{
+    margin: 40px;
+    border-top: 2px solid var(--lineColor);
+    border-bottom: 2px solid var(--lineColor);
+}
+
+li{
+    line-height: 40px;
+    color:var(--lineColor);
+}
+
+.premium-plan{
+    z-index: 2;
+    height: 580px;
+    width: 330px;
+}
+
+.basic-plan,
+.ultimate-plan{
+    height: 530px;
+}
+
+.basic-plan{
+    position: relative;
+    right: -10px;
+}
+
+.ultimate-plan{
+    position: relative;
+    left: -10px;
+}
+
+.price{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--priceColor);
+    text-align: center;
+}
+
+sup,
+sub{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+button{
+    text-transform: capitalize;
+    border: 1px solid var(--btnColor);
+    background: var(--white);
+    padding: 8px 30px;
+    border-radius: 20px;
+    color: var(--btnColor);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    cursor: pointer;
+    transition: box-shadow .3s ease;
+    font-weight: 600;
+    
+}
