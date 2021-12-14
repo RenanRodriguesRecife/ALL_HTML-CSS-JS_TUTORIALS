@@ -15,3 +15,18 @@
     --twitterBgColor: #55acee;
     --instagramBgColor: #e4405f;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway',sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
