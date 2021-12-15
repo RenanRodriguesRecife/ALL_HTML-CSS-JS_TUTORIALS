@@ -352,3 +352,10 @@ textarea:focus{
     top: 5px;
     right: 20px;
 }
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s,opacity .25s 0, transform .25s;
+}
