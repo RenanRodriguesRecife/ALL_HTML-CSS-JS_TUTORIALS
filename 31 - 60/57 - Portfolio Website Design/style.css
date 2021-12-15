@@ -241,3 +241,20 @@ textarea:focus{
         margin-top: 0;
     }
 }
+
+.assets-side{
+    display: grid;
+    grid-template-columns: 1fr .15fr;
+}
+
+.img{
+    background-color: var(--profileBgColor);
+}
+
+.assets-side img{
+    width: 468px;
+    position: relative;
+    left: 70%;
+    right: 70%;
+    transform: translateX(-70%);
+}
