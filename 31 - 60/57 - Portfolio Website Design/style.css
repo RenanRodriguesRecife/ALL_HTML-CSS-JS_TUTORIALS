@@ -348,4 +348,7 @@ textarea:focus{
 .close-modal{
     font-size: 2rem;
     cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 20px;
 }
