@@ -280,4 +280,7 @@ textarea:focus{
     font-size: 1.5rem;
     color: var(--white);
     height: calc(100%/3);
+    width: 100%;
+    text-align: center;
+    padding-right: 30px;
 }
