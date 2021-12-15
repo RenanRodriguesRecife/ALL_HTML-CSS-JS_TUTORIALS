@@ -21,3 +21,7 @@ let aboutAnker = document.querySelector('#about a');
 let skillsH1 = document.querySelector("#skills h1");
 let skillsPara = document.querySelector("#skills p");
 let skillsCard = document.querySelector('skills .skills-card');
+//grab elements of contact section for animation
+let contactH1 = document.querySelector('#contact h1');
+let contactForm = document.querySelector('#contact form');
+let contactAnker = document.querySelector('#contact a');
