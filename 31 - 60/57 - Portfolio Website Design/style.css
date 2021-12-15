@@ -258,3 +258,26 @@ textarea:focus{
     right: 70%;
     transform: translateX(-70%);
 }
+
+.facebook, .twitter, .instagram{
+    height: calc(100%/3);
+}
+
+.facebook{
+    background-color: var(--facebookBgColor);
+}
+
+.twitter{
+    background-color: var(--twitterBgColor);
+}
+
+.instagram{
+    background-color: var(--instagramBgColor);
+}
+
+.links a {
+    writing-mode: vertical-rl;
+    font-size: 1.5rem;
+    color: var(--white);
+    height: calc(100%/3);
+}
