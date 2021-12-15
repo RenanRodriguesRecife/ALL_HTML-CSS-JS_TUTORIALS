@@ -190,3 +190,54 @@ skills img{
     color: var(--skillsH3Color);
     margin-top: 10px;
 }
+
+form{
+    max-width: 500px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--inputBorerColor);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--inputBorerColor);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+button:focus,
+.input:focus,
+textarea:focus{
+    outline:none;
+}
+
+.main-animation{
+    animation:animate 1s;
+}
+
+@keyframes animate{
+    from{
+        margin-top: 30px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
+
+@-webkit-keyframes animate{
+    from{
+        margin-top: 30px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
