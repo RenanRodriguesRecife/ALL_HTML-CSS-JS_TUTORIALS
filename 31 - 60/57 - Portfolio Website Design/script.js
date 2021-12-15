@@ -8,3 +8,8 @@ let main = document.querySelector('#main');
 let about = document.querySelector('#about');
 let skills = document.querySelector('#skills');
 let contact = document.querySelector('#contact');
+//grab elements of main section for animation
+let mainH1 = document.querySelector('#main h1');
+let mainH12 = document.querySelector('#main h1:nth-child(2)');
+let mainPara = document.querySelector('#main p');
+let mainAnker = document.querySelector('#main a');
