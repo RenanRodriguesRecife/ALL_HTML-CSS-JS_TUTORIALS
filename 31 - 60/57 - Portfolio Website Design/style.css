@@ -175,7 +175,7 @@ h1:nth-child(2){
 
 .skills-card p{
     max-width: 100px;
-    font-size: -9rem;
+    font-size: .9rem;
     margin-top: 10px;
     color: var(--sectionParaColor);
     font-weight: 600;
