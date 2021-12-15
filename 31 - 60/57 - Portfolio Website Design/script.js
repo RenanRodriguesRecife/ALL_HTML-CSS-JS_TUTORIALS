@@ -17,3 +17,7 @@ let mainAnker = document.querySelector('#main a');
 let aboutH1 = document.querySelector('#about h1');
 let aboutPara = document.querySelector('#about p');
 let aboutAnker = document.querySelector('#about a');
+//grab element of skills section for animation
+let skillsH1 = document.querySelector("#skills h1");
+let skillsPara = document.querySelector("#skills p");
+let skillsCard = document.querySelector('skills .skills-card');
