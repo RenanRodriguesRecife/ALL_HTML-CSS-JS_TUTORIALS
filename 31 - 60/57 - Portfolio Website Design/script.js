@@ -61,3 +61,9 @@ contactLink.addEventListener('click',function(){
     handleOpacity(contact, main, about, skills);
     handleAnimation(contactH1, contactForm, contactAnker);
 })
+
+
+let modal = document.querySelector('.modal');
+let trigger = document.querySelector('.open-modal');
+let closeButton = document.querySelector('.close-modal');
+
