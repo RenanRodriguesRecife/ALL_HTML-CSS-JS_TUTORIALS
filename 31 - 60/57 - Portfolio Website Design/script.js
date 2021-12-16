@@ -38,6 +38,6 @@ function handleAnimation(){
         arguments[i].classList.remove("main-animation");
         arguments[i].offsetWidth;
         arguments[i].classList.add(main-animation);
-        ]
+        
     }
 }
