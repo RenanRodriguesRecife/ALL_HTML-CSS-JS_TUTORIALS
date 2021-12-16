@@ -102,3 +102,36 @@ section::after
     background: #fff;
     color: #111 !important;
 }
+
+.dycalendar-month-container .dycalendar-header 
+.dycalendar-prev-next-btn.next-btn,
+.dycalendar-month-container .dycalendar-header 
+.dycalendar-prev-next-btn.prev-btn
+{
+    background: #fff;
+    color: #111;
+    width: 44px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.dycalendar-prev-next-btn.prev-btn
+{
+    left: 4px;
+}
+
+.dycalendar-prev-next-btn.next-btn
+{
+    right: 4px;
+}
+
+.dycalendar-month-container .dycalendar-span-month-year
+{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
