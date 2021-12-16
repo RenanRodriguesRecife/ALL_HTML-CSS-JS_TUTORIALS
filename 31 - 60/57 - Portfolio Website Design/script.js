@@ -57,4 +57,7 @@ skillsLink.addEventListener('click',function(){
     handleAnimation(skillsH1, skillsPara, skillsCard);
 })
 
-
+logo.addEventListener('click',function(){
+    handleOpacity(contact, main, about, skills);
+    handleAnimation(contactH1, contactForm, contactAnker);
+})
