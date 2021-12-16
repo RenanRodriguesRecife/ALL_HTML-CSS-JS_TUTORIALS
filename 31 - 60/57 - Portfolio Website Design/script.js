@@ -51,3 +51,10 @@ aboutLink.addEventListener('click',function(){
     handleOpacity(about, main, skills, contact);
     handleAnimation(aboutH1, aboutPara, aboutAnker);
 })
+
+skillsLink.addEventListener('click',function(){
+    handleOpacity(contact, main, about, contact);
+    handleAnimation(skillsH1, skillsPara, skillsCard);
+})
+
+
