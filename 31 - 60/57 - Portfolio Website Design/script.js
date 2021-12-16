@@ -25,3 +25,19 @@ let skillsCard = document.querySelector('skills .skills-card');
 let contactH1 = document.querySelector('#contact h1');
 let contactForm = document.querySelector('#contact form');
 let contactAnker = document.querySelector('#contact a');
+
+function hendleOpacity(opacityOne, opacityZero1, opacityZero2, opacityZero3){
+    opacityOne.style.opacity = 1;
+    opacityZero1.style.opacity = 0;
+    opacityZero2.style.opacity = 0;
+    opacityZero3.style.opacity = 0;
+}
+
+function handleAnimation(){
+    for(let i = 0; i < arguments.length; i++){
+        arguments[i].classList.remove("main-animation");
+        arguments[i].offsetWidth;
+        arguments[i].classList.add(main-animation);
+        ]
+    }
+}
