@@ -38,3 +38,21 @@ section::after
     border-radius: 50%;
     transform: translate(250px,120px);
 }
+
+.box
+{
+    position: relative;
+    z-index: 1000;
+}
+
+.container
+{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
