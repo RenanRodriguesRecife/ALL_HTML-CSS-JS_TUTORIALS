@@ -26,7 +26,7 @@ let contactH1 = document.querySelector('#contact h1');
 let contactForm = document.querySelector('#contact form');
 let contactAnker = document.querySelector('#contact a');
 
-function hendleOpacity(opacityOne, opacityZero1, opacityZero2, opacityZero3){
+function handleOpacity(opacityOne, opacityZero1, opacityZero2, opacityZero3){
     opacityOne.style.opacity = 1;
     opacityZero1.style.opacity = 0;
     opacityZero2.style.opacity = 0;
@@ -53,11 +53,11 @@ aboutLink.addEventListener('click',function(){
 })
 
 skillsLink.addEventListener('click',function(){
-    handleOpacity(contact, main, about, contact);
+    handleOpacity(skills, main, about, contact);
     handleAnimation(skillsH1, skillsPara, skillsCard);
 })
 
-logo.addEventListener('click',function(){
+contactLink.addEventListener('click',function(){
     handleOpacity(contact, main, about, skills);
     handleAnimation(contactH1, contactForm, contactAnker);
 })
