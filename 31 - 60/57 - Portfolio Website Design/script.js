@@ -41,3 +41,9 @@ function handleAnimation(){
         
     }
 }
+
+logo.addEventListener('click',function(){
+    handleOpacity(main, about, skills, contact);
+    handleAnimation(mainH1,mainH12,mainPara, mainAnker);
+})
+
