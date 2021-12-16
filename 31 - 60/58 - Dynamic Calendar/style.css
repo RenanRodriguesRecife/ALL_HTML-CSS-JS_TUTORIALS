@@ -86,4 +86,19 @@ section::after
 {
     color: #fff;
     padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#dycalendar table td:hover
+{
+    background: #fff;
+    color: #111 !important;
+}
+
+.dycalendar-month-container .dycalendar-today-date,
+.dycalendar-month-container .dycalendar-target-date
+{
+    background: #fff;
+    color: #111 !important;
 }
