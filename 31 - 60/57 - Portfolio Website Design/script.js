@@ -47,3 +47,7 @@ logo.addEventListener('click',function(){
     handleAnimation(mainH1,mainH12,mainPara, mainAnker);
 })
 
+aboutLink.addEventListener('click',function(){
+    handleOpacity(about, main, skills, contact);
+    handleAnimation(aboutH1, aboutPara, aboutAnker);
+})
