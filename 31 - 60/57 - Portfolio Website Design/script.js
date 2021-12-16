@@ -67,3 +67,12 @@ let modal = document.querySelector('.modal');
 let trigger = document.querySelector('.open-modal');
 let closeButton = document.querySelector('.close-modal');
 
+function toggleModal(){
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(e){
+    if(e.target == modal){
+        toggleModal();
+    }
+}
