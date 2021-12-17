@@ -247,7 +247,7 @@ textarea:focus{
 
 .assets-side{
     display: grid;
-    grid-template-columns: 1fr .15fr;
+    grid-template-columns: 1fr .1fr;
 }
 
 .img{
@@ -282,11 +282,11 @@ textarea:focus{
     writing-mode: vertical-rl;
     font-size: 1.5rem;
     color: var(--white);
-    height: calc(100%/3);
-    
+    height: calc(100vh/3);
+    width: 100%;
     text-align: center;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .open-modal{
