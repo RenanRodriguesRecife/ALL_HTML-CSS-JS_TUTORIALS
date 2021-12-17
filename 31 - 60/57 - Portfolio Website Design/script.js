@@ -37,7 +37,7 @@ function handleAnimation(){
     for(let i = 0; i < arguments.length; i++){
         arguments[i].classList.remove("main-animation");
         arguments[i].offsetWidth;
-        arguments[i].classList.add(main-animation);
+        arguments[i].classList.add("main-animation");
         
     }
 }
