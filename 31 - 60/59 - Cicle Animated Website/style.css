@@ -193,3 +193,23 @@ body{
 .further-detail img{
     width: 50px;
 }
+
+.sm-circle-1{
+    width: 20px;
+    height: 20px;
+    background-color: #ff9f68;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 300px;
+}
+
+.sm-circle-2{
+    width: 10px;
+    height: 10px;
+    background-color: #ff9f68;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 400px;
+    left: 60px;
+}
