@@ -139,11 +139,19 @@ body{
     cursor: pointer;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-    border-left: 20px; solid #22d1ee;
+    border-left: 20px solid #22d1ee;
     position: absolute;
     right: 20px;
     bottom: 115px;
     z-index: 1;
     animation: scale 1s linear infinite;
     transition: 1s ease;
+}
+
+@keyframes scale {
+    100%{
+        transform: scale(1.2);
+        filter: hue-rotate(3.142rad);
+    }
+    
 }
