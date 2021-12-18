@@ -89,3 +89,24 @@ body{
     right: 50%;
     transform: translateX(-50%);
 }
+
+.btn{
+    color: #fff;
+    background-color: #2e303b;
+    padding: 10px 30px;
+    box-shadow: 0 .2rem 2rem rgba(0,0,0,.3);
+    border-radius: 50px;
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:focus{
+    outline: none;
+}
