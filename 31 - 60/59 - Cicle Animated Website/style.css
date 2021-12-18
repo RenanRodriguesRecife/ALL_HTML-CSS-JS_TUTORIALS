@@ -116,3 +116,34 @@ body{
     margin-top: 4px;
     font-weight: 300;
 }
+
+.speaker img{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.hero p{
+    color: #fff;
+    max-width: 500px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 40px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.triangle{
+    cursor: pointer;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px; solid #22d1ee;
+    position: absolute;
+    right: 20px;
+    bottom: 115px;
+    z-index: 1;
+    animation: scale 1s linear infinite;
+    transition: 1s ease;
+}
