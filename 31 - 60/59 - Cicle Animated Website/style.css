@@ -9,6 +9,7 @@
 body{
     height: 100vh;
     overflow: hidden;
+    background: #111215;
 }
 
 .circles{
@@ -83,11 +84,12 @@ body{
     padding: 20px 30px;
     box-shadow: 0 .2rem 2rem rgba(0,0,0,.8);
     border-radius: 50px;
-    width: 460px;
+    width: 468px;
     position: relative;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
+    text-align: center;
 }
 
 .btn{
@@ -145,6 +147,11 @@ body{
     bottom: 115px;
     z-index: 1;
     animation: scale 1s linear infinite;
+    transition: 1s ease;
+}
+
+.triangle-toggle{
+    right: 550px;
     transition: 1s ease;
 }
 
