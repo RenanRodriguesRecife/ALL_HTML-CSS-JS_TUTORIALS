@@ -213,3 +213,36 @@ body{
     bottom: 400px;
     left: 60px;
 }
+
+.sm-rec-1, .sm-rec-2{
+    width: 150px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #2e303b;
+    margin-left: -10px;
+    animation: rec-1 4s linear
+}
+
+.sm-rec-2{
+    margin-left: -30px;
+    margin-top: 2px;
+    animation: rec-2 6s linear;
+}
+
+@keyframes rec-1{
+    from{
+        margin-left: -140px;
+    }
+    to{
+        margin-left: -10px;
+    }
+}
+
+@keyframes rec-1{
+    from{
+        margin-left: -140px;
+    }
+    to{
+        margin-left: -10px;
+    }
+}
