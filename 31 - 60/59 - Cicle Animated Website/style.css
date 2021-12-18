@@ -229,6 +229,7 @@ body{
     animation: rec-2 6s linear;
 }
 
+
 @keyframes rec-1{
     from{
         margin-left: -140px;
@@ -238,11 +239,11 @@ body{
     }
 }
 
-@keyframes rec-1{
+@keyframes rec-2{
     from{
         margin-left: -140px;
     }
     to{
-        margin-left: -10px;
+        margin-left: -30px;
     }
 }
