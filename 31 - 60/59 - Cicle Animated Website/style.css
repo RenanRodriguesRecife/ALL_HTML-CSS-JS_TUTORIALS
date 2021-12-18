@@ -183,3 +183,13 @@ body{
     max-width: 150px;
     text-align: center;
 }
+
+.further-detail p {
+    color: #fff;
+    font-size: .8rem;
+    margin-top: 15px;
+}
+
+.further-detail img{
+    width: 50px;
+}
