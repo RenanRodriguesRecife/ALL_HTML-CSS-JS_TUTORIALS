@@ -46,3 +46,26 @@ body{
 .container{
     padding: 0 100px;
 }
+
+.logo{
+    width: 150px;
+    padding: 10px;
+    background-color: #1f2028;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 .2rem 2rem rgba(0,0,0,.5);
+    margin-top: 20px;
+}
+
+.logo img{
+    width: 40px;
+    margin-right:10px;
+}
+
+.logo h1{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 8px;
+    font-weight: 500;
+}
