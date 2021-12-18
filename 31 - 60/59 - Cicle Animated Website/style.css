@@ -110,3 +110,9 @@ body{
 .btn:focus{
     outline: none;
 }
+
+.main-content h2{
+    font-size: 1.2rem;
+    margin-top: 4px;
+    font-weight: 300;
+}
