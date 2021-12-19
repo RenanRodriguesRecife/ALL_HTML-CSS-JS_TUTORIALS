@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Montserrat:wght@200&family=Open+Sans:wght@600&family=PT+Sans&family=Philosopher&family=Poppins:wght@200;500&family=Raleway:wght@100;200;300&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
 :root{
     --white: #fff;
     --nameColor: #323133;
-    --listColor: #434a53;
-    --lineColor: #e6e8ed;
+    --listColor: #434a54;
+    --lineColor: #e6e9ed;
     --priceColor: #e48e66;
     --btnColor: #0f3443;
 }
@@ -15,10 +17,10 @@
 }
 
 .container{
-    height: 90vh;
+    height: 100vh;
     background-image: url('./img/bg.svg');
     background-repeat: no-repeat;
-    background-position: 0px -420px;
+    background-position: 0px -1020px;
     background-size: cover;
 }
 
@@ -28,7 +30,7 @@ li{
 }
 
 .wrapper{
-    padding: 0 100px;
+    padding: 0px 100px;
 }
 
 h1 {
@@ -37,7 +39,7 @@ h1 {
     font-size: 3rem;
     font-weight: 500;
     color: var(--white);
-    padding: 30px 0 20px 0;
+    padding: 15px 0 12px 0;
 }
 
 .plans{
@@ -82,7 +84,7 @@ ul{
 
 li{
     line-height: 40px;
-    color:var(--lineColor);
+    color:var(--listColor);
 }
 
 .premium-plan{
@@ -145,7 +147,7 @@ button:hover{
     border:none;
 }
 
-@media screen and (max-width: 1128){
+@media screen and (max-width: 1128px){
     .container{
         background: linear-gradient(45deg, #0f3443, #34e89e);
         background-size: cover;
