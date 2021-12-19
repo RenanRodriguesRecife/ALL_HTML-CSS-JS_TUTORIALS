@@ -50,7 +50,7 @@
 .div-open-cursor,
 .div-close-cursor,
 .div-img-cursor{
-    color: var(--while);
+    color: var(--white);
     animation: blick .4 ease infinite;
     opacity: 0;
     font-size: 2rem;
@@ -89,4 +89,34 @@
         opacity: 1;
         transform: rotate(270deg) translate(-30px,200px);
     }
+}
+
+.mouse-options{
+    max-width: 300px;
+    background-color: var(--mouseOptionBgColor);
+    box-shadow: 0 .2rem .4rem rgba(0,0,0,.25);
+    margin-left: 120px;
+    margin-top: -10px;
+    opacity: 0;
+}
+
+.mouse-options p{
+    color: var(--white);
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.divider{
+    border: 1px solid var(--dividerColor);
+    height: 1px;
+    display: block;
+    background-color: var(--dividerColor);
+}
+
+.error-page{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
 }
