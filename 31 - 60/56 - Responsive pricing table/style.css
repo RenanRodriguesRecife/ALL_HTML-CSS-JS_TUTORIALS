@@ -16,9 +16,9 @@
 
 .container{
     height: 90vh;
-    background-image: url('/img/bg.svg');
+    background-image: url('./img/bg.svg');
     background-repeat: no-repeat;
-    background-position: 0 -370px;
+    background-position: 0px -420px;
     background-size: cover;
 }
 
@@ -135,4 +135,37 @@ button{
     transition: box-shadow .3s ease;
     font-weight: 600;
     
+}
+
+
+button:hover{
+    background: linear-gradient(0deg, #0f3443,#34e89e);
+    box-shadow: 0 8px 16px -5px rgba(15, 52, 67,.5);
+    color: var(--white);
+    border:none;
+}
+
+@media screen and (max-width: 1128){
+    .container{
+        background: linear-gradient(45deg, #0f3443, #34e89e);
+        background-size: cover;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    .plans{
+        flex-direction: column;
+    }
+    .basic-plan{
+        right: 0;
+        margin: 10px;
+    }
+    .ultimate-plan{
+        left: 0;
+        margin: 10px;
+    }
+    .premium-plan{
+        height: 530px;
+        width: 300px;
+        margin: 10px;
+    }
 }
