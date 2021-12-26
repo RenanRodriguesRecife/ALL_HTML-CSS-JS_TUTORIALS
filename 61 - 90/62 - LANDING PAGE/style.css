@@ -82,6 +82,14 @@ body{
     color: #2F2325;
 }
 
+.conteudo-principal-escrito-botao:hover{
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-escrito-botao:active{
+    background-color: rgba(105, 86, 86, 0.993);
+}
+
 .conteudo-principal-imagem{
     height: 430px;
 }
