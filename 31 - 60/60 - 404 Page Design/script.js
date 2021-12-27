@@ -44,3 +44,37 @@ setTimeout(() =>{
     errorPage.style.opacity = "1";
 }, 14600);
 
+function divOpenTyping(){
+    divOpen.innerHTML += divOpenData.charAt(currentIndex1);
+    currentIndex1++;
+    setTimeout(divOpenTyping, animationSpeed);
+    currentIndex1 === divOpenData.length ? removeCursor(divOpenCursor) : null;
+}
+
+function divImgTyping(){
+    divImg.innerHTML += divImgData.charAt(currentIndex2);
+    currentIndex2++;
+    setTimeout(divImgTyping, animationSpeed);
+    currentIndex2 === divImgData.length ? removeCursor(divImgCursor) : null;
+}
+
+
+function divCloseTyping(){
+    divClose.innerHTML += divCloseData.charAt(currentIndex3);
+    currentIndex3++;
+    setTimeout(divCloseTyping, animationSpeed);
+    currentIndex3 === divCloseData.length ? removeCursor(divCloseCursor) : null;
+}
+
+function removeCursor(cursor){
+    cursor.style.opacity = 0;
+    cursor.style.animation = "none";
+}
+
+function allCall(){
+    setTimeout(divOpenTyping, 100);
+    setTimeout(divImgTyping, 1200);
+    setTimeout(divCloseTyping, 6700);
+}
+
+allCall();
