@@ -18,6 +18,16 @@
         background: lightblue;
     }
 
+    .container{
+        margin: auto;
+        max-width: 1000px;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
     .polaroid{
         background: white;
         padding: 15px 15px 40px;
@@ -29,19 +39,12 @@
         object-fit: cover;
     }
 
-    .container{
-        margin: auto;
-        max-width: 1000px;
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 20px;
-        justify-content: center;
-    }
+    
 </style>
 <body>
     <div class="container">
         <div class="polaroid">
-            <img src="https://picsum.photos/800/800" alt="photo">
+            <img class="photo" src="https://picsum.photos/800/800" alt="photo">
         
             <div class="caption">
                 <h2>Somewhare</h2>
