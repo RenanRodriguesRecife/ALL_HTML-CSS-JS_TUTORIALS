@@ -120,3 +120,44 @@
     transform: translateX(-50%);
     opacity: 0;
 }
+
+.error-page h1{
+    line-height: 1em;
+    color:var(--h1Color);
+    font-weight: bold;
+    font-size: 16.675rem;
+    text-shadow: 0px 0px rgb(236,236,236), 0px 1px 0 rgb(228,228,228),
+    0px 2px 0 rgb(219,219,219), 0px 3px 0 rgb(211,211,211),
+    0px 4px 0 rgb(202, 202, 202), 0px 5px 0 rgb(192, 193, 193),
+    0px 6px 0 rgb(185, 185, 185), 0px 7px 0 rgb(176, 176, 176),
+    0px 8px 0 rgb(168, 168, 168), 0px 9px 0 rgb(159, 159, 159),
+    0px 10px 0 rgb(150, 150, 150), 0px 11px 0 rgb(142, 142, 142),
+    0px 12px 0 rgb(133, 133, 133), 0px 13px 0 rgb(125, 125, 125),
+    0px 14px 15px rgb(0, 0, 0, 1), 0px 16px 1px rgb(0, 0, 0, 0.5),
+    0px 0px 15px rgba(0,0,0,0.2);
+    margin-top: 100px;
+}
+
+.error-page p{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--pColor);
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.error-page a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--aColor);
+    color: var(--white);
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
