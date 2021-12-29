@@ -161,7 +161,7 @@ img{
 }
 
 .btn:hover{
-    transform: scale(0.96deg);
+    transform: scale(0.96);
 }
 
 .flex{
