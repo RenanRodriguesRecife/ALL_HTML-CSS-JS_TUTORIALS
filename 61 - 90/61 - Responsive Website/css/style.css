@@ -123,6 +123,9 @@ img{
     left: 0;
     background: #fff;
     transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    transform: skewY(-3deg);
 }
 
 /* Utilities */
