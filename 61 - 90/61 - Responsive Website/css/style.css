@@ -81,8 +81,23 @@ img{
 }
 
 .showcase .grid{
+    overflow: hidden;
     grid-template-columns:  55% 45%;
     gap: 30px;
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-conetrol{
+    margin: 30px 0;
 }
 
 /* Utilities */
@@ -91,6 +106,15 @@ img{
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
 }
 
 .flex{
