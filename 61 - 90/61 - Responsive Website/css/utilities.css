@@ -99,3 +99,46 @@
 .m-5{
     margin: 4rem;
 }
+
+/* Padding */
+
+.py-1{
+    padding: 1rem;
+}
+
+.py-2{
+    padding: 1.5rem;
+}
+
+.py-3{
+    padding: 2rem;
+}
+
+.py-4{
+    padding: 3rem;
+}
+
+.py-5{
+    padding: 4rem;
+}
+
+
+.p-1{
+    padding: 1rem;
+}
+
+.p-2{
+    padding: 1.5rem;
+}
+
+.p-3{
+    padding: 2rem;
+}
+
+.p-4{
+    padding: 3rem;
+}
+
+.p-5{
+    padding: 4rem;
+}
