@@ -35,3 +35,16 @@ p{
 img{
     width: 100%;
 }
+
+.navbar{
+    background-color: #047ead;
+    color: #fff;
+    height: 70px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
