@@ -35,6 +35,14 @@
     transform: scale(0.96);
 }
 
+/* background and colored buttuns */
+.bg-primary,
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
 .text-center{
     text-align: center;
 }
