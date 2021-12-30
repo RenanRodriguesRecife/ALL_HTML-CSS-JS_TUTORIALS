@@ -191,6 +191,11 @@ img{
 }
 
 
+.features-sub-head img{
+    width: 300px;
+    justify-self: flex-end;
+}
+
 /* Footer */
 .footer .social a{
     margin: 0 10px;
