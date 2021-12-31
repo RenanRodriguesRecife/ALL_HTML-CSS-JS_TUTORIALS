@@ -69,6 +69,23 @@
     color: #fff;
 }
 
+/* text color */
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-secondary{
+    color: var(--secondary-color);
+}
+
+.text-dark{
+    color: var(--dark-color);
+}
+
+.text-light{
+    color: var(--light-color);
+}
+
 /* Text sizes */
 .lead{
     font-size: 20px;
