@@ -4,5 +4,8 @@ const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
 
 about.addEventListener('click', ()=>{
-    new WinBox()
+    const aboutBox = new WinBox({
+        title: 'About Me',
+        background: '#00aa00',
+    })
 })
