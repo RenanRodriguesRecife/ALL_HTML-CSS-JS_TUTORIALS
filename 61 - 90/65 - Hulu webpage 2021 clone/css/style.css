@@ -31,6 +31,12 @@ img{
     width: 100%;
 }
 
+.btn{
+    
+}
+
+/* Header */
+
 .header{
     height: 530px;
     background: url(../img/header.jpg) no-repeat center center / cover;
@@ -55,4 +61,23 @@ img{
 .header .logo{
     width: 270px;
     margin: 20px 0;
+}
+
+.header .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header .header-text-1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header .header-text-2{
+    font-size: 18px;
+    margin: 25px 0;
+
 }
