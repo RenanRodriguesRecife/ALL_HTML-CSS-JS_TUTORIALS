@@ -69,3 +69,18 @@ nav ul li{
 .hidden{
     display:none;
 }
+
+.cursor{
+    font-weight: 700;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from,
+    to{
+        color: transparent;
+    }
+    50%{
+        color: var(--text-color);
+    }
+}
