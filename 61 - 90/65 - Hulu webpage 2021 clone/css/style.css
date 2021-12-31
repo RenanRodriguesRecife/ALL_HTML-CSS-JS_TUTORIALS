@@ -170,7 +170,12 @@ h4{
 
 /* Categories */
 .categories{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 90px 40px;
 }
 
 /* Media Queries */
