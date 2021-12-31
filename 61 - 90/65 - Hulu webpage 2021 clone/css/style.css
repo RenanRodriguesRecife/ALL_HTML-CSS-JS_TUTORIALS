@@ -35,3 +35,24 @@ img{
     height: 530px;
     background: url(../img/header.jpg) no-repeat center center / cover;
 }
+
+.header nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+.header nav .login-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header .logo{
+    width: 270px;
+    margin: 20px 0;
+}
