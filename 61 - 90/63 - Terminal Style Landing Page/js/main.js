@@ -14,7 +14,7 @@ about.addEventListener('click', ()=>{
         bottom: 50,
         left: 50,
         mount: aboutContent,
-<<<<<<< HEAD
+
     })
 })
 
@@ -30,7 +30,6 @@ contact.addEventListener('click', ()=>{
         bottom: 50,
         left: 250,
         mount: contactContent,
-=======
->>>>>>> 5848c1a3e2dcbc4c8dd1286f8ede566b35f311d2
+
     })
 })
