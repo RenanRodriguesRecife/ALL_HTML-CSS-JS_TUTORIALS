@@ -32,7 +32,23 @@ img{
 }
 
 .btn{
-    
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    min-width: 135px;
+    padding: 20px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 14px;
+    border:none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-cta:hover{
+    opacity: 0.8;
 }
 
 /* Header */
