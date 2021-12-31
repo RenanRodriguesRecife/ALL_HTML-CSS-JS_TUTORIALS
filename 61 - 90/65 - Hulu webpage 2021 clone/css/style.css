@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, boty{
+    font-family: 'Rubik',sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.7;
+    overflow-x:hidden; 
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ccc;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+}
