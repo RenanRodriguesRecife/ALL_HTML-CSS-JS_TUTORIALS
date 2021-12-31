@@ -51,6 +51,12 @@ img{
     opacity: 0.8;
 }
 
+.legal-text{
+    font-size: 10px;
+    color: #ccc;
+    margin-top: 20px;
+}
+
 /* Header */
 
 .header{
