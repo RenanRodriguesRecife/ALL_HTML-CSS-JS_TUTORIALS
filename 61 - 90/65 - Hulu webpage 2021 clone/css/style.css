@@ -148,6 +148,15 @@ h4{
     );
 }
 
+.sub-header > div:last-of-type{
+    justify-self: end;
+    align-self: end;
+}
+
+.sub-header > div:last-of-type .sub-link{
+    text-align: center;
+}
+
 /* Media Queries */
 @media (max-width: 768px){
     .header .login{
