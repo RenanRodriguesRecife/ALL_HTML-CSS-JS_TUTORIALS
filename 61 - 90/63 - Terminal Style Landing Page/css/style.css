@@ -37,6 +37,16 @@ a {
     text-decoration: none;
 }
 
+.container{
+    max-width: 600px;
+    margin: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .hidden{
     display:none;
 }
