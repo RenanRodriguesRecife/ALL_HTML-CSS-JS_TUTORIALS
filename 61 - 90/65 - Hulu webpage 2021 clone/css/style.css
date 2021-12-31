@@ -62,6 +62,17 @@ h4{
     opacity: 0.8;
 }
 
+.btn-outline{
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline:hover{
+    color: #fff;
+    border-color: #ccc;
+}
+
 .legal-text{
     font-size: 10px;
     color: #ccc;
