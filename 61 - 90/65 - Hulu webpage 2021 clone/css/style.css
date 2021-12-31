@@ -87,6 +87,17 @@ h4{
     text-decoration: underline;
 }
 
+.text-xl{
+    font-size:70px;
+    font-weight: bold;
+}
+
+.sub-text{
+    max-width: 850px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
 /* Header */
 
 .header{
@@ -155,6 +166,11 @@ h4{
 
 .sub-header > div:last-of-type .sub-link{
     text-align: center;
+}
+
+/* Categories */
+.categories{
+
 }
 
 /* Media Queries */
