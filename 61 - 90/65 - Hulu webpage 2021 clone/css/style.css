@@ -30,3 +30,8 @@ ul{
 img{
     width: 100%;
 }
+
+.header{
+    height: 530px;
+    background: url(../img/header.jpg) no-repeat center center / cover;
+}
