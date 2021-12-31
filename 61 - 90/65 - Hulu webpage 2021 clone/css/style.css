@@ -178,6 +178,19 @@ h4{
     padding: 90px 40px;
 }
 
+.categories .covers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.categories .covers > div{
+    height: 500px;
+    width: 300px;
+    position: relative;
+}
+
 /* Media Queries */
 @media (max-width: 768px){
     .header .login{
