@@ -31,6 +31,12 @@ img{
     width: 100%;
 }
 
+h4{
+    color: #00ed82;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
 .btn{
     display: inline-block;
     background: #fff;
