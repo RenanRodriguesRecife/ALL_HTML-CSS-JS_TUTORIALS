@@ -1,0 +1,38 @@
+:root{
+    --white:#fff;
+    --bgColor:#f8f8ff;
+    --h1Color: #fc6e51;
+    --propertiesBgColor: #ffce54;
+    --buttonBgColor: #ccd1d9;
+    --codeNameColor: #d8334a;
+    --codeColor:#434a54;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+.container{
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+}
+
+h1{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    color: var(--h1Color);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+}
