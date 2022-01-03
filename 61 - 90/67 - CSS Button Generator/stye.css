@@ -1,0 +1,16 @@
+:root{
+    --white:#fff;
+    --bgColor:#f8f8ff;
+    --h1Color: #fc6e51;
+    --propertiesBgColor: #ffce54;
+    --buttonBgColor: #ccd1d9;
+    --codeNameColor: #d8334a;
+    --codeColor:#434a54;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
