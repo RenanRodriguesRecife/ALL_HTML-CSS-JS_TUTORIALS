@@ -80,3 +80,70 @@ input[type="number"]{
     display: inline-block;
 }
 
+#border{
+    opacity: 0;
+}
+
+.left{
+    margin: 0;
+}
+
+.right{
+    margin-left: 18px;
+}
+
+input:first-child{
+    margin-top: 0;
+}
+
+input:focus, select:focus{
+    outline:none;
+}
+
+.button{
+    background-color: var(--buttonBgColor);
+}
+
+button{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.buttons a{
+    text-decoration: none;
+    background-color: #48cfad;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-radius: 50px;
+    color: var(--white);
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top:50px;
+}
+
+.html,
+.css{
+    color: var(--codeNameColor);
+    opacity: 0;
+}
+
+.html{
+    padding-top: 10px;
+}
+
+#html-code,
+#css-code{
+    padding-left: 20px;
+    color:var(--codeColor);
+}
+
+.css{
+    margin-top: 30px;
+    padding-top: 10px;
+}
