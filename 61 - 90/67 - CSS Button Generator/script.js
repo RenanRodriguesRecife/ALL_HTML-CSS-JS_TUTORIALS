@@ -24,3 +24,20 @@ let generateCode = document.getElementById("generateCode");
 
 let html = document.querySelector(".html");
 let css = document.querySelector(".css");
+
+//code
+let htmlCode = document.getElementById("html-code");
+let csCode = document.getElementById("css-code");
+
+let cssCode = "";
+let bColor = "";
+let tColor = "";
+let tTransform = "";
+let tPadding = "";
+let lPadding = "";
+let bPadding = "";
+let rPadding = "";
+let tLeftRadius = "";
+let bLeftRadius = "";
+let bRightRadius = "";
+let borderProp = "";
