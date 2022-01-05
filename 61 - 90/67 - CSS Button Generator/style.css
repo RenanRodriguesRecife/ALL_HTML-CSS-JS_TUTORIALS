@@ -71,12 +71,12 @@ input[type="radio"]{
     width: 30px;
 }
 
-input[type="border"]:last-child{
+input[name="border"]:last-child{
     margin-left: 40px;
 }
 
 input[type="number"]{
-    width: 47%;
+    width: 46%;
     display: inline-block;
 }
 
