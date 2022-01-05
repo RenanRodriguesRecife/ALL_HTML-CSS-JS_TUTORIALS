@@ -36,3 +36,47 @@ h1{
     text-align: center;
     margin-top: 20px;
 }
+
+.properties, .button{
+    height: 83vh;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.button{
+    height: 40vh;
+}
+
+.properties{
+    background-color: var(--propertiesBgColor);
+}
+
+.label{
+    margin-right: 30px;
+    color: #434a54;
+    font-size: 1.2rem;
+}
+
+input, select{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: .9rem;
+    border:none;
+    margin-top: 15px;
+}
+
+input[type="radio"]{
+    width: 30px;
+}
+
+input[type="border"]:last-child{
+    margin-left: 40px;
+}
+
+input[type="number"]{
+    width: 47%;
+    display: inline-block;
+}
+
