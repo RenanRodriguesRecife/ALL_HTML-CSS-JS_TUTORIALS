@@ -14,3 +14,13 @@ let blRad = document.getElementById("blRad");
 let brRad = document.getElementById("brRad");
 
 let btn = document.getElementById("btn");
+
+//border
+let border = document.getElementsByName("border");
+let borderInp = document.getElementById("border");
+
+//generate code button
+let generateCode = document.getElementById("generateCode");
+
+let html = document.querySelector(".html");
+let css = document.querySelector(".css");
