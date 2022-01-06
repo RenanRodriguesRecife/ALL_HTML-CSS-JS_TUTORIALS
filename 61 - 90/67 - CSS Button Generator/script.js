@@ -41,3 +41,10 @@ let tLeftRadius = "";
 let bLeftRadius = "";
 let bRightRadius = "";
 let borderProp = "";
+
+
+btnText.addEventListener('input', function(){
+    btn.innerText = btnText.value;
+    button = `<button>${btnText.value}</button>`
+})
+
