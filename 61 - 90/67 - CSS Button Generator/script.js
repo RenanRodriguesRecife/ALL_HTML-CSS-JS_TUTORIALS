@@ -118,6 +118,9 @@ borderInp.addEventListener('click',function(){
 border[1].addEventListener('click',function(){
     btn.style.border = "none";
     borderInp.style.opacity = 0;
-    borderProp = "nome";
+    borderProp = "none";
 })
 
+const filterProps = (props, value) => {
+    return value === "" ? : value === "px" ? "" : `${props}:${value};\n`;
+}
