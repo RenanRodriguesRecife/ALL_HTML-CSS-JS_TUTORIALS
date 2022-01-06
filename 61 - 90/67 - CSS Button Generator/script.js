@@ -85,4 +85,23 @@ lPad.addEventListener('input',function(){
         btn.style.paddingLeft = `${lPad.value}px`;
 })
 
+tlRad.addEventListener('input', function(){
+    tLeftRadius = `${tlRad.value}px`;
+    btn.style.borderTopLeftRadius = `${tlRad.value}`;
+})
+
+trRad.addEventListener('input', function(){
+    tRightRadius = `${trRad.value}px`;
+    btn.style.borderTopRightRadius = `${trRad.value}`;
+})
+
+blRad.addEventListener('input',function(){
+    bLeftRadius = `${blRad.value}px`;
+    btn.style.borderBottomLeftRadius = `${blRad.value}px`
+})
+
+brRad.addEventListener('input', function(){
+    bRightRadius = `${brRad.value}px`;
+    btn.style.borderBottomRightRadius = `${brRad.value}px`;
+})
 
