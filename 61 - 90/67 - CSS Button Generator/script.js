@@ -87,12 +87,12 @@ lPad.addEventListener('input',function(){
 
 tlRad.addEventListener('input', function(){
     tLeftRadius = `${tlRad.value}px`;
-    btn.style.borderTopLeftRadius = `${tlRad.value}`;
+    btn.style.borderTopLeftRadius = `${tlRad.value}px`;
 })
 
 trRad.addEventListener('input', function(){
     tRightRadius = `${trRad.value}px`;
-    btn.style.borderTopRightRadius = `${trRad.value}`;
+    btn.style.borderTopRightRadius = `${trRad.value}px`;
 })
 
 blRad.addEventListener('input',function(){
@@ -125,3 +125,24 @@ const filterProps = (props, value) => {
     return value === "" ? "" : value === "px" ? "" : `${props}:${value};\n`;
 }
 
+generateCode.addEventListener("click",function(){
+    cssCode = "background-color: " +
+    bColor +
+    ";\n" +
+    "color: " +
+    `${tColor !== "" ? tColor : "000"};\n` +
+    filterProps("text-transform",tTransform) +
+    filterProps("padding-top",tPadding) +
+    filterProps("padding-left",lPadding) +
+    filterProps("padding-right", rPadding) +
+    filterProps("border-top-left-radius", tLeftRadius) +
+    filterProps("border-top-right-radius", tRightRadius) +
+    filterProps("border-bottom-left-radius",bLeftRadius) +
+    filterProps("border-bottom-right-radius",bRightRadius) +
+    filterProps("border",borderProp);
+    cssCode = `button {${cssCode}}`;
+    html.style.opacity = 1;
+    css.style.opacity = 1;
+    htmlCode.innerHTML = button;
+    csCode.innerText = cssCode;
+})
