@@ -48,3 +48,29 @@ btnText.addEventListener('input', function(){
     button = `<button>${btnText.value}</button>`
 })
 
+// 
+
+bgColor.addEventListener('input',function(){
+    bColor = bgColor.value;
+    btn.style.backgroundColor = bgColor.value;
+})
+
+txtColor.addEventListener('input',function(){
+    tColor = txtColor.value;
+    btn.style.color = txtColor.value;
+})
+
+txtTransform.addEventListener('input',function(){
+    tTransform = txtTransform.value;
+    btn.style.textTransform = txtTransform.value;
+})
+
+tPad.addEventListener('input',function(){
+    tPadding = `${tPad.value}px`;
+    btn.style.paddingTop = `${tPad.value}px`;
+})
+
+rPad.addEventListener('input',function(){
+    rPadding = `${rPad.value}px`;
+    btn.style.paddingRight = `${rPad.value}px`;
+})
