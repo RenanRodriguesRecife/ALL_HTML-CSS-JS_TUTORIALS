@@ -38,6 +38,7 @@ let lPadding = "";
 let bPadding = "";
 let rPadding = "";
 let tLeftRadius = "";
+let tLRingtRadius = "";
 let bLeftRadius = "";
 let bRightRadius = "";
 let borderProp = "";
@@ -143,6 +144,6 @@ generateCode.addEventListener("click",function(){
     cssCode = `button {${cssCode}}`;
     html.style.opacity = 1;
     css.style.opacity = 1;
-    htmlCode.innerHTML = button;
+    htmlCode.innerText = button;
     csCode.innerText = cssCode;
 })
