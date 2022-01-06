@@ -122,5 +122,6 @@ border[1].addEventListener('click',function(){
 })
 
 const filterProps = (props, value) => {
-    return value === "" ? : value === "px" ? "" : `${props}:${value};\n`;
+    return value === "" ? "" : value === "px" ? "" : `${props}:${value};\n`;
 }
+
