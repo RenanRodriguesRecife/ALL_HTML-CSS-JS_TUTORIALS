@@ -74,3 +74,15 @@ rPad.addEventListener('input',function(){
     rPadding = `${rPad.value}px`;
     btn.style.paddingRight = `${rPad.value}px`;
 })
+
+bPad.addEventListener('input',function(){
+    bPadding = `${bPad.value}px`;
+    btn.style.paddingBottom = `${bPad.value}px`;
+})
+
+lPad.addEventListener('input',function(){
+        lPadding = `${lPad.value}px`;
+        btn.style.paddingLeft = `${lPad.value}px`;
+})
+
+
