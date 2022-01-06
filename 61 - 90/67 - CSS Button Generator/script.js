@@ -105,3 +105,19 @@ brRad.addEventListener('input', function(){
     btn.style.borderBottomRightRadius = `${brRad.value}px`;
 })
 
+border[0].addEventListener('click',function(){
+    borderInp.style.opacity = 1;
+})
+
+borderInp.addEventListener('click',function(){
+    btn.style.border = borderInp.value;
+    borderProp = borderInp.value;
+})
+
+
+border[1].addEventListener('click',function(){
+    btn.style.border = "none";
+    borderInp.style.opacity = 0;
+    borderProp = "nome";
+})
+
