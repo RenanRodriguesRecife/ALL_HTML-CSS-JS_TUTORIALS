@@ -191,6 +191,31 @@ h4{
     position: relative;
 }
 
+.categories .cover-grad{
+    background: linear-gradient(
+        156.82deg,
+        rgba(0,0,0,0.6) 4.58%,
+        rgba(0,0,0,0) 68.61%),
+        linear-gradient(24.5deg, rgba(0,0,0,0.2) 4.71%, rgba(0,0,0,0) 71.49%
+    );
+}
+
+.cover-1{
+    background: url('../img/cover-1.jpg') no-repeat center center/cover;
+}
+
+.cover-2{
+    background: url('../img/cover-2.jpg') no-repeat center center/cover;
+}
+
+.cover-3{
+    background: url('../img/cover-3.jpg') no-repeat center center/cover;
+}
+
+.cover-4{
+    background: url('../img/cover-4.jpg') no-repeat center center/cover;
+}
+
 /* Media Queries */
 @media (max-width: 768px){
     .header .login{
