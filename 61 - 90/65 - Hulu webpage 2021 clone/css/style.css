@@ -345,6 +345,20 @@ h4{
     margin-right: 25px;
 }
 
+/* Modal */
+.modal{
+    /* display: none */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+
+
 /* Media Queries */
 
 @media(max-width: 1100px){
