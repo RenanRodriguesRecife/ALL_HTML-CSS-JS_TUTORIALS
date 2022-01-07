@@ -109,6 +109,8 @@ h4{
     display: flex;
     justify-content: flex-end;
     padding: 20px 40px;
+    z-index: 2;
+    position: relative;
 }
 
 .header nav .login-btn{
@@ -142,6 +144,22 @@ h4{
 .header .header-text-2{
     font-size: 18px;
     margin: 25px 0;
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.76)15.54%,
+        rgba(0,0,0,0.192)60.23%,
+        rgba(0,0,0,8e-5)100%
+    );
 }
 
 /* Sub Header */
@@ -205,19 +223,26 @@ h4{
     );
 }
 
-.cover-1{
+.categories .cover-text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.categories .cover-1{
     background: url('../img/cover-1.jpg') no-repeat center center/cover;
 }
 
-.cover-2{
+.categories .cover-2{
     background: url('../img/cover-2.jpg') no-repeat center center/cover;
 }
 
-.cover-3{
+.categories .cover-3{
     background: url('../img/cover-3.jpg') no-repeat center center/cover;
 }
 
-.cover-4{
+.categories .cover-4{
     background: url('../img/cover-4.jpg') no-repeat center center/cover;
 }
 
