@@ -392,6 +392,18 @@ h4{
     right: 20px;
 }
 
+.modal .modal-footer{
+    background: #f7f7f9;
+    color: #333;
+    padding: 20px 0;
+    border-top: #eee 1px solid;
+    text-align: center;
+}
+
+.modal .modal-footer a{
+    color: steelblue;
+}
+
 /* Media Queries */
 
 @media(max-width: 1100px){
