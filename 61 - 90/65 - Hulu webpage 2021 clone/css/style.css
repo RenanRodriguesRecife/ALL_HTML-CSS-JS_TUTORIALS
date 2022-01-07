@@ -413,4 +413,8 @@ h4{
         left: 30px;
         margin-top: 60px;
     }
+
+    .footer-lists{
+        flex-direction: column;
+    }
 }
