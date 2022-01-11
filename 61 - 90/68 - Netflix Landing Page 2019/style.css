@@ -136,6 +136,10 @@ img{
     cursor: pointer;
 }
 
+.tab-border{
+    border-bottom: var(--primary-color) 4px solid;
+}
+
 /* Container */
 .container{
     max-width: 70%;
