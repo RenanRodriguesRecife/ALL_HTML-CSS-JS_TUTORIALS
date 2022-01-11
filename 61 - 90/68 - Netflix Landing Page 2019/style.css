@@ -187,6 +187,11 @@ img{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+.text-md{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 .text-lg{
     font-size: 1.8rem;
     margin-bottom: 1rem;
