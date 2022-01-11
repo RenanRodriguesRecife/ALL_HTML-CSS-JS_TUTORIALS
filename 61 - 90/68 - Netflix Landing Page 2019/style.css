@@ -63,6 +63,17 @@ img{
     transform: translate(-50%, -50%);
 }
 
+.showcase-content{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+
 /* Button */
 
 .btn{
@@ -93,3 +104,10 @@ img{
     padding: 1.5rem 2.1rem;
     text-transform: uppercase;
 }
+
+.btn-lg{
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+}
+
