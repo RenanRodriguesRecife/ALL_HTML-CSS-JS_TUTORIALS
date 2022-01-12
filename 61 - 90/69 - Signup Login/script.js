@@ -21,3 +21,19 @@ login.addEventListener('click',function(){
     signupActivator.style.backgroundColor = '#2f2f2f';
     loginActiator.style.backgroundColor = '#c03546';
 })
+
+
+signup.addEventListener('click',function(){
+    loginForm.style.opacity = 0;
+    loginForm.style.visibility = 'hidden';
+    loginMessage.style.opacity = 1;
+    loginMessage.style.visibility = 'visible';
+
+    signupForm.style.opacity = 1;
+    signupForm.style.visibility = 'visible';
+    signupMessage.style.opacity = 0;
+    signupMessage.style.visibility = 'hidden';
+
+    signupActivator.style.backgroundColor = '#c03546';
+    loginActiator.style.backgroundColor = '#2f2f2f';
+})
