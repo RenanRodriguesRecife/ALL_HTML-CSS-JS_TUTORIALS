@@ -1,0 +1,25 @@
+:root{
+    --darkBlackShadeColor: #1e1e1e;
+    --lightBlackShadeColor: #2f2f2f;
+    --lineColor: #707070;
+    --headingColor: #2f89fc;
+    --inputBorderColor: #707070;
+    --btnColor: #ffce54;
+    --btnTextColor: #1e1e1e;
+    --activatorColor: #c03546;
+    --h2Color: #707070;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+
+.container{
+    background-color: var(--darkBlackShadeColor);
+    height: 100vh;
+    padding: 30px 50px;
+}
+
