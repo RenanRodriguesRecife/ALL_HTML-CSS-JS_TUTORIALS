@@ -23,3 +23,38 @@
     padding: 30px 50px;
 }
 
+.forms, .activators{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.forms > div{
+    height: calc(95vh - 10px);
+    width: 50%;
+    position: relative;
+    top: -30px;
+}
+
+.signup{
+    background-color: var(--lightBlackShadeColor);
+}
+
+.login{
+    background-color: var(--darkBlackShadeColor);
+}
+
+.activators div{
+    width: 50%;
+    height: 10px;
+    position: relative;
+    bottom: -5px;
+}
+
+.signup-activator{
+    background-color: var(--activatorColor);
+}
+
+.login-activator{
+    background-color: var(--lightBlackShadeColor);
+}
