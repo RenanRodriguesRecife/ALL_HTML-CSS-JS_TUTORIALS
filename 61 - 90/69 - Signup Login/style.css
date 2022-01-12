@@ -58,3 +58,100 @@
 .login-activator{
     background-color: var(--lightBlackShadeColor);
 }
+
+.lines div{
+    position: absolute;
+    background-color: var(--lineColor);
+}
+
+.hr-line{
+    height: 1px;
+}
+
+.vr-line{
+    width: 1px;
+    animation: vrAnimate 2s ease forwards;
+}
+
+@keyframes vrAnimate{
+    from{
+        height: 0vh;
+    }
+    to{
+        height: 100vh;
+    }
+}
+
+.line-1{
+    width: calc(100% + 50px);
+    top: 30px;
+    left: -50px;
+}
+
+.line-2{
+    width: calc(100% + 50px);
+    bottom: calc(5vh + 30px - 10px -10px);
+    left: -50px;
+}
+
+.line-3{
+    top: 0;
+    left: 50px;
+}
+
+.line-4{
+    top: 0;
+    right: 50px;
+}
+
+.line-5{
+    top: 0;
+    left: 50%;
+}
+
+.line-6{
+    width: calc(50% + 50px);
+    left: -50px;
+    top: 180px;
+    animation: brAnimateLine6 2s ease forwards;
+}
+
+@keyframes brAnimateLine6{
+    from{
+        width: 0;
+    }to{
+        width: calc(50% + 50px);
+    }
+}
+
+.line-7{
+    width: calc(100% + 50px);
+    left: -50px;
+    top: 280px;
+}
+
+.line-8{
+    width: calc(100% + 50px);
+    left: -50px;
+    top: 380px;
+}
+
+.line-9{
+    width: calc(100% + 50px);
+    left: -50px;
+    top: 480px;
+}
+
+.line-1, .line-2,.line-7, .line-8, .line-9{
+    animation: brAnimate 2s ease forwards;
+}
+
+@keyframes brAnimate{
+    from{
+        width: 0;
+    }to{
+        width: calc(100% + 50px);
+    }
+}
+
+
