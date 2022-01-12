@@ -207,3 +207,58 @@ button{
     font-size: 1.3rem;
 }
 
+h2{
+    position: relative;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: var(--h2Color);
+    top: -250px;
+    text-align: center;
+    z-index: 2;
+}
+
+.signup h2 {
+    opacity: 0;
+}
+
+.login .form{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.login h2{
+    opacity: 1;
+    visibility: visible;
+}
+
+.login h1{
+    margin-top: 180px;
+}
+
+.login input{
+    background-color: var(--darkBlackShadeColor);
+}
+
+.login input:nth-child(1){
+    margin-top: 50px;
+}
+
+.login input:nth-child(2){
+    margin-top: 40px;
+}
+
+.signup, .login{
+    cursor:pointer;
+}
+
+.signup .form, .login .form{
+    transition: 1s ease;
+}
+
+.signup h2, .login h2{
+    transition: 1s ease;
+}
+
+.signup-activator, .login-activator{
+    transition: 1s ease;
+}
