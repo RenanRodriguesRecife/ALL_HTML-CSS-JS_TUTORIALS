@@ -154,4 +154,23 @@
     }
 }
 
+.signup h1, .login h1{
+    color: var(--headingColor);
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
 
+input{
+    width: 450px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 3px solid var(--inputBorderColor);
+    background-color: var(--lightBlackShadeColor);
+    position:relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    color:var(--h2Color);
+}
