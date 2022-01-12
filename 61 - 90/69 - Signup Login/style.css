@@ -174,3 +174,36 @@ input{
     transform: translateX(-50%);
     color:var(--h2Color);
 }
+
+input:focus{
+    outline:none;
+}
+
+.signup input:nth-child(1){
+    margin-top: 40px;
+}
+
+.signup input:nth-child(2){
+    margin-top: 50px;
+}
+
+.signup input:nth-child(3){
+    margin-top: 50px;
+}
+
+button{
+    display: block;
+    background-color:var(--btnColor);
+    color: var(--btnTextColor);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    font-size: 1.3rem;
+}
+
