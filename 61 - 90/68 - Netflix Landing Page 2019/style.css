@@ -303,6 +303,10 @@ img{
     text-transform: uppercase;
 }
 
+.btn-icon{
+    margin-left:1rem;
+}
+
 @media(max-width: 960px){
     .showcase{
         height: 70vh;
