@@ -17,3 +17,31 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+body{
+    background-color: var(--bgColor);
+    overflow-x:hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.logo,
+nav a,
+.small-para,
+.small-para span,
+.large-para,
+.btn,
+input,
+footer p{
+    font-family: 'Raleway',sans-serif;
+}
+
+.container{
+    padding: 0 100px;
+}
