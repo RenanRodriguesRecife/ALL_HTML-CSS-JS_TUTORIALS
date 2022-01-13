@@ -1,0 +1,19 @@
+:root{
+    --white: #fff;
+    --bgColor: #faf4d0;
+    --textColor: #1f1f1f;
+    --btnColor: #ba6c65;
+    --footerColor: #323133;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--textColor);
+    font-family: 'Saol Display', sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
