@@ -14,9 +14,9 @@
     font-family: 'Saol Display', sans-serif;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     display: none;
-}
+} */
 
 body{
     background-color: var(--bgColor);
@@ -76,4 +76,74 @@ nav li{
 
 nav a{
     font-weight: 500;
+}
+
+/* hero */
+
+.small-para{
+    text-align: center;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 130px;
+}
+
+.hero p{
+    opacity: 0;
+    animation: animateHeroPara 1.5s ease .5s forwards;
+}
+
+.small-para span{
+    font-size: 1rem;
+}
+
+.heading{
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    max-width: 1000px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0;
+    animation: animateHeroHeading 1.5s ease 1s forwards;
+}
+
+.heading span{
+    text-transform: lowercase;
+}
+
+/* images */
+
+.images{
+    height: 90vh;
+    width: 3300px;
+    display: inline-flex;
+    align-items: center;
+    transform: translate3d(0,0,0);
+    margin-top: 30px;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    /* animation: showImages 1s ease 1.5s forwards, moveImages 100% linear 2.7s forwards infinite; */
+}
+
+.images .sm-img{
+    width: 300px;
+}
+
+.images .md-img{
+    width: 380px;
+}
+
+.images .lg-img{
+    width: 430px;
+}
+
+.images img{
+    margin-right: 50px;
 }
