@@ -129,7 +129,7 @@ nav a{
     z-index: -1;
     position: relative;
     opacity: 0;
-    /* animation: showImages 1s ease 1.5s forwards, moveImages 100% linear 2.7s forwards infinite; */
+    animation: showImages 1s ease 1.5s forwards, moveImages 100s linear 2.7s forwards infinite;
 }
 
 .images .sm-img{
@@ -190,7 +190,7 @@ nav a{
     position: relative;
 }
 
-.min-img{
+.main-img{
     width: 400px;
     margin-top: -50px;
 }
