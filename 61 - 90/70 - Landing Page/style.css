@@ -277,3 +277,65 @@ footer p{
     font-size: 1.2rem;
     color:var(--white);
 }
+
+/* Animation */
+
+@keyframes showImages{
+    100%{
+        margin-top: -30px;
+        opacity: 1;
+    }
+}
+
+@keyframes moveImages{
+    100%{
+        transform: translate3d(-1960px,0, 0);
+    }
+}
+
+@keyframes animateHeader{
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes animateHeroPara{
+    100%{
+        opacity: 1;
+        margin-top: 150px;
+    }
+}
+
+@keyframes animateHeroHeading{
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes animateImg1{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+
+@keyframes animateImg3{
+    0%{
+        top: -70px;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: -70px;
+    }
+}
+
