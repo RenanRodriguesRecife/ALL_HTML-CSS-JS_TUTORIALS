@@ -224,3 +224,44 @@ nav a{
     top: -70px;
     animation: animateImg3 8s linear forwards infinite;
 }
+
+/* Newletter */
+.newslatter{
+    margin-top: 200px;
+}
+
+.newslatter .small-para{
+    margin-bottom: 20px;
+}
+
+.newslatter h2{
+    font-size: 3.2rem;
+    text-transform: capitalize;
+    text-align: center;
+    max-width: 450px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.form{
+    margin-top: 30px;
+    text-align: center;
+}
+
+input{
+    border: 2px solid var(--textColor);
+    width: 40%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-right: 50px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    border: 2px solid var(--btnColor);
+}
