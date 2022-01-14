@@ -147,3 +147,80 @@ nav a{
 .images img{
     margin-right: 50px;
 }
+
+
+/* latest collection */
+.latest-collection{
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest-collection .small-para{
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.latest-collection h2{
+    font-size: 3.2rem;
+    max-width: 250px;
+    text-transform: capitalize;
+}
+
+.large-para{
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 50px;
+}
+
+.btn{
+    background-color: var(--btnColor);
+    padding: 15px 30px;
+    color: var(--white);
+    display: inline-block;
+    margin: 50px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.image{
+    position: relative;
+}
+
+.min-img{
+    width: 400px;
+    margin-top: -50px;
+}
+
+.small-img{
+    position: absolute;
+}
+
+.img-1,
+.img-2{
+    width: 150px;
+}
+
+.img-3{
+    width: 150px;
+}
+
+.img-1{
+    right: 350px;
+    top: 0;
+    animation: animateImg1 4s linear forwards infinite;
+}
+
+.img-2{
+    right: 320px;
+    top: 380px;
+}
+
+.img-3{
+    right: -60px;
+    top: -70px;
+    animation: animateImg3 8s linear forwards infinite;
+}
