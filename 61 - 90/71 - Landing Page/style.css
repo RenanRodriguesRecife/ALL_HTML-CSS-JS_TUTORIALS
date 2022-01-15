@@ -73,3 +73,31 @@ nav a{
     text-align: center;
     margin-top: -60px;
 }
+
+.hero-content div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-img{
+    width: 75vh;
+    margin-top: -220px;
+    filter: drop-shadow(.4rem .2rem 1rem rgba(0,0,0,.35));
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.shop-now{
+    background-color: var(--blackShadeColor);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: 15px 30px;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
