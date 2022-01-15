@@ -114,3 +114,26 @@ nav a{
     background-color: var(--yellowShadeColor);
     text-transform: capitalize;
 }
+
+.signup{
+    background-color: var(--white);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    color:var(--yellowShadeColor);
+    margin-top: 60px;
+}
+
+.login{
+    color: var(--white);
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
