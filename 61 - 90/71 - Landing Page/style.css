@@ -22,3 +22,11 @@ li{
 a{
     text-decoration: none;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr .15fr;
+    grid-template-rows:1fr;
+    height: 100vh;
+    overflow: hidden;
+}
