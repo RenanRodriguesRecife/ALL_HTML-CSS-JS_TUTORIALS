@@ -6,3 +6,9 @@ const signupModalClose = document.querySelector(".signup-moda span");
 const loginBtn = document.querySelector(".login");
 const loginForm = document.querySelector(".login-form");
 const loginModalClose = document.querySelector(".login-modal span");
+
+const showCollection = () => {
+    collections.classList.toggle('collections-toggle');
+    chevron.classList.toggle('chevron-toggle');
+}
+
