@@ -60,6 +60,12 @@ nav li{
     line-height: 50px;
 }
 
+nav a{
+    color: var(--blackShadeColor);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
 .summer{
     font-family: 'Brush Script MT', sans-serif;
     color: var(--yellowShadeColor);
@@ -67,4 +73,3 @@ nav li{
     text-align: center;
     margin-top: -60px;
 }
-
