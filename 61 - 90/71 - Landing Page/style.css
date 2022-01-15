@@ -30,3 +30,41 @@ a{
     height: 100vh;
     overflow: hidden;
 }
+
+.left-side{
+    background-color: var(--leftSideBgCOlor);
+    padding: 0 100px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+}
+
+nav li{
+    margin-left: 30px;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--blackShadeColor);
+    line-height: 50px;
+}
+
+.summer{
+    font-family: 'Brush Script MT', sans-serif;
+    color: var(--yellowShadeColor);
+    font-size: 20rem;
+    text-align: center;
+    margin-top: -60px;
+}
+
