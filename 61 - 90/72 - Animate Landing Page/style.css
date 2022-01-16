@@ -141,3 +141,47 @@ nav a{
     font-weight: bolder;
     color: var(--bgColor);
 }
+
+.extra-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.numbers li{
+    margin-left: 30px;
+}
+
+.numbers a{
+    font-size: 1.4rem;
+    color: var(--white);
+    transition: 1s ease;
+}
+
+.btn{
+    color: var(--bgColor);
+    background-color: var(--white);
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    top: -100px;
+}
+
+.slide-2,
+.slide-3{
+    position: absolute;
+    left: -9999px;
+}
+
+.activeLink{
+    font-size: 2rem !important;
+}
