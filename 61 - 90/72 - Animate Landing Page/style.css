@@ -25,7 +25,7 @@ a{
     padding: 0 100px;
 }
 
-.container *{
+.container * {
     z-index: 2;
 }
 
@@ -67,4 +67,77 @@ nav a{
     color: var(--bgColor);
 }
 
+.main-content{
+    position: relative;
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.item{
+    margin-bottom: 40px;
+}
+
+.slide-2 img{
+    width: 400px;
+}
+
+.slide-3 .rating img{
+    width: 18px;
+}
+
+.content{
+    text-transform: uppercase;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.price p{
+    text-align: right;
+    color: var(--bgColor);
+    font-size: 1.4rem;
+}
+
+.item-name{
+    color: var(--bgColor);
+    text-align: center;
+    overflow:hidden;
+}
+
+.item-name::before,
+.item-name::after{
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color:var(--bgColor);
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item-name::before{
+    right: .5rem;
+    margin-left: -50%;
+}
+
+.item-name:after{
+    left: .5rem;
+    margin-right: -50%;
+}
+
+.rating{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rating img{
+    margin-left: 10px;
+    width: 20px;
+}
+
+.general-name{
+    font-size: 10rem;
+    font-weight: bolder;
+    color: var(--bgColor);
+}
