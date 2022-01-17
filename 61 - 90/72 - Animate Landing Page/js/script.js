@@ -20,3 +20,12 @@ const onLoad = () => {
       .fromTo(btn, 1,{opacity: 0},{opacity:1},'start')
 };
 
+const showItem = e => {
+    const itemId = e.id;
+    const activaLinks = document.querySelector('.activaLink');
+    e.classList.add('activeLink')
+    const slides = document.getElementsByClassName('main-content');
+    for(let i=0; i<slides.length;i++){
+        
+    }
+}
