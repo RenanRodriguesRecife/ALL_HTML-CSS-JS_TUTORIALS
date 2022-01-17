@@ -26,6 +26,16 @@ const showItem = e => {
     e.classList.add('activeLink')
     const slides = document.getElementsByClassName('main-content');
     for(let i=0; i<slides.length;i++){
-        
+        if(slides[i].classList.contains(`slide-${itemId}`)){
+            slides[i].style.position = "relative";
+            slides[i].style.left = 0;
+
+            const img = document.querySelector(`.slide-${itemId} img.item`);
+            const price = document.querySelector(`.slide-${itemId} div.price`);
+            const itemName = document.querySelector(`.slide-${itemId} h3.item-name`);
+            const rating = document.querySelector(`.slide-${itemId} div.rating`);
+            const generalName = document.querySelector(`.slide-${itemId} h1.general-name`);
+
+        }
     }
 }
