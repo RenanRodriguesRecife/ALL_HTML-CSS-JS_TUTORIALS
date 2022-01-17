@@ -7,4 +7,9 @@ const onLoad = () => {
     const generalName = document.querySelector(".numbers");
     const numbers = document.querySelector(".numbers");
     const btn = document.querySelector(".btn");
-}
+
+    let t1 = new TimelineLite();
+
+    t1.fromTo(whiteBox, 1,{height: '0vh'},{height: '55vh'})
+};
+
