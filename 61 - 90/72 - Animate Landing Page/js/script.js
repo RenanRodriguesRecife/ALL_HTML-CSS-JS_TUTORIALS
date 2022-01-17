@@ -23,6 +23,7 @@ const onLoad = () => {
 const showItem = e => {
     const itemId = e.id;
     const activaLinks = document.querySelector('.activaLink');
+    activeLinks.classList.remove('activeLink');
     e.classList.add('activeLink')
     const slides = document.getElementsByClassName('main-content');
     for(let i=0; i<slides.length;i++){
@@ -36,6 +37,16 @@ const showItem = e => {
             const rating = document.querySelector(`.slide-${itemId} div.rating`);
             const generalName = document.querySelector(`.slide-${itemId} h1.general-name`);
 
+            let t1 = new TimelineLite();
+
+            t1.fromTo(img, 1,{opacity: 0},{opacity: 1})
+            .fromTo(itemName, 1 ,{opacity: 0},{opacity: 1})
+            .fromTo(rating, 1, {opacity: 0,y:'-20px'},{opacity: 1,y:'0px',ease:Power4.easeOut},'start1')
+            .fromTo(price, 1, {opacity: 0,y:'20px'},{opacity: 1,y:'0px',ease:Power4.easeOut},'start1')
+            .fromTo(generalName, 1, {marginTop: '120px'},{marginTop:'0px',ease:Power4.easeOut},'start1')
+        }else{
+            slides[i].style.position = "relative";
+            slides[i].style.left = '-9999px';
         }
     }
 }
