@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="onLoad()">
     <div class="white-box"></div>
     <div class="container">
         <header>
@@ -80,9 +80,9 @@
 
         <div class="extra-info">
             <ul class="numbers">
-                <li><a href="#" class="activeLink" id="1">01</a></li>
-                <li><a href="#" id="2">02</a></li>
-                <li><a href="#" id="3">03</a></li>
+                <li><a href="#" class="activeLink" id="1" onclick="showItem(this)">01</a></li>
+                <li><a href="#" id="2" onclick="showItem(this)">02</a></li>
+                <li><a href="#" id="3" onclick="showItem(this)">03</a></li>
             </ul>
             <a href="#" class="btn">shop now</a>
         </div>
