@@ -44,6 +44,27 @@
             secure: '',
             semesite: 'none',
         });
+
+
+        // Como buscar um cookie
+        // Para buscar um cookie temos que usar estratégias de 
+        // maniputação de string. Primeiro, dividimos a string com os 
+        // cookies pelo ';'. Segundo, passamos por cada cookie que é 
+        // um par de key=value e novamente dividimos mas agora tomando 
+        // como base o caractere '='. Terceiro, em cada parte do cookie eu 
+        // retiro os espaço em branco no final e no início usando o trim(). 
+        // Por fim, eu verifico se a key é igual o chave do cookie (part[0]),
+        // se for igual eu retorno o cookie;
+
+        function searchCookie(key){
+            const cookies = document.cookie.split(';');
+            for(const cookie of cookies){
+                const parts = cookie.split('=').map((part)=> part.trim());
+                if(key === parts[0]) return ({key, value: parts[1]});
+            }
+            return null;
+        }
+
     </script>
 </body>
 </html>
