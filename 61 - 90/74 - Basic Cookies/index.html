@@ -65,6 +65,22 @@
             return null;
         }
 
+        // Como deletar um cookie
+        // A forma mais simples de deletar um cookie é usando a 
+        // é substituir a data de expiração do cookie
+        // Você vai precisar passar o path e o domain (para a maioria dos navegadores)
+        
+        function deleteToken(key,path,domain){
+            if(searchCookie(key)){
+                document.cookie = key + "=" + 
+                ((path) ? ";path="+path:"")+
+                ((domain)?";domain="+domain:"")+
+                ";expires=Thu, 01 Jan 1970 00:00:01 GMT";
+            }
+        }
+
+        console.log(searchCookie('test2'))
+        deleteToken('test2','/','127.0.0.1')
     </script>
 </body>
 </html>
