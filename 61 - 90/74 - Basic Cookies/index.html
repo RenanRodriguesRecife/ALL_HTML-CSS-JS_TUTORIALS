@@ -7,9 +7,42 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- -->
-</body>
     <script>
-        
+        // Para criar um novo cookie basta atribuir ao atributo cookie
+        // do document uma string com uma sequência de pares key=value separados por ';'
+        // o primeiro par é o nome e o valor do cookie de fato o restante são definições 
+        // do cookie como data de expiração path e etc (os compos de definições estão destacados
+        // em vermelho na imagem abaixo);
+
+        function storeCookie(key, value, options){
+            const cookieOptions = Object.keys(options).map((option)=>{
+                return `${option}=${options[option]}`;
+            }).join(';');
+
+            document.cookie = `${key}=${value};${cookieOptions}`;
+        }
+
+        // expiresIn
+        // Eu criei esse função para extregar o valor do expires no formato correto.
+        // Ela basicamente recebe a quantidade de dias, transforma esses dias em milissegundos,
+        // soma esses dias em ms com a data atual também em milissegundos, atribui esse novo time 
+        // no objeto date pelo setTime e por fim retorna esse date transformado em uma cadeia de caracteres
+        // pelo método toUTCString();
+
+        function expiresIn(days){
+            const date = new Date();
+            const daysInMs = (days * 24 * 60 * 60 * 1000);
+            date.setTime(date.getTime() + daysInMs);
+            return date.toUTCString();
+        }
+
+        const DAYS = 2;
+        storeCookie('test2','valor2',{
+            expires: expiresIn(DAYS),
+            path: '/',
+            secure: '',
+            semesite: 'none',
+        });
     </script>
+</body>
 </html>
