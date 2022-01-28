@@ -3,6 +3,10 @@
 
 <img src=".assets/">
 
+Como testar cookies no localhost
+    Para testar cookies no ambiente local eu recomendo o uso da extensão live server no vs code, pois quando clicamos para abrir o HTML com live server a extensão cria um servidor HTTP que tem o papel de servir páginas HTML. Dessa forma, com este servidor HTTP de pé temos uma url que permite que o cookie seja criado e anexado a essa url;
 
+<img src=".assets/">
+<img src=".assets/">
 
 https://www.instagram.com/p/CZPHJHgOtuz/
