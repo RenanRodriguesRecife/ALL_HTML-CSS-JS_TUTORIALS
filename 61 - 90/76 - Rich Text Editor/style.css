@@ -7,3 +7,15 @@
 body{
     background-color: #338;
 }
+
+.container{
+    background-color: #ffffff;
+    width: 90vmin;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(7,20,35,0.2);
+}
