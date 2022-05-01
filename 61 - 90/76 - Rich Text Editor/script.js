@@ -8,3 +8,16 @@ let alignButtons = document.querySelectorAll(".align");
 let spacingButtons = document.querySelectorAll(".spacing");
 let formatButtons = document.querySelectorAll(".format");
 let scriptButtons = document.querySelectorAll("script");
+
+
+// list of fonts
+let fontList = [
+    "Arial",
+    "Verdana",
+    "Times New Roman",
+    "Garamond",
+    "Georgia",
+    "Courier New",
+    "cursive"
+];
+
