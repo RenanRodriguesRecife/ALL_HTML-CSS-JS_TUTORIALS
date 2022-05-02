@@ -1,6 +1,6 @@
 let optionsButtons = document.querySelectorAll(".option-button");
 let advencedOptionButton = document.querySelectorAll(".adv-option-button");
-let fontName = document.getElementById("fontName");
+let fontName = document.getElementById("font-name");
 let fontSizeRef = document.getElementById("fontSize");
 let writingArea = document.getElementById("text-input");
 let linkButton = document.getElementsByName("createLink");
@@ -27,6 +27,14 @@ const initialize = () => {
     highlighter(spacingButtons, true);
     highlighter(formatButtons, false);
     highlighter(scriptButtons, true);
+
+    // option for fontlist
+    fontList.map((value)=>{
+        let option = document.createElement("option");
+        option.value = value;
+        option.innerHTML = value;
+        fontName.appendChild(option);
+    });
 }
 
 //Destaca botões clicados
