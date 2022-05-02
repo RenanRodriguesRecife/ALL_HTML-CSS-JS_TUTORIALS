@@ -1,7 +1,7 @@
 let optionsButtons = document.querySelectorAll(".option-button");
 let advencedOptionButton = document.querySelectorAll(".adv-option-button");
 let fontName = document.getElementById("font-name");
-let fontSizeRef = document.getElementById("fontSize");
+let fontSizeRef = document.getElementById("font-size");
 let writingArea = document.getElementById("text-input");
 let linkButton = document.getElementsByName("createLink");
 let alignButtons = document.querySelectorAll(".align");
@@ -35,6 +35,14 @@ const initialize = () => {
         option.innerHTML = value;
         fontName.appendChild(option);
     });
+
+    //fontsize 
+    for(let i = 1; i<=7;i++){
+        let option = document.createElement("option");
+        option.value = i;
+        option.innerHTML = i;
+        fontSizeRef.appendChild(option);
+    }
 }
 
 //Destaca botões clicados
