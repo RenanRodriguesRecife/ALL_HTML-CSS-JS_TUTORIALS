@@ -43,6 +43,14 @@ const initialize = () => {
         option.innerHTML = i;
         fontSizeRef.appendChild(option);
     }
+    //tamanho padrão
+    fontSizeRef.value = 7;
+}
+
+//main logic
+const modifyText = (command, defaultUi, value) =>{
+    //execCommand executa o comando do texto selecionado
+    document.execCommand(command,defaultUi, value);
 }
 
 //Destaca botões clicados
