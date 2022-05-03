@@ -3,7 +3,7 @@ let advencedOptionButton = document.querySelectorAll(".adv-option-button");
 let fontName = document.getElementById("font-name");
 let fontSizeRef = document.getElementById("font-size");
 let writingArea = document.getElementById("text-input");
-let linkButton = document.getElementsByName("createLink");
+let linkButton = document.getElementById("createLink");
 let alignButtons = document.querySelectorAll(".align");
 let spacingButtons = document.querySelectorAll(".spacing");
 let formatButtons = document.querySelectorAll(".format");
@@ -52,6 +52,32 @@ const modifyText = (command, defaultUi, value) =>{
     //execCommand executa o comando do texto selecionado
     document.execCommand(command,defaultUi, value);
 }
+
+//para operadores que não precisam de valores
+optionsButtons.forEach((button) =>{
+    button.addEventListener("click",()=>{
+        modifyText(button.id, false,null);
+    });
+})
+
+//para operadores que precisam de volores
+advencedOptionButton.forEach((button) => {
+    button.addEventListener("change",()=>{
+        modifyText(button.id, false,button.value);
+    });
+});
+
+// link button
+linkButton.addEventListener("click", () => {
+    let userLink = prompt("Enter a URL");
+    // if link has http then pass directly else add https
+    if(/http/i.test(userLink)){
+        modifyText(linkButton.id, false, userLink);
+    }else{
+        userLink = "http://" + userLink;
+        modifyText(linkButton.id, false, userLink);
+    }
+})
 
 //Destaca botões clicados
 const highlighter = (className, needsRemoval) => {
