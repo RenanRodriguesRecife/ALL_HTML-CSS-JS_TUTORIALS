@@ -8,3 +8,21 @@ let eraseBtn = document.getElementById("erase-btn");
 let paintBtn = document.getElementById("paint-btn");
 let widthValue = document.getElementById("width-value");
 let HeightValue = document.getElementById("height-value");
+
+// events
+let events = {
+    mouse: {
+        down: "mousedown",
+        move: "mousemove",
+        up:"mouseup",
+    },
+    touch:{
+        down: "touchstart",
+        move: "touchmove",
+        up: "touchend",
+    },
+};
+
+let deviceType = "";
+let draw = false;
+let erase = false;
