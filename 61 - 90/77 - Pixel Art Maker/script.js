@@ -26,3 +26,19 @@ let events = {
 let deviceType = "";
 let draw = false;
 let erase = false;
+
+//Detecta touch device
+const isTouchDevice = () => {
+    try{
+        //Tenta criar touchEvent(Isso irá falhar para Destops)
+        document.createEvent("TouchEvent")
+        deviceType = "touch";
+        return true;
+    }catch(e){
+        deviceType = "mouse";
+        return false;
+    }
+}
+
+
+console.log(isTouchDevice());
