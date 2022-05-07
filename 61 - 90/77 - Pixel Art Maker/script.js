@@ -41,4 +41,26 @@ const isTouchDevice = () => {
 }
 
 
-console.log(isTouchDevice());
+isTouchDevice();
+
+gridButton.addEventListener("click",()=>{
+    //limpando o grid 
+    container.innerHTML = "";
+    //gerar ids unicas
+    let count = 0;
+    //criando linhas
+    for(let i = 0; i < gridHeight.value; i++){
+        count += 2;
+        let div = document.createElement("div");
+        div.classList.add("gridRow");
+        //criando colunas
+        for(let j = 0;j < gridWidth.value; j++){
+            count += 2;
+            let col = document.createElement("div");
+            col.classList.add("gridCol");
+            //criando ids unicos
+            col.setAttribute("id",`gridCol${count}`);
+        }
+
+    }
+})
