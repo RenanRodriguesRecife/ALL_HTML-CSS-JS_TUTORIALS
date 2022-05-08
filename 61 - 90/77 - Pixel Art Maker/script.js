@@ -60,6 +60,26 @@ gridButton.addEventListener("click",()=>{
             col.classList.add("gridCol");
             //criando ids unicos
             col.setAttribute("id",`gridCol${count}`);
+
+            /*
+            se o devicetype = "mouse"
+            o estado do evento será events[mouse].down
+            se o devicetype = "touch"
+            o estado do evento será events[touch].down que é igual a touchstart
+            */
+
+            col.addEventListener(events[deviceType].down,()=>{
+                //usuário começa a desenhar
+                draw = true;
+                //se erase = true estão o background = transparent se não é igual a cor
+                if(erase){
+                    col.style.background = "transparent";
+                }else{
+                    col.style.backgroundColor = colorButton.value;
+                }
+            })
+
+           
         }
 
     }
