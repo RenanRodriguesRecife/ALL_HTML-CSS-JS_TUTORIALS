@@ -3,6 +3,7 @@ let container = document.querySelector(".container");
 let gridButton = document.getElementById("submit-grid");
 let clearGridButton = document.getElementById("clear-grid");
 let gridWidth = document.getElementById("width-range");
+let gridHeight = document.getElementById("height-range");
 let colorButton = document.getElementById("color-input");
 let eraseBtn = document.getElementById("erase-btn");
 let paintBtn = document.getElementById("paint-btn");
@@ -83,12 +84,35 @@ gridButton.addEventListener("click",()=>{
                 // elementFromPoint retorna o elemento na posição x,y do mouse
                 let elementId = document.elementFromPoint(
                     !isTouchDevice()? e.clientX : e.touches[0].clientX,
-                    !isTouchDevice()? e.clientY : e.touches[0].clientY).id;
+                    !isTouchDevice()? e.clientY : e.touches[0].clientY
                     //checker
-                    checher(elementId);
-                )
+                    
+                ).id;
+                checker(elementId);
             })
+            //parar de desenhar
+            col.addEventListener(events[deviceType].up,()=>{
+                draw = false;
+            });
+            //anexar colunas
+            div.appendChild(col);
         }
+        //anexar grid para container
+        container.appendChild(div);
 
     }
 })
+function checker(elementId){
+    let gridColumns = document.querySelectorAll(".gridCol");
+    //loop through all boxes
+    gridColumns.forEach((element)=>{
+        // se o id matcher então colore
+        if(elementId == element.id){
+            if(draw && !erase){
+                element.style.backgroundColor = colorButton.value;
+            }else if(draw && erase){
+                element.style.backgroundColor = "transparent";
+            }
+        }
+    });
+}
