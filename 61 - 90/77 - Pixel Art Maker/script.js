@@ -130,3 +130,17 @@ eraseBtn.addEventListener("click",()=>{
 paintBtn.addEventListener("click",()=>{
     erase = false;
 })
+
+
+//Mostra grid largura e altura
+gridWidth.addEventListener("input",()=>{
+    widthValue.innerHTML = 
+    gridWidth.value < 9 ? `0${gridWidth.value}`:
+    gridWidth.value;
+});
+
+gridHeight.addEventListener("input",()=>{
+    HeightValue.innerHTML = 
+    gridHeight.value < 9 ? `0${gridHeight.value}`:
+    gridHeight.value;
+});
