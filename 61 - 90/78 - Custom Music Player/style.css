@@ -9,3 +9,17 @@ body{
     background: linear-gradient(to bottom, #2887e3 50%,
     #16191e 50%);
 }
+
+.music-player{
+    font-size: 16px;
+    width: 80vw;
+    max-width: 25em;
+    background-color: #ffffff;
+    padding: 3em 1.8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.5em;
+    box-shadow: 0.6em 1.2em 3em rgba(0,0,0,0.25);
+}
