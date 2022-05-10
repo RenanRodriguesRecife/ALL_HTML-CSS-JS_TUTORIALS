@@ -15,6 +15,35 @@
         <button id="playlist">
             <i class="fa-solid fa-angle-down"></i>
         </button>
+        <img src="./img/whitelies.jpg" alt="" id="song-image">
+        <div class="song-details">
+            <p id="song-name">Too long await</p>
+            <p id="song-artist"></p>
+        </div>
+        <div class="player-options">
+            <button id="shuffler">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+            <button id="prev">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="pause" class="hide">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="next">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+            <button id="repeat">
+                <i class="fa-solid fa-repeat"></i>
+            </button>
+        </div>
+        <audio preload="metadata" id="audio"></audio>
+        <div id="progress-bar">
+            <div id="current-progress"></div>
+        </div>
     </div>
 </body>
 </html>
