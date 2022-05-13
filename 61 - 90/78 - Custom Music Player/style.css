@@ -100,5 +100,11 @@ img{
     width: 20%;
     background-color: #2887e3;
     border-radius: 0.18em;
+}
 
+.time-container{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    font-family: "Roboto Mono",monospace;
 }
