@@ -11,3 +11,11 @@ const playButton = document.getElementById("play");
 const playlistButton = document.getElementById("playlist");
 const maxDurataion = document.getElementById("max-duration");
 const currentTimeRef = document.getElementById("current-time");
+const progressBar = document.getElementById("progress-bar");
+const playlistContainer = document.getElementById("playlist-container");
+const closeButton = document.getElementById("close-button");
+const playlistSongs = document.getElementById("playlist-songs");
+const currentProgress = document.getElementById("current-progress");
+
+
+
