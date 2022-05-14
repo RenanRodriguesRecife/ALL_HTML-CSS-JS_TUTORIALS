@@ -48,3 +48,15 @@ const songsList = [
     }
 ];
 
+let events = {
+    mouse: {
+        click:"click",
+    },
+    touch:{
+        click:"touchstart",
+    },
+}
+
+let deviceType = "";
+
+const isTouchDevice = () => {}
