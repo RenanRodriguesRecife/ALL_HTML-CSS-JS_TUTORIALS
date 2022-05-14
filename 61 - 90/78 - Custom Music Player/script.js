@@ -17,5 +17,34 @@ const closeButton = document.getElementById("close-button");
 const playlistSongs = document.getElementById("playlist-songs");
 const currentProgress = document.getElementById("current-progress");
 
+let index;
 
+let loop = true;
+
+const songsList = [
+    {
+        name: "",
+        link: "",
+        artist: "",
+        image: "",
+    },
+    {
+        name: "",
+        link: "",
+        artist: "",
+        image: "",
+    },
+    {
+        name: "",
+        link: "",
+        artist: "",
+        image: "",
+    },
+    {
+        name: "",
+        link: "",
+        artist: "",
+        image: "",
+    }
+];
 
