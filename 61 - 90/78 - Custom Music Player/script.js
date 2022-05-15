@@ -59,4 +59,16 @@ let events = {
 
 let deviceType = "";
 
-const isTouchDevice = () => {}
+const isTouchDevice = () => {
+    try{
+        //tenta criar um evento trouch (irá falhar no desktops)
+        document.createEvent("TouchEvent");
+        deviceType = "touch";
+        return true;
+    }catch(e){
+        deviceType = "mouse";
+        return false;
+    }
+}
+
+console.log(isTouchDevice());
