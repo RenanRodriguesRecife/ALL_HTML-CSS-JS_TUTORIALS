@@ -103,3 +103,16 @@ const playAudio = () =>{
     pauseButton.classList.remove("hide");
     playButton.classList.add("hide");
 }
+
+//repeat button
+repeatButton.addEventListener("click",()=>{
+    if(repeatButton.classList.contains("active")){
+        repeatButton.classList.remove("active");
+        audio.loop = false;
+        console.log("repeat off");
+    }else{
+        repeatButton.classList.add("active");
+        audio.loop = true;
+        console.log("repeat on");
+    }
+});
