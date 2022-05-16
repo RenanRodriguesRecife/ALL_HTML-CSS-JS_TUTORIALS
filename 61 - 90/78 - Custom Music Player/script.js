@@ -96,3 +96,10 @@ const setSong = (arrayIndex) => {
         maxDurataion.innerHTML = timeFormatter(audio.duration);
     }
 }
+
+//play song
+const playAudio = () =>{
+    audio.play();
+    pauseButton.classList.remove("hide");
+    playButton.classList.add("hide");
+}
