@@ -83,3 +83,16 @@ const timeFormatter = (timeInput) => {
 }
 
 console.log(timeFormatter(400));
+
+//set song
+const setSong = (arrayIndex) => {
+    let {name, link, artist, image} = songsList[arrayIndex];
+    audio.src = link;
+    songName.innerHTML = name;
+    songArtist.innerHTML = artist;
+    songImage.src = image;
+    //mostra a duração do tempo
+    audio.onloadedmetadata = () =>{
+        maxDurataion.innerHTML = timeFormatter(audio.duration);
+    }
+}
