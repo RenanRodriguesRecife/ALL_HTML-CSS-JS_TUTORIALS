@@ -72,3 +72,14 @@ const isTouchDevice = () => {
 }
 
 console.log(isTouchDevice());
+
+// time convert format (ms to seconds, minutes)
+const timeFormatter = (timeInput) => {
+    let minute = Math.floor(timeInput / 60);
+    minute = minute < 10 ? "0" + minute : minute;
+    let second = Math.floor(timeInput % 60);
+    second = second < 10 ? "0" + second : second;
+    return `${minute}:${second}`;
+}
+
+console.log(timeFormatter(400));
