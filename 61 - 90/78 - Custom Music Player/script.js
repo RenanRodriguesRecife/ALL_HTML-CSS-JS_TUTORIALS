@@ -138,3 +138,11 @@ const nextSong = () => {
         playAudio();
     }
 }
+
+
+
+// play button
+playButton.addEventListener("click",playAudio);
+
+// next button
+nextButton.addEventListener("click",nextSong);
