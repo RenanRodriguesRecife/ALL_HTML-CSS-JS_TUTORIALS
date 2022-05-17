@@ -146,3 +146,9 @@ playButton.addEventListener("click",playAudio);
 
 // next button
 nextButton.addEventListener("click",nextSong);
+
+window.onload = () => {
+    // inciando a primeira música
+    index = 0;
+    setSong(index);
+}
