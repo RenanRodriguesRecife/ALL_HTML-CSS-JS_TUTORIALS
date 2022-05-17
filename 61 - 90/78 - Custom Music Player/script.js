@@ -48,6 +48,7 @@ const songsList = [
     }
 ];
 
+
 let events = {
     mouse: {
         click:"click",
@@ -92,7 +93,7 @@ const setSong = (arrayIndex) => {
     songArtist.innerHTML = artist;
     songImage.src = image;
     //mostra a duração do tempo
-    audio.onloadedmetadata = () =>{
+    audio.onloadedmetadata = () => {
         maxDurataion.innerHTML = timeFormatter(audio.duration);
     }
 }
@@ -116,3 +117,24 @@ repeatButton.addEventListener("click",()=>{
         console.log("repeat on");
     }
 });
+
+//Next song
+const nextSong = () => {
+    if(loop){
+        if(index == songsList.length - 1){
+            //se a ultima musica estiver sendo tocada
+            index = 0;
+        }else{
+            index += 1;
+        }
+        setSong(index);
+        playAudio();
+    }
+    else{
+        //encontra um index aleatódio e toca a musica
+        let randIndex = Math.floor(Math.random() = songsList.lenght);
+        console.log(randIndex);
+        setSong(randIndex);
+        playAudio();
+    }
+}
