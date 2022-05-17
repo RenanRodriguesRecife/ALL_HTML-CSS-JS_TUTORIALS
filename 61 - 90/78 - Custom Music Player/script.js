@@ -139,6 +139,13 @@ const nextSong = () => {
     }
 }
 
+//pause song
+const pauseAudio = () => {
+    audio.pause();
+    pauseButton.classList.add("hide");
+    playButton.classList.remove("hide");
+}
+
 
 
 // play button
