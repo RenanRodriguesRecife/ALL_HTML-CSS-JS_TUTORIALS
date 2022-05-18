@@ -23,28 +23,22 @@ let loop = true;
 
 const songsList = [
     {
-        name: "",
-        link: "",
-        artist: "",
-        image: "",
+        name: "Farewell to the Fairground",
+        link: "./audio/White Lies - Farewell to the Fairground.mp3",
+        artist: "whitelies",
+        image: "./img/whitelies.jpg",
     },
     {
-        name: "",
-        link: "",
-        artist: "",
-        image: "",
+        name: "Too Long Awake",
+        link: "./audio/Too Long Awake.mp3",
+        artist: "Idlewild",
+        image: "./img/idlewild.jpg",
     },
     {
-        name: "",
-        link: "",
-        artist: "",
-        image: "",
-    },
-    {
-        name: "",
-        link: "",
-        artist: "",
-        image: "",
+        name: "The mother we share",
+        link: "./audio/CHVRCHES - The mother we share.mp3",
+        artist: "Chvrches",
+        image: "./img/chvrches.jpg",
     }
 ];
 
