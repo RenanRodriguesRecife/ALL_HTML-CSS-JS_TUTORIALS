@@ -146,7 +146,16 @@ const pauseAudio = () => {
     playButton.classList.remove("hide");
 }
 
-
+//musica anterior
+const previousSong = () => {
+    if(index > 0){
+        pauseAudio();
+        index = songsList.length - 1;
+    }else{
+        index = songsList.length - 1;
+    }
+    setSong(index);
+};
 
 // play button
 playButton.addEventListener("click",playAudio);
