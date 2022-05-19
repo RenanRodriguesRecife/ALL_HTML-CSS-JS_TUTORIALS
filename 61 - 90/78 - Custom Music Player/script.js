@@ -182,6 +182,36 @@ prevButton.addEventListener("click",previousSong);
 // pause button
 pauseButton.addEventListener("click",pauseAudio);
 
+//if click on progress bar
+isTouchDevice();
+progressBar.addEventListener(events[deviceType].click,(event)=>{
+    //start of progressBar
+    let coordStart = progressBar.getBoundingClientRect().left;
+    //mouse click position
+    let coordEnd = !isTouchDevice() ? event.clientX : event.touches[0].clientX;
+    let progress = (coordEnd - coordStart)/progressBar.offsetWidth;
+    // aplicando a largura para o progresso da barra
+    currentProgress.style.width = progress * 100 + "%";
+    //aplicando o tempo
+    audio.currentProgress = progress * audio.duration;
+    //play
+    audio.play();
+    pauseButton.classList.remove("hide");
+    playButton.classList.add("hide");
+    
+})
+
+//update the progress bar a cada segundo
+setInterval(() =>{
+    currentTimeRef.innerHTML = timeFormatter(audio.currentTime);
+    currentProgress.style.width = (audio.currentTime/audio.duration.toFixed(3))*100 + "%";
+})
+
+//update time
+audio.addEventListener("timeupdate",()=>{
+    currentTimeRef.innerHTML = timeFormatter(audio.currentTime);
+})
+
 window.onload = () => {
     // inciando a primeira música
     index = 0;
