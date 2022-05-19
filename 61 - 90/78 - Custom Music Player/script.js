@@ -155,7 +155,20 @@ const previousSong = () => {
 //proxima musica quando a música termina
 audio.onended = () => {
     nextSong();
-}
+};
+
+//embaralhar lista de musicas
+shuffleButton.addEventListener("click",()=>{
+    if(shuffleButton.classList.contains("active")){
+        shuffleButton.classList.remove("active");
+        loop = true;
+        console.log("shuffle off");
+    }else{
+        shuffleButton.classList.add("active");
+        loop = false;
+        console.log("shuffle on")
+    }
+})
 
 // play button
 playButton.addEventListener("click",playAudio);
