@@ -144,11 +144,12 @@ const pauseAudio = () => {
 const previousSong = () => {
     if(index > 0){
         pauseAudio();
-        index = songsList.length - 1;
+        index -= 1;
     }else{
         index = songsList.length - 1;
     }
     setSong(index);
+    playAudio();
 };
 
 // play button
