@@ -152,6 +152,11 @@ const previousSong = () => {
     playAudio();
 };
 
+//proxima musica quando a música termina
+audio.onended = () => {
+    nextSong();
+}
+
 // play button
 playButton.addEventListener("click",playAudio);
 
