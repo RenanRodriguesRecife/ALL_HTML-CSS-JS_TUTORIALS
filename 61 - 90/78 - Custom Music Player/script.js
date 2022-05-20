@@ -217,7 +217,7 @@ audio.addEventListener("timeupdate",()=>{
 const initializePlaylist = () => {
     for (let i in songsList){
         playlistSongs.innerHTML += `
-        <li class='playlistSong' on click='setSong(${i})'>
+        <li class='playlistSong' on onclick='setSong(${i})'>
             <div class="playlist-image-container">
                 <img src="${songsList[i].image}"/>
             </div>
