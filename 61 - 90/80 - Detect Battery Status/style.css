@@ -4,3 +4,33 @@
     box-sizing: border-box;
     font-family: "Roboto Mono",monospace;
 }
+
+.container{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+#battery{
+    box-sizing: content-box;
+    height: 7.8em;
+    width: 17.5em;
+    border: 0.6em solid #246aed;
+    margin: auto;
+    border-radius: 0.6em;
+    position: relative;
+}
+
+#battery:before{
+    position:absolute;
+    content: "";
+    height: 5em;
+    width: 1.1em;
+    background-color: #245aed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: -1.6em;
+    border-radius: 0 0.3em 0.3em 0;
+}
