@@ -51,3 +51,22 @@
     font-size: 3em;
     font-weight: 500;
 }
+
+#charging-time{
+    text-align: center;
+    font-size: 1.7em;
+    margin-top: 1.4em;
+}
+
+.active{
+    animation:charge-animation 3s infinite linear;
+}
+
+@keyframes charge-animation{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 16.25em;
+    }
+}
