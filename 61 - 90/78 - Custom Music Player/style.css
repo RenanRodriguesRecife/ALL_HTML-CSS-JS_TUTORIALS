@@ -56,6 +56,11 @@ img{
     margin: 1.25em 0 0.6em 0;
 }
 
+.music-player button{
+    border:none;
+    background-color: transparent;
+}
+
 #play, #pause{
     height: 2.5em;
     width: 2.5em;
