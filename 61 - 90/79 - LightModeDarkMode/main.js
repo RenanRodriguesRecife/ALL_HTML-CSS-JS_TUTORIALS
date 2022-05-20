@@ -1,14 +1,14 @@
 const inputContainer = document.querySelector('input');
-
+const rootElement = document.documentElement;
 
 const lightTheme = {
-    '--background-coloer':'#FFF',
+    '--background-color':'#FFF',
     '--text-color':'#1A1A1A',
     '--button-background-color':'#9B8AFB',
 }
 
 const darkTheme = {
-    '--background-coloer':'#1A1A1A',
+    '--background-color':'#1A1A1A',
     '--text-color':'#FFF',
     '--button-background-color':'#5925DC',
 }
@@ -19,5 +19,11 @@ inputContainer.addEventListener('change',function(){
 })
 
 function changeTheme(theme){
-    
+    for(let prop in theme){
+        changeProperty(prop, theme[prop])
+    }
+}
+
+function changeProperty(property, value){
+    rootElement.style.setProperty(property,value);
 }
