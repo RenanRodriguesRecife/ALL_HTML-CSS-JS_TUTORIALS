@@ -213,11 +213,16 @@ audio.addEventListener("timeupdate",()=>{
 })
 
 
+const selectSong = (index) => {
+    setSong(index);
+    playAudio();
+}
+
 // create playlist
 const initializePlaylist = () => {
     for (let i in songsList){
         playlistSongs.innerHTML += `
-        <li class='playlistSong' on onclick='setSong(${i})'>
+        <li class='playlistSong' onclick='selectSong(${i})'>
             <div class="playlist-image-container">
                 <img src="${songsList[i].image}"/>
             </div>
