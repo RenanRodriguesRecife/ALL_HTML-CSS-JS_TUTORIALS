@@ -20,6 +20,8 @@
     margin: auto;
     border-radius: 0.6em;
     position: relative;
+    display: grid;
+    place-items:center;
 }
 
 #battery:before{
@@ -33,4 +35,19 @@
     bottom: 0;
     right: -1.6em;
     border-radius: 0 0.3em 0.3em 0;
+}
+
+#charge{
+    position: absolute;
+    height: 6.5em;
+    width: 16.25em;
+    background-color: #246aed;
+    top: 0.6em;
+    left: 0.6em;
+}
+
+#charge-level{
+    position:absolute;
+    font-size: 3em;
+    font-weight: 500;
 }
