@@ -233,6 +233,15 @@ const initializePlaylist = () => {
     }
 }
 
+//display playlist
+playlistButton.addEventListener("click",()=>{
+    playlistContainer.classList.remove("hide");
+})
+
+closeButton.addEventListener("click",()=>{
+    playlistContainer.classList.add("hide");
+})
+
 window.onload = () => {
     // inciando a primeira música
     index = 0;
