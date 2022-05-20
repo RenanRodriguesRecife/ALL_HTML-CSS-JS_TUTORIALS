@@ -118,7 +118,7 @@ img{
     top: 50%;
     left: 50%;
     border-radius: 0.6em;
-    pad: 2em 1em;
+    padding: 2em 1em;
     font-family: "Poppins",sans-serif;
 }
 
@@ -129,4 +129,41 @@ img{
     width: 2em;
     cursor: pointer;
     margin-left: 90%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.playlist-song-details{
+    margin-left: 1em;
+}
+
+.playlist-song-details > span{
+    display: block;
+}
+
+#playlist-song-artist-album{
+    color: #949494;
+    font-size: 0.8em;
+}
+
+button.active i{
+    color: #2887e3;
+}
+@media screen and (max-width: 450px){
+    .music-player{
+        font-size:14px;
+    }
+}
+
+.playlist-image-container{
+    width: 3em;
 }
