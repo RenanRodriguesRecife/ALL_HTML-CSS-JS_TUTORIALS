@@ -189,11 +189,11 @@ progressBar.addEventListener(events[deviceType].click,(event)=>{
     let coordStart = progressBar.getBoundingClientRect().left;
     //mouse click position
     let coordEnd = !isTouchDevice() ? event.clientX : event.touches[0].clientX;
-    let progress = (coordEnd - coordStart)/progressBar.offsetWidth;
+    let progress = (coordEnd - coordStart)/ progressBar.offsetWidth;
     // aplicando a largura para o progresso da barra
     currentProgress.style.width = progress * 100 + "%";
     //aplicando o tempo
-    audio.currentProgress = progress * audio.duration;
+    audio.currentTime = progress * audio.duration;
     //play
     audio.play();
     pauseButton.classList.remove("hide");
