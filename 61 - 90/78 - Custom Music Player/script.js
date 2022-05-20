@@ -212,8 +212,30 @@ audio.addEventListener("timeupdate",()=>{
     currentTimeRef.innerHTML = timeFormatter(audio.currentTime);
 })
 
+
+// create playlist
+const initializePlaylist = () => {
+    for (let i in songsList){
+        playlistSongs.innerHTML += `
+        <li class='playlistSong' on click='setSong($(i))'>
+            <div class="playlist-image-container">
+                <img src="${songsList[i].image}"/>
+            </div>
+            <div class="plalist-song-details">
+                <span id="playlist-song-name">
+                    ${songsList[i].name}
+                </span>
+                <span id="playlist-song-artist-album">
+                    ${songsList[i].artist}
+                </span>
+            </div>
+        </li>`;
+    }
+}
+
 window.onload = () => {
     // inciando a primeira música
     index = 0;
     setSong(index);
+    initializePlaylist();
 }
