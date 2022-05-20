@@ -19,8 +19,13 @@ inputContainer.addEventListener('change',function(){
 })
 
 function changeTheme(theme){
-    for(let prop in theme){
-        changeProperty(prop, theme[prop])
+    // for(let prop in theme){
+    //     changeProperty(prop, theme[prop])
+    // }
+
+    // console.log(Object.entries(theme))
+    for(let [property, value] of Object.entries(theme)){
+        changeProperty(property, value)
     }
 }
 
