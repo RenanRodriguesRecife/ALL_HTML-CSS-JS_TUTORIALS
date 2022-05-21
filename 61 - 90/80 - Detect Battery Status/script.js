@@ -12,3 +12,26 @@ window.onload = () => {
     }
 }
 
+navigator.getBattery().then((battery)=>{
+    function updateAllBatteryInfo(){
+        updateChargingInfo();
+    }
+
+    updateAllBatteryInfo();
+
+    //when the charging status changes
+    battery.addEventListener("chargingchange",()=>{
+        updateAllBatteryInfo();
+    })
+
+    function updateChargingInfo(){
+        if(battery.charging){
+            charge.classList.add("active")
+            console.log("charging");
+        }else{
+            charge.classList.remove("active")
+            console.log("not charging");
+        }
+    }
+});
+
