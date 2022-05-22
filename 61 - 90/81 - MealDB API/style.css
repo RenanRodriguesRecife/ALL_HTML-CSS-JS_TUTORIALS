@@ -70,6 +70,18 @@ img {
     font-weight: 400;
 }
 
+#show-recipe{
+    font-size: 1em;
+    position: relative;
+    left: 75%;
+    padding: 0.9em 0.6em;
+    background-color: #f4c531;
+    border:none;
+    top: 1.5em;
+    border-radius: 0.3em;
+    font-weight: 600;
+}
+
 #recipe{
     position: absolute;
     background-color: #ffffff;
