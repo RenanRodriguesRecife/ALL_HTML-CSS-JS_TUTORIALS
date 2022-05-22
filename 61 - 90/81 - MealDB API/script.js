@@ -33,7 +33,7 @@ searchBtn.addEventListener("click",()=>{
             result.innerHTML = `<img src=${myMeal.strMealThumb}>
             <div class="details">
                 <h2>${myMeal.strMeal}</h2>
-                <h2>${myMeal.strAre}</h2>
+                <h2>${myMeal.strArea}</h2>
             </div>
             <div id="ingredient-con"></div>
             <div id="recipe">
