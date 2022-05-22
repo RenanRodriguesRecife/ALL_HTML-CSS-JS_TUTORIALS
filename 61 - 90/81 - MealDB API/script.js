@@ -35,7 +35,12 @@ fetch(url + "big mac")
             <button id="hide-recipe">X</button>
             <pre id="instructions">${myMeal.strInstructions}</pre>
         </div>
-        `
-        
+        <button id="show-recipe">View Recipe</button>
+        `;
+        let ingredientCon = documnet.getElementById("ingredient-con");
+        let parent = document.createElement("ul");
+        let recipe = document.getElementById("recipe");
+        let hideRecipe = document.getElementById("hide-recipe");
+        let showRecipe = document.getElementById("show-recipe")
     }) 
 
