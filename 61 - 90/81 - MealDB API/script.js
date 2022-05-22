@@ -25,6 +25,17 @@ fetch(url + "big mac")
                 ingredients.push(`${measure} ${ingredient}`)
             }
         }
-        result.innerHTML = `<img src=${myMeal.strMealThumb}>`
+        result.innerHTML = `<img src=${myMeal.strMealThumb}>
+        <div class="details">
+            <h2>${myMeal.strMeal}</h2>
+            <h2>${myMeal.strAre}</h2>
+        </div>
+        <div id="ingredient-con"></div>
+        <div id="recipe">
+            <button id="hide-recipe">X</button>
+            <pre id="instructions">${myMeal.strInstructions}</pre>
+        </div>
+        `
+        
     }) 
 
