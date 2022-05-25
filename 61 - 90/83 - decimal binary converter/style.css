@@ -49,4 +49,18 @@ input{
     font-size: 1.1em;
     width: 100%;
     padding: 0.5em;
+    border-radius: 0.2em;
+    border: 1.5px solid #43405c;
+    color: #43405c;
+    outline:none;
+}
+
+input:focus{
+    border-color: #0075ff;
+}
+
+#error-msg{
+    text-align: center;
+    margin-top: 1.25em;
+    color: #ff4362;
 }
