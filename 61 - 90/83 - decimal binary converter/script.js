@@ -5,18 +5,20 @@ let errorMsg = document.getElementById("error-msg");
 // decimal -> binário
 decInp.addEventListener("input",()=>{
     let decValue = parseInt(decInp.value);
-    binInp.value = decValue.toString(2)
+    binInp.value = decValue.toString(2);
+    errorMsg.textContent = "";
 })
 
 // binário -> decimal 
-binInp.addEventListeners("input",() =>{
+binInp.addEventListener("input",() =>{
     let binValue = binInp.value;
     // se o número binário é válido
     if(binValidator(binValue)){
-
+        decInp.value = parseInt(binValue, 2);
+        errorMsg.textContent = "";
     }else{
-
-    }
+        errorMsg.textContent = "Please Enter An Valid Binary Input";
+    }   
 
     // verifica se o número binário não contem nenhum número diferente de 0 e 1
     function binValidator(num){
@@ -25,5 +27,6 @@ binInp.addEventListeners("input",() =>{
                 return false;
             }
         }
+        return true;
     }
 })
