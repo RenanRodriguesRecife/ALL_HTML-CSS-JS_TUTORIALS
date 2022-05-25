@@ -30,3 +30,23 @@ h2{
     letter-spacing: 0.5px;
     margin-bottom: 1.3em;
 }
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8em;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #050121;
+}
+
+input{
+    position: relative;
+    font-size: 1.1em;
+    width: 100%;
+    padding: 0.5em;
+}
