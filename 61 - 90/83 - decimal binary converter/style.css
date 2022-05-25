@@ -21,3 +21,12 @@ body{
     border-radius: 0.62em;
     box-shadow: 0 1.2em 2.5em rgba(0, 21, 44, 0.18);
 }
+
+h2{
+    font-size: 1.8em;
+    color: #0075ff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.3em;
+}
