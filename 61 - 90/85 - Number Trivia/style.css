@@ -49,3 +49,7 @@ body{
     padding: 0.7em;
     cursor: pointer;
 }
+#ran-fact-btn{
+    width: 100%;
+    margin-top: 1em;
+}
