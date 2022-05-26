@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
 }
 
 body{
@@ -52,4 +53,29 @@ body{
 #ran-fact-btn{
     width: 100%;
     margin-top: 1em;
+}
+
+.fact{
+    background: #ffffff;
+    box-shadow: 0 0 1.2em rgba(0,4,52,0.1);
+    margin: 3em auto 0 auto;
+    padding: 2.8em 1.8em;
+    border-radius: 0.6em;
+    border: none;
+    border-bottom: 0.6em solid #566fff;
+    display: none;
+}
+
+.fact h2{
+    font-size: 2.8em;
+    color: #181a34;
+}
+
+.fact p{
+    font-size:  1.15em;
+    font-weight: 400;
+    color: #50526b;
+    line-height: 1.8em;
+    text-align: justify;
+    margin-top: 0.8em;
 }
