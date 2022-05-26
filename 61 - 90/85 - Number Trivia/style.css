@@ -79,3 +79,9 @@ body{
     text-align: justify;
     margin-top: 0.8em;
 }
+
+p.msg{
+    text-align: center;
+    font-weight: 500;
+    color: #181a34;
+}
