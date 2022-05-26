@@ -21,3 +21,31 @@ body{
     border-radius: 0.6em;
     box-shadow: 0 1.2em 3em rgba(0,4,52,0.2);
 }
+
+.search-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container input,
+.container button{
+    font-size: 1.25em;
+    outline: none;
+    border:none;
+    border-radius: 0.4em;
+}
+
+.container input{
+    width: 40%;
+    border: 1px solid #bdbdbf;
+    padding: 0.6em;
+}
+
+.container button{
+    width: 55%;
+    background-color: #566fff;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.7em;
+    cursor: pointer;
+}
