@@ -30,4 +30,12 @@ let getFact = () => {
     }
 }
 
+let getRandomFact = () => {
+    let num = Math.floor(Math.random() * 301);
+    console.log(num)
+    fetchFact(num);
+}
+
 getFactBtn.addEventListener("click",getFact);
+ranFactBtn.addEventListener("click",getRandomFact);
+window.addEventListener("load",getRandomFact);
