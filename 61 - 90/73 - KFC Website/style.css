@@ -6,10 +6,25 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+
 header{
     position: relative;
     width: 100%;
     height: 80vh;
     background: linear-gradient(90deg, #f94526,#f02328);
     overflow:hidden;
+}
+
+header nav{
+    width: 63%;
+    height: 13%;
+    border: 1px solid #fff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
