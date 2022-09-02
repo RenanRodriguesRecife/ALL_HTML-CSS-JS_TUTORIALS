@@ -19,13 +19,16 @@ const randomColor = () => colors[Math.floor(Math.random()*colors.length)];
 function loadItems(){
     content.innerHTML = "";
     verifyNulls();
-    items_db.forEach((item)=>{
-        addHTML(item);
-    })
+
+    items_db.forEach((item,i)=>{
+        addHTML(item,i);
+    });
+    addEvents();
 }
 
 btnNew.onclick = () =>{
     addHTML();
+    addEvents();
 }
 
 function addHTML(item){
@@ -37,11 +40,14 @@ function addHTML(item){
 }
 
 function addEvents(){
-    const notes =document.querySelectorAll(".item textarea");
+    const notes = document.querySelectorAll(".item textarea");
     const remove = document.querySelectorAll(".item .remove");
+
+    console.log(notes)
 
     notes.forEach((item, i)=>{
         item.oninput = () =>{
+            
             items_db[i] = {
                 text: item.value,
                 color: items_db[i]?.color || item.parentElement.style.backgroundColor,
@@ -67,3 +73,6 @@ function verifyNulls(){
     items_db = items_db.filter((item)=>item);
     localStorage.setItem("items_db",JSON.stringify(items_db));
 }
+
+
+loadItems();
