@@ -34,7 +34,7 @@ btnNew.onclick = () =>{
 function addHTML(item){
     const div = document.createElement("div");
     div.innerHTML = `<div class="item" style="background-color: ${item?.color || randomColor()}">
-    <span class="remove">X</san>
+    <span class="remove">X</span>
     <textarea>${item?.text||""}</textarea></div>`;
     content.appendChild(div);
 }
@@ -43,11 +43,11 @@ function addEvents(){
     const notes = document.querySelectorAll(".item textarea");
     const remove = document.querySelectorAll(".item .remove");
 
-    console.log(notes)
+    
 
     notes.forEach((item, i)=>{
         item.oninput = () =>{
-            
+            console.log("gfdgsd")
             items_db[i] = {
                 text: item.value,
                 color: items_db[i]?.color || item.parentElement.style.backgroundColor,
