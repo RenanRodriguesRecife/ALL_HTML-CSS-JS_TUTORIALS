@@ -7,10 +7,16 @@ Repositório unindo todos os tutoriais avulsos de HTML-CSS-JS
 <table>
     <thead>
         <tr>
-            <th>test3</th>
-            <th>tes3</th>
-            <th>tes3</th>
-            <th>tesd3</th>
+            <th>#</th>
+            <th>Nome</th>
+            <th>descrição</th>
+            <th>view</th>
         </tr>
     </thead>
+    <tbody>
+        <td>01</td>
+        <td>test1</td>
+        <td>tes3</td>
+        <td><a href="01"></a></td>
+    </tbody>
 </table>
